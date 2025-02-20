@@ -8,6 +8,28 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(geometry_msgs)
+find_package(std_msgs)
+find_package(tf2)
+find_package(tf2_geometry_msgs)
+find_package(nav_msgs)
+
+
+add_executable(pub_trajectory_node 
+src/pub_trajectory_node.cpp)
+
+ament_target_dependencies(pub_trajectory_node
+std_msgs
+geometry_msgs
+rclcpp
+tf2
+tf2_geometry_msgs
+nav_msgs
+)
+
+install(TARGETS
+pub_trajectory_node
+DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
