@@ -36,7 +36,7 @@ def generate_launch_description():
         declare_pos_z_cmd,
 
         Node(
-            package='pub_sub_pkg',
+            package='practica1_pkg',
             executable='publisher',
             name='publisher_pose',
             output='screen',
@@ -46,7 +46,7 @@ def generate_launch_description():
         ),
 
         Node(
-            package='pub_sub_pkg',
+            package='practica1_pkg',
             executable='publisher',
             name='publisher_pose1',
             output='screen',
@@ -54,7 +54,7 @@ def generate_launch_description():
         ),
 
         Node(
-            package='pub_sub_pkg',
+            package='practica1_pkg',
             executable='subscriber',
             name='subscriber_pose',
             output='screen', 

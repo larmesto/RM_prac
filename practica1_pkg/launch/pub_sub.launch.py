@@ -12,13 +12,13 @@ def generate_launch_description():
     actions = [ 
         
         Node(
-            package='pub_sub_pkg',
+            package='practica1_pkg',
             executable='publisher',
             name='publisher_pose',
             output='screen', 
         ),
         Node(
-            package='pub_sub_pkg',
+            package='practica1_pkg',
             executable='subscriber',
             name='subscriber_pose',
             output='screen', 
