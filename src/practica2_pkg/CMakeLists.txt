@@ -15,10 +15,10 @@ find_package(tf2_geometry_msgs)
 find_package(nav_msgs)
 
 
-add_executable(pub_trajectory_node 
-src/pub_trajectory_node.cpp)
+add_executable(ejercicio_practica2 
+src/ejercicio_practica2.cpp)
 
-ament_target_dependencies(pub_trajectory_node
+ament_target_dependencies(ejercicio_practica2
 std_msgs
 geometry_msgs
 rclcpp
@@ -28,7 +28,7 @@ nav_msgs
 )
 
 install(TARGETS
-pub_trajectory_node
+ejercicio_practica2
 DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

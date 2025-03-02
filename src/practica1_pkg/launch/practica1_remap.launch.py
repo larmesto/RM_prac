@@ -14,14 +14,18 @@ def generate_launch_description():
         Node(
             package='practica1_pkg',
             executable='publisher',
-            name='publisher_pose',
-            output='screen', 
+            name='publisher2',
+            output='screen',
+            remappings=[{'/topic_pose','/pose1'}] 
+            
         ),
         Node(
             package='practica1_pkg',
-            executable='subscriber',
-            name='subscriber_pose',
-            output='screen', 
+            executable='publisher',
+            name='publisher2',
+            output='screen',
+            remappings=[{'/topic_pose','/pose2'}] 
+
         ),
     ]
 

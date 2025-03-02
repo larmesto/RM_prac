@@ -61,10 +61,10 @@ def generate_launch_description():
         ),
     ]
 
-    pub_sub_cmd_group = GroupAction(actions)
+    practica1_cmd_group = GroupAction(actions)
 
     ld = LaunchDescription()
-    ld.add_action(pub_sub_cmd_group)
+    ld.add_action(practica1_cmd_group)
     
 
     return ld
