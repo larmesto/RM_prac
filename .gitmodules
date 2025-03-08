@@ -1,6 +1,0 @@
-[submodule "src/ros2_laser_scan_matcher"]
-	path = src/ros2_laser_scan_matcher
-	url = https://github.com/larmesto/ros2_laser_scan_matcher.git
-[submodule "src/csm"]
-	path = src/csm
-	url = https://github.com/AlexKaravaev/csm.git
