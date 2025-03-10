@@ -33,6 +33,8 @@ class PublisherTrajectory : public rclcpp::Node
 
     void odom_data_callback(const nav_msgs::msg::Odometry::SharedPtr odom_msg){
 
+      (void)odom_msg; // This is to avoid a warning when the code is empty
+
       //TODO: Print positions x,y and linear velocities x,y  and angular velocity z
       //Hint: Use RCLCPP_INFO
     }

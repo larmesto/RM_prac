@@ -32,6 +32,7 @@ class TransformListener : public rclcpp::Node
   void camera_callback(const geometry_msgs::msg::Point::SharedPtr bill_pos_cam_msg) 
 
   { 
+    (void)bill_pos_cam_msg; // This is to avoid a warning when the code is empty
 
     std::string target_frame = "camera_link"; 
     std::string source_frame = "base_footprint"; 
