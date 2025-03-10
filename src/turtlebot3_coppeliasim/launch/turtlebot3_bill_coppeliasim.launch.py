@@ -85,7 +85,7 @@ def generate_launch_description():
             package='tf2_ros',
             executable='static_transform_publisher',
             name='static_transform_publisher',
-            parameters=[{'x':0.0385,'z':0.1445,'roll':1.570796326794897,'pitch':3.141592653589793,'yaw':1.570796326794897,'frame-id':'base_link','child-frame-id':'camera_link'}]),
+            arguments=["--x","0.0385","--z","0.1445","--roll","1.570796326794897","--pitch","3.141592653589793","--yaw","1.570796326794897","--frame-id","base_link","--child-frame-id","camera_link"]),
 
         Node(
             package='robot_state_publisher',
