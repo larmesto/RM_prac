@@ -24,8 +24,8 @@ public:
         laser_sub_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
             "/scan", qos_profile, std::bind(&LaserToPointCloud::scan_callback, this, std::placeholders::_1));
 
-        frame_id = this->declare_parameter<std::string>("frame_id","");
-        child_frame_id = this->declare_parameter<std::string>("child_frame_id","");
+        frame_id = this->declare_parameter<std::string>("frame_id","odom");
+        child_frame_id = this->declare_parameter<std::string>("child_frame_id","scan_link");
 
         // Publicador de la nube de puntos transformada
         cloud_pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("/map_cloud", 10);
