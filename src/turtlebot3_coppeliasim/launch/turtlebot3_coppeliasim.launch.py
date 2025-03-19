@@ -54,7 +54,7 @@ def generate_launch_description():
     urdf_file_name = 'turtlebot3_' + TURTLEBOT3_MODEL + '.urdf'
 
     urdf = os.path.join(
-        get_package_share_directory('turtlebot3_gazebo'),
+        get_package_share_directory('turtlebot3_coppeliasim'),
         'urdf',
         urdf_file_name)
 
