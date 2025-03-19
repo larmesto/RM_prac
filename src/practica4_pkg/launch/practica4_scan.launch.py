@@ -11,13 +11,13 @@ def generate_launch_description():
 
     declare_frame_id_cmd = DeclareLaunchArgument(
         'frame_id',
-        default_value='',
+        default_value='odom',
         description='Frame to refer the pointcloud'
     )  
 
     declare_child_frame_id_cmd = DeclareLaunchArgument(
         'child_frame_id',
-        default_value='',
+        default_value='scan_link',
         description='Frame from get the laser scans'
     )
 
