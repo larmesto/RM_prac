@@ -25,7 +25,7 @@ find_package(ament_cmake REQUIRED)
 #  DESTINATION lib/${PROJECT_NAME}
 #)
 
-install(DIRECTORY launch param scenes rviz
+install(DIRECTORY launch param scenes rviz urdf models
   DESTINATION share/${PROJECT_NAME}
 )
 
