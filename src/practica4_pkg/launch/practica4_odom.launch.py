@@ -6,7 +6,6 @@ from launch.actions import DeclareLaunchArgument,GroupAction
 def generate_launch_description():
 
     frame_id = LaunchConfiguration('frame_id')
-    child_frame_id = LaunchConfiguration('child_frame_id')
     publish_tf = LaunchConfiguration('publish_tf')
 
     declare_frame_id_cmd = DeclareLaunchArgument(
