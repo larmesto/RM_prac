@@ -62,7 +62,7 @@ private:
         // Convertir a PointCloud2 para publicar
         sensor_msgs::msg::PointCloud2 cloud_output;
         pcl::toROSMsg(pcl_map, cloud_output);
-        cloud_output.header.frame_id = "scm_odom"; 
+        cloud_output.header.frame_id = frame_id; 
         cloud_output.header.stamp = msg->header.stamp;
         
         cloud_pub_->publish(cloud_output);
