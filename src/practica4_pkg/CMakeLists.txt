@@ -29,6 +29,8 @@ find_package(pcl_conversions REQUIRED)
 
 find_package(visualization_msgs REQUIRED)
 
+find_package(pkg5_interface REQUIRED)
+
 add_executable(map_pointcloud_node
 src/map_pointcloud_node.cpp)
 
@@ -43,6 +45,7 @@ laser_geometry
 tf2_sensor_msgs
 pcl_conversions
 PCL
+pkg5_interface
 )
 
 install(TARGETS

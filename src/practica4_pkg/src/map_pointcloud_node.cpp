@@ -11,6 +11,8 @@
 #include <pcl/point_cloud.h>
 #include <pcl/point_types.h>
 
+#include "pkg5_interface/srv/reset_map.hpp"
+
 class LaserToPointCloud : public rclcpp::Node {
 public:
     LaserToPointCloud() : Node("map_pointcloud_node") {
@@ -30,6 +32,10 @@ public:
 
         // Publicador de la nube de puntos transformada
         cloud_pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("/map_cloud", 10);
+
+        service_reset_map_ = this->create_service<pkg5_interface::srv::ResetMap>(
+            "reset_map",std::bind(&LaserToPointCloud::reset_map,this,std::placeholders::_1,std::placeholders::_2));
+
     }
 
 private:
@@ -74,6 +80,21 @@ private:
         //cloud_pub_->publish(cloud_transformed);
     }
 
+    void reset_map(const std::shared_ptr<pkg5_interface::srv::ResetMap::Request> request,
+        std::shared_ptr<pkg5_interface::srv::ResetMap::Response> response)
+        {
+          RCLCPP_INFO(this->get_logger(),"Recive reset request");
+          if(request->reset_req){
+            RCLCPP_INFO(this->get_logger(),"Request accepted");
+            pcl_map.clear();
+            response->response = "Reseted map succeed";
+          }
+          else{
+            RCLCPP_INFO(this->get_logger(),"Request denied");
+            response->response = "Couldnt reset map";
+          }
+        }
+
     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr laser_sub_;
     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr cloud_pub_;
     std::shared_ptr<tf2_ros::Buffer> tf_buffer_;
@@ -81,6 +102,9 @@ private:
     laser_geometry::LaserProjection projector;
     sensor_msgs::msg::PointCloud2 map_cloud;
     pcl::PointCloud<pcl::PointXYZ> pcl_map;
+
+    rclcpp::Service<pkg5_interface::srv::ResetMap>::SharedPtr service_reset_map_;
+
 
     std::string frame_id;
     //std::string child_frame_id;
