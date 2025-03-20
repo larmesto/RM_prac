@@ -15,12 +15,6 @@ def generate_launch_description():
         description='Frame to refer the pointcloud'
     )  
 
-    declare_child_frame_id_cmd = DeclareLaunchArgument(
-        'child_frame_id',
-        default_value='base_scan',
-        description='Frame from get the laser scans'
-    )
-
     declare_publish_tf_cmd = DeclareLaunchArgument(
         'publish_tf',
         default_value='true',
@@ -30,7 +24,6 @@ def generate_launch_description():
     actions=[
 
         declare_frame_id_cmd,
-        declare_child_frame_id_cmd,
         declare_publish_tf_cmd,
 
         Node(
@@ -38,8 +31,7 @@ def generate_launch_description():
             executable='map_pointcloud_node',
             name='map_pointcloud_node',
             output='screen',
-            parameters=[{'frame_id': frame_id},
-                        {'child_frame_id': child_frame_id}]
+            parameters=[{'frame_id': frame_id}]
         ),
     ]
 

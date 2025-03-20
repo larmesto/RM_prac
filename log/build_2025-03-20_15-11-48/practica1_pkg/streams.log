@@ -1,0 +1,83 @@
+[0.014s] Invoking command in '/home/leo/RM_prac/build/practica1_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/practica1_pkg -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/practica1_pkg
+[0.127s] -- The C compiler identification is GNU 11.4.0
+[0.459s] -- The CXX compiler identification is GNU 11.4.0
+[0.729s] -- Detecting C compiler ABI info
+[0.793s] -- Detecting C compiler ABI info - done
+[0.796s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.797s] -- Detecting C compile features
+[0.797s] -- Detecting C compile features - done
+[0.798s] -- Detecting CXX compiler ABI info
+[0.858s] -- Detecting CXX compiler ABI info - done
+[0.862s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.862s] -- Detecting CXX compile features
+[0.862s] -- Detecting CXX compile features - done
+[0.863s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.926s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.964s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[1.066s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.068s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.072s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.078s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.087s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.119s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.120s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.617s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.989s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.381s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.389s] -- Looking for pthread.h
+[3.523s] -- Looking for pthread.h - found
+[3.524s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.672s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.673s] -- Found Threads: TRUE  
+[3.810s] -- Found tf2_geometry_msgs: 0.25.7 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[3.906s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.907s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.908s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.087s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.122s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.122s] -- Configured cppcheck include dirs: 
+[4.122s] -- Configured cppcheck exclude dirs and/or files: 
+[4.122s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.123s] -- Added test 'lint_cmake' to check CMake code style
+[4.123s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.123s] -- Added test 'uncrustify' to check C / C++ code style
+[4.123s] -- Configured uncrustify additional arguments: 
+[4.124s] -- Added test 'xmllint' to check XML markup files
+[4.124s] -- Configuring done
+[4.131s] -- Generating done
+[4.132s] -- Build files have been written to: /home/leo/RM_prac/build/practica1_pkg
+[4.137s] Invoked command in '/home/leo/RM_prac/build/practica1_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/practica1_pkg -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/practica1_pkg
+[4.137s] Invoking command in '/home/leo/RM_prac/build/practica1_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/practica1_pkg -- -j32 -l32
+[4.157s] [ 25%] [32mBuilding CXX object CMakeFiles/publisher.dir/src/publisher_node.cpp.o[0m
+[4.158s] [ 50%] [32mBuilding CXX object CMakeFiles/subscriber.dir/src/subscriber_node.cpp.o[0m
+[6.251s] [ 75%] [32m[1mLinking CXX executable publisher[0m
+[6.441s] [ 75%] Built target publisher
+[7.929s] [100%] [32m[1mLinking CXX executable subscriber[0m
+[8.135s] [100%] Built target subscriber
+[8.139s] Invoked command in '/home/leo/RM_prac/build/practica1_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/practica1_pkg -- -j32 -l32
+[8.151s] Invoking command in '/home/leo/RM_prac/build/practica1_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/practica1_pkg
+[8.153s] -- Install configuration: ""
+[8.154s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/lib/practica1_pkg/publisher
+[8.154s] -- Set runtime path of "/home/leo/RM_prac/install/practica1_pkg/lib/practica1_pkg/publisher" to ""
+[8.154s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/lib/practica1_pkg/subscriber
+[8.155s] -- Set runtime path of "/home/leo/RM_prac/install/practica1_pkg/lib/practica1_pkg/subscriber" to ""
+[8.156s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg//launch
+[8.156s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg//launch/practica1_remap.launch.py
+[8.156s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg//launch/practica1_param.launch.py
+[8.156s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg//launch/practica1.launch.py
+[8.157s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/share/ament_index/resource_index/package_run_dependencies/practica1_pkg
+[8.157s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/share/ament_index/resource_index/parent_prefix_path/practica1_pkg
+[8.157s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/environment/ament_prefix_path.sh
+[8.157s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/environment/ament_prefix_path.dsv
+[8.157s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/environment/path.sh
+[8.157s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/environment/path.dsv
+[8.157s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/local_setup.bash
+[8.157s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/local_setup.sh
+[8.158s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/local_setup.zsh
+[8.158s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/local_setup.dsv
+[8.158s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/package.dsv
+[8.158s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/share/ament_index/resource_index/packages/practica1_pkg
+[8.158s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/cmake/practica1_pkgConfig.cmake
+[8.158s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/cmake/practica1_pkgConfig-version.cmake
+[8.158s] -- Installing: /home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/package.xml
+[8.159s] Invoked command in '/home/leo/RM_prac/build/practica1_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/practica1_pkg

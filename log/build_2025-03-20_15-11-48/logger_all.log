@@ -1,0 +1,559 @@
+[0.148s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.148s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fa746b21630>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fa746b21030>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fa746b21030>>, mixin_verb=('build',))
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.339s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/leo/RM_prac'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extension 'ignore_ament_install'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extensions ['colcon_pkg']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extension 'colcon_pkg'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extensions ['colcon_meta']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extension 'colcon_meta'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extensions ['ros']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/csm) by extension 'ros'
+[0.349s] DEBUG:colcon.colcon_core.package_identification:Package 'src/csm' with type 'ros.ament_cmake' and name 'csm'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica1_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica1_pkg) by extension 'ignore'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica1_pkg) by extension 'ignore_ament_install'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica1_pkg) by extensions ['colcon_pkg']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica1_pkg) by extension 'colcon_pkg'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica1_pkg) by extensions ['colcon_meta']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica1_pkg) by extension 'colcon_meta'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica1_pkg) by extensions ['ros']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica1_pkg) by extension 'ros'
+[0.349s] DEBUG:colcon.colcon_core.package_identification:Package 'src/practica1_pkg' with type 'ros.ament_cmake' and name 'practica1_pkg'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica2_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica2_pkg) by extension 'ignore'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica2_pkg) by extension 'ignore_ament_install'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica2_pkg) by extensions ['colcon_pkg']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica2_pkg) by extension 'colcon_pkg'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica2_pkg) by extensions ['colcon_meta']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica2_pkg) by extension 'colcon_meta'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica2_pkg) by extensions ['ros']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica2_pkg) by extension 'ros'
+[0.350s] DEBUG:colcon.colcon_core.package_identification:Package 'src/practica2_pkg' with type 'ros.ament_cmake' and name 'practica2_pkg'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica3_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica3_pkg) by extension 'ignore'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica3_pkg) by extension 'ignore_ament_install'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica3_pkg) by extensions ['colcon_pkg']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica3_pkg) by extension 'colcon_pkg'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica3_pkg) by extensions ['colcon_meta']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica3_pkg) by extension 'colcon_meta'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica3_pkg) by extensions ['ros']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica3_pkg) by extension 'ros'
+[0.351s] DEBUG:colcon.colcon_core.package_identification:Package 'src/practica3_pkg' with type 'ros.ament_cmake' and name 'practica3_pkg'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica4_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica4_pkg) by extension 'ignore'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica4_pkg) by extension 'ignore_ament_install'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica4_pkg) by extensions ['colcon_pkg']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica4_pkg) by extension 'colcon_pkg'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica4_pkg) by extensions ['colcon_meta']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica4_pkg) by extension 'colcon_meta'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica4_pkg) by extensions ['ros']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/practica4_pkg) by extension 'ros'
+[0.352s] DEBUG:colcon.colcon_core.package_identification:Package 'src/practica4_pkg' with type 'ros.ament_cmake' and name 'practica4_pkg'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extensions ['ignore', 'ignore_ament_install']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extension 'ignore'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extension 'ignore_ament_install'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extensions ['colcon_pkg']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extension 'colcon_pkg'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extensions ['colcon_meta']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extension 'colcon_meta'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extensions ['ros']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_laser_scan_matcher) by extension 'ros'
+[0.352s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_laser_scan_matcher' with type 'ros.ament_cmake' and name 'ros2_laser_scan_matcher'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_coppeliasim) by extensions ['ignore', 'ignore_ament_install']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_coppeliasim) by extension 'ignore'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_coppeliasim) by extension 'ignore_ament_install'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_coppeliasim) by extensions ['colcon_pkg']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_coppeliasim) by extension 'colcon_pkg'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_coppeliasim) by extensions ['colcon_meta']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_coppeliasim) by extension 'colcon_meta'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_coppeliasim) by extensions ['ros']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_coppeliasim) by extension 'ros'
+[0.353s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_coppeliasim' with type 'ros.ament_cmake' and name 'turtlebot3_coppeliasim'
+[0.353s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.353s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.353s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.353s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.353s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.373s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.373s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.374s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/leo/RM_prac/install/turtlebot3_coppeliasim' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.374s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/leo/RM_prac/install/ros2_laser_scan_matcher' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.374s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/leo/RM_prac/install/practica4_pkg' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.374s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/leo/RM_prac/install/practica3_pkg' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.374s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/leo/RM_prac/install/practica2_pkg' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.374s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/leo/RM_prac/install/practica1_pkg' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.374s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/leo/RM_prac/install/csm' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.374s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/leo/RM_prac/install/turtlebot3_coppeliasim' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.374s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/leo/RM_prac/install/ros2_laser_scan_matcher' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.375s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/leo/RM_prac/install/practica4_pkg' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.375s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/leo/RM_prac/install/practica3_pkg' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.375s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/leo/RM_prac/install/practica2_pkg' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.375s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/leo/RM_prac/install/practica1_pkg' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.375s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/leo/RM_prac/install/csm' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.376s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/leo/RM_prac/install
+[0.377s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 397 installed packages in /opt/ros/humble
+[0.378s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_args' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_target' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_clean_cache' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_clean_first' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_force_configure' from command line to 'False'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'ament_cmake_args' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'catkin_cmake_args' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.445s] DEBUG:colcon.colcon_core.verb:Building package 'csm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leo/RM_prac/build/csm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leo/RM_prac/install/csm', 'merge_install': False, 'path': '/home/leo/RM_prac/src/csm', 'symlink_install': False, 'test_result_base': None}
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'practica1_pkg' build argument 'cmake_args' from command line to 'None'
+[0.445s] Level 5:colcon.colcon_core.verb:set package 'practica1_pkg' build argument 'cmake_target' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica1_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica1_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica1_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica1_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica1_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica1_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica1_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.446s] DEBUG:colcon.colcon_core.verb:Building package 'practica1_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leo/RM_prac/build/practica1_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leo/RM_prac/install/practica1_pkg', 'merge_install': False, 'path': '/home/leo/RM_prac/src/practica1_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica2_pkg' build argument 'cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica2_pkg' build argument 'cmake_target' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica2_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica2_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica2_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica2_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica2_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica2_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica2_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.446s] DEBUG:colcon.colcon_core.verb:Building package 'practica2_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leo/RM_prac/build/practica2_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leo/RM_prac/install/practica2_pkg', 'merge_install': False, 'path': '/home/leo/RM_prac/src/practica2_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica3_pkg' build argument 'cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica3_pkg' build argument 'cmake_target' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica3_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica3_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica3_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica3_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica3_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica3_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica3_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.446s] DEBUG:colcon.colcon_core.verb:Building package 'practica3_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leo/RM_prac/build/practica3_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leo/RM_prac/install/practica3_pkg', 'merge_install': False, 'path': '/home/leo/RM_prac/src/practica3_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica4_pkg' build argument 'cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica4_pkg' build argument 'cmake_target' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica4_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica4_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica4_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica4_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica4_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica4_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'practica4_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.446s] DEBUG:colcon.colcon_core.verb:Building package 'practica4_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leo/RM_prac/build/practica4_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leo/RM_prac/install/practica4_pkg', 'merge_install': False, 'path': '/home/leo/RM_prac/src/practica4_pkg', 'symlink_install': False, 'test_result_base': None}
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_coppeliasim' build argument 'cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_coppeliasim' build argument 'cmake_target' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_coppeliasim' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_coppeliasim' build argument 'cmake_clean_cache' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_coppeliasim' build argument 'cmake_clean_first' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_coppeliasim' build argument 'cmake_force_configure' from command line to 'False'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_coppeliasim' build argument 'ament_cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_coppeliasim' build argument 'catkin_cmake_args' from command line to 'None'
+[0.446s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_coppeliasim' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.446s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_coppeliasim' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leo/RM_prac/build/turtlebot3_coppeliasim', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leo/RM_prac/install/turtlebot3_coppeliasim', 'merge_install': False, 'path': '/home/leo/RM_prac/src/turtlebot3_coppeliasim', 'symlink_install': False, 'test_result_base': None}
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_target' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_clean_first' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_force_configure' from command line to 'False'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'ament_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.447s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.447s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_laser_scan_matcher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/leo/RM_prac/build/ros2_laser_scan_matcher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/leo/RM_prac/install/ros2_laser_scan_matcher', 'merge_install': False, 'path': '/home/leo/RM_prac/src/ros2_laser_scan_matcher', 'symlink_install': False, 'test_result_base': None}
+[0.447s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.447s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.447s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/leo/RM_prac/src/csm' with build type 'ament_cmake'
+[0.447s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/leo/RM_prac/src/csm'
+[0.450s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.450s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.450s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.452s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/leo/RM_prac/src/practica1_pkg' with build type 'ament_cmake'
+[0.452s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/leo/RM_prac/src/practica1_pkg'
+[0.452s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.452s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.454s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/leo/RM_prac/src/practica2_pkg' with build type 'ament_cmake'
+[0.454s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/leo/RM_prac/src/practica2_pkg'
+[0.454s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.454s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.455s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/leo/RM_prac/src/practica3_pkg' with build type 'ament_cmake'
+[0.456s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/leo/RM_prac/src/practica3_pkg'
+[0.456s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.456s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.457s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/leo/RM_prac/src/practica4_pkg' with build type 'ament_cmake'
+[0.457s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/leo/RM_prac/src/practica4_pkg'
+[0.457s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.458s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.459s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/leo/RM_prac/src/turtlebot3_coppeliasim' with build type 'ament_cmake'
+[0.459s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/leo/RM_prac/src/turtlebot3_coppeliasim'
+[0.459s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.459s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/csm -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/csm
+[0.466s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/practica1_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/practica1_pkg -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/practica1_pkg
+[0.467s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/practica2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/practica2_pkg -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/practica2_pkg
+[0.469s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/practica3_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/practica3_pkg -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/practica3_pkg
+[0.469s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/practica4_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/practica4_pkg -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/practica4_pkg
+[0.473s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/turtlebot3_coppeliasim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/turtlebot3_coppeliasim -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/turtlebot3_coppeliasim
+[1.450s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/turtlebot3_coppeliasim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/turtlebot3_coppeliasim -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/turtlebot3_coppeliasim
+[1.451s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/turtlebot3_coppeliasim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/turtlebot3_coppeliasim -- -j32 -l32
+[1.466s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/turtlebot3_coppeliasim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/turtlebot3_coppeliasim -- -j32 -l32
+[1.477s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/turtlebot3_coppeliasim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/turtlebot3_coppeliasim
+[1.561s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_coppeliasim)
+[1.561s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/turtlebot3_coppeliasim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/turtlebot3_coppeliasim
+[1.565s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/turtlebot3_coppeliasim' for CMake module files
+[1.565s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/turtlebot3_coppeliasim' for CMake config files
+[1.565s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_coppeliasim', 'cmake_prefix_path')
+[1.565s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/hook/cmake_prefix_path.ps1'
+[1.566s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/hook/cmake_prefix_path.dsv'
+[1.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/hook/cmake_prefix_path.sh'
+[1.567s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/turtlebot3_coppeliasim/bin'
+[1.567s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/turtlebot3_coppeliasim/lib/pkgconfig/turtlebot3_coppeliasim.pc'
+[1.567s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/turtlebot3_coppeliasim/lib/python3.10/site-packages'
+[1.567s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/turtlebot3_coppeliasim/bin'
+[1.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.ps1'
+[1.568s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.dsv'
+[1.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.sh'
+[1.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.bash'
+[1.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.zsh'
+[1.569s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leo/RM_prac/install/turtlebot3_coppeliasim/share/colcon-core/packages/turtlebot3_coppeliasim)
+[1.578s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_coppeliasim)
+[1.578s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/turtlebot3_coppeliasim' for CMake module files
+[1.578s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/turtlebot3_coppeliasim' for CMake config files
+[1.578s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_coppeliasim', 'cmake_prefix_path')
+[1.578s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/hook/cmake_prefix_path.ps1'
+[1.578s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/hook/cmake_prefix_path.dsv'
+[1.578s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/hook/cmake_prefix_path.sh'
+[1.579s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/turtlebot3_coppeliasim/bin'
+[1.579s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/turtlebot3_coppeliasim/lib/pkgconfig/turtlebot3_coppeliasim.pc'
+[1.579s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/turtlebot3_coppeliasim/lib/python3.10/site-packages'
+[1.579s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/turtlebot3_coppeliasim/bin'
+[1.579s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.ps1'
+[1.579s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.dsv'
+[1.579s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.sh'
+[1.579s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.bash'
+[1.579s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.zsh'
+[1.580s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leo/RM_prac/install/turtlebot3_coppeliasim/share/colcon-core/packages/turtlebot3_coppeliasim)
+[3.423s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/csm -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/csm
+[3.424s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/csm -- -j32 -l32
+[4.145s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/practica3_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/practica3_pkg -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/practica3_pkg
+[4.145s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/practica3_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/practica3_pkg -- -j32 -l32
+[4.589s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/practica1_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/practica1_pkg -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/practica1_pkg
+[4.590s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/practica1_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/practica1_pkg -- -j32 -l32
+[4.982s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/practica2_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/practica2_pkg -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/practica2_pkg
+[4.984s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/practica2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/practica2_pkg -- -j32 -l32
+[8.514s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/practica3_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/practica3_pkg -- -j32 -l32
+[8.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/practica3_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/practica3_pkg
+[8.530s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(practica3_pkg)
+[8.531s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/practica3_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/practica3_pkg
+[8.531s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica3_pkg' for CMake module files
+[8.531s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica3_pkg' for CMake config files
+[8.531s] Level 1:colcon.colcon_core.shell:create_environment_hook('practica3_pkg', 'cmake_prefix_path')
+[8.531s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/hook/cmake_prefix_path.ps1'
+[8.532s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/hook/cmake_prefix_path.dsv'
+[8.532s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/hook/cmake_prefix_path.sh'
+[8.532s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica3_pkg/lib'
+[8.532s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica3_pkg/bin'
+[8.532s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica3_pkg/lib/pkgconfig/practica3_pkg.pc'
+[8.532s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica3_pkg/lib/python3.10/site-packages'
+[8.532s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica3_pkg/bin'
+[8.532s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/package.ps1'
+[8.532s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/package.dsv'
+[8.533s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/package.sh'
+[8.533s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/package.bash'
+[8.533s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/package.zsh'
+[8.533s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leo/RM_prac/install/practica3_pkg/share/colcon-core/packages/practica3_pkg)
+[8.543s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(practica3_pkg)
+[8.543s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica3_pkg' for CMake module files
+[8.543s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica3_pkg' for CMake config files
+[8.543s] Level 1:colcon.colcon_core.shell:create_environment_hook('practica3_pkg', 'cmake_prefix_path')
+[8.543s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/hook/cmake_prefix_path.ps1'
+[8.544s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/hook/cmake_prefix_path.dsv'
+[8.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/hook/cmake_prefix_path.sh'
+[8.544s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica3_pkg/lib'
+[8.544s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica3_pkg/bin'
+[8.544s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica3_pkg/lib/pkgconfig/practica3_pkg.pc'
+[8.544s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica3_pkg/lib/python3.10/site-packages'
+[8.544s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica3_pkg/bin'
+[8.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/package.ps1'
+[8.544s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/package.dsv'
+[8.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/package.sh'
+[8.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/package.bash'
+[8.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/package.zsh'
+[8.545s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leo/RM_prac/install/practica3_pkg/share/colcon-core/packages/practica3_pkg)
+[8.592s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/practica1_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/practica1_pkg -- -j32 -l32
+[8.603s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/practica1_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/practica1_pkg
+[8.611s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(practica1_pkg)
+[8.611s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica1_pkg' for CMake module files
+[8.611s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/practica1_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/practica1_pkg
+[8.611s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica1_pkg' for CMake config files
+[8.611s] Level 1:colcon.colcon_core.shell:create_environment_hook('practica1_pkg', 'cmake_prefix_path')
+[8.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/hook/cmake_prefix_path.ps1'
+[8.612s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/hook/cmake_prefix_path.dsv'
+[8.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/hook/cmake_prefix_path.sh'
+[8.612s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica1_pkg/lib'
+[8.612s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica1_pkg/bin'
+[8.612s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica1_pkg/lib/pkgconfig/practica1_pkg.pc'
+[8.612s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica1_pkg/lib/python3.10/site-packages'
+[8.612s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica1_pkg/bin'
+[8.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/package.ps1'
+[8.613s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/package.dsv'
+[8.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/package.sh'
+[8.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/package.bash'
+[8.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/package.zsh'
+[8.613s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leo/RM_prac/install/practica1_pkg/share/colcon-core/packages/practica1_pkg)
+[8.624s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(practica1_pkg)
+[8.624s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica1_pkg' for CMake module files
+[8.624s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica1_pkg' for CMake config files
+[8.624s] Level 1:colcon.colcon_core.shell:create_environment_hook('practica1_pkg', 'cmake_prefix_path')
+[8.624s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/hook/cmake_prefix_path.ps1'
+[8.624s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/hook/cmake_prefix_path.dsv'
+[8.624s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/hook/cmake_prefix_path.sh'
+[8.625s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica1_pkg/lib'
+[8.625s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica1_pkg/bin'
+[8.625s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica1_pkg/lib/pkgconfig/practica1_pkg.pc'
+[8.625s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica1_pkg/lib/python3.10/site-packages'
+[8.625s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica1_pkg/bin'
+[8.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/package.ps1'
+[8.625s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/package.dsv'
+[8.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/package.sh'
+[8.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/package.bash'
+[8.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica1_pkg/share/practica1_pkg/package.zsh'
+[8.626s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leo/RM_prac/install/practica1_pkg/share/colcon-core/packages/practica1_pkg)
+[9.130s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/practica2_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/practica2_pkg -- -j32 -l32
+[9.140s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/practica2_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/practica2_pkg
+[9.146s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(practica2_pkg)
+[9.146s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/practica2_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/practica2_pkg
+[9.146s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica2_pkg' for CMake module files
+[9.146s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica2_pkg' for CMake config files
+[9.146s] Level 1:colcon.colcon_core.shell:create_environment_hook('practica2_pkg', 'cmake_prefix_path')
+[9.147s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/hook/cmake_prefix_path.ps1'
+[9.147s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/hook/cmake_prefix_path.dsv'
+[9.147s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/hook/cmake_prefix_path.sh'
+[9.147s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica2_pkg/lib'
+[9.147s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica2_pkg/bin'
+[9.147s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica2_pkg/lib/pkgconfig/practica2_pkg.pc'
+[9.147s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica2_pkg/lib/python3.10/site-packages'
+[9.147s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica2_pkg/bin'
+[9.147s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/package.ps1'
+[9.148s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/package.dsv'
+[9.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/package.sh'
+[9.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/package.bash'
+[9.148s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/package.zsh'
+[9.148s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leo/RM_prac/install/practica2_pkg/share/colcon-core/packages/practica2_pkg)
+[9.158s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(practica2_pkg)
+[9.158s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica2_pkg' for CMake module files
+[9.158s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica2_pkg' for CMake config files
+[9.158s] Level 1:colcon.colcon_core.shell:create_environment_hook('practica2_pkg', 'cmake_prefix_path')
+[9.158s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/hook/cmake_prefix_path.ps1'
+[9.158s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/hook/cmake_prefix_path.dsv'
+[9.158s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/hook/cmake_prefix_path.sh'
+[9.159s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica2_pkg/lib'
+[9.159s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica2_pkg/bin'
+[9.159s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica2_pkg/lib/pkgconfig/practica2_pkg.pc'
+[9.159s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica2_pkg/lib/python3.10/site-packages'
+[9.159s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica2_pkg/bin'
+[9.159s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/package.ps1'
+[9.159s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/package.dsv'
+[9.159s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/package.sh'
+[9.159s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/package.bash'
+[9.160s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/package.zsh'
+[9.160s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leo/RM_prac/install/practica2_pkg/share/colcon-core/packages/practica2_pkg)
+[10.316s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/csm -- -j32 -l32
+[10.345s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/csm
+[10.354s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(csm)
+[10.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/csm
+[10.354s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/csm' for CMake module files
+[10.354s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/csm' for CMake config files
+[10.354s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'cmake_prefix_path')
+[10.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/csm/share/csm/hook/cmake_prefix_path.ps1'
+[10.355s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leo/RM_prac/install/csm/share/csm/hook/cmake_prefix_path.dsv'
+[10.355s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/csm/share/csm/hook/cmake_prefix_path.sh'
+[10.355s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/csm/lib'
+[10.355s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'ld_library_path_lib')
+[10.355s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/csm/share/csm/hook/ld_library_path_lib.ps1'
+[10.355s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leo/RM_prac/install/csm/share/csm/hook/ld_library_path_lib.dsv'
+[10.355s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/csm/share/csm/hook/ld_library_path_lib.sh'
+[10.355s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/csm/bin'
+[10.355s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/csm/lib/pkgconfig/csm.pc'
+[10.355s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/csm/lib/python3.10/site-packages'
+[10.355s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/csm/bin'
+[10.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/csm/share/csm/package.ps1'
+[10.356s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leo/RM_prac/install/csm/share/csm/package.dsv'
+[10.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/csm/share/csm/package.sh'
+[10.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/csm/share/csm/package.bash'
+[10.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/csm/share/csm/package.zsh'
+[10.356s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leo/RM_prac/install/csm/share/colcon-core/packages/csm)
+[10.385s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(csm)
+[10.385s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/csm' for CMake module files
+[10.385s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/csm' for CMake config files
+[10.385s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'cmake_prefix_path')
+[10.385s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/csm/share/csm/hook/cmake_prefix_path.ps1'
+[10.385s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leo/RM_prac/install/csm/share/csm/hook/cmake_prefix_path.dsv'
+[10.385s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/csm/share/csm/hook/cmake_prefix_path.sh'
+[10.386s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/csm/lib'
+[10.386s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'ld_library_path_lib')
+[10.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/csm/share/csm/hook/ld_library_path_lib.ps1'
+[10.386s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leo/RM_prac/install/csm/share/csm/hook/ld_library_path_lib.dsv'
+[10.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/csm/share/csm/hook/ld_library_path_lib.sh'
+[10.386s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/csm/bin'
+[10.386s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/csm/lib/pkgconfig/csm.pc'
+[10.386s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/csm/lib/python3.10/site-packages'
+[10.386s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/csm/bin'
+[10.386s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/csm/share/csm/package.ps1'
+[10.387s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leo/RM_prac/install/csm/share/csm/package.dsv'
+[10.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/csm/share/csm/package.sh'
+[10.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/csm/share/csm/package.bash'
+[10.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/csm/share/csm/package.zsh'
+[10.387s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leo/RM_prac/install/csm/share/colcon-core/packages/csm)
+[10.387s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/leo/RM_prac/src/ros2_laser_scan_matcher' with build type 'ament_cmake'
+[10.387s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/leo/RM_prac/src/ros2_laser_scan_matcher'
+[10.388s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.388s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/ros2_laser_scan_matcher': CMAKE_PREFIX_PATH=/home/leo/RM_prac/install/csm:/home/leo/RM_prac/install/turtlebot3_coppeliasim:/home/leo/RM_prac/install/ros2_laser_scan_matcher:/home/leo/RM_prac/install/practica4_pkg:/home/leo/RM_prac/install/practica3_pkg:/home/leo/RM_prac/install/practica2_pkg:/home/leo/RM_prac/install/practica1_pkg:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/ros2_laser_scan_matcher -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/ros2_laser_scan_matcher
+[14.042s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/practica4_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/practica4_pkg -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/practica4_pkg
+[14.043s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/practica4_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/practica4_pkg -- -j32 -l32
+[14.693s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/ros2_laser_scan_matcher' returned '0': CMAKE_PREFIX_PATH=/home/leo/RM_prac/install/csm:/home/leo/RM_prac/install/turtlebot3_coppeliasim:/home/leo/RM_prac/install/ros2_laser_scan_matcher:/home/leo/RM_prac/install/practica4_pkg:/home/leo/RM_prac/install/practica3_pkg:/home/leo/RM_prac/install/practica2_pkg:/home/leo/RM_prac/install/practica1_pkg:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/ros2_laser_scan_matcher -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/ros2_laser_scan_matcher
+[14.695s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/ros2_laser_scan_matcher': CMAKE_PREFIX_PATH=/home/leo/RM_prac/install/csm:/home/leo/RM_prac/install/turtlebot3_coppeliasim:/home/leo/RM_prac/install/ros2_laser_scan_matcher:/home/leo/RM_prac/install/practica4_pkg:/home/leo/RM_prac/install/practica3_pkg:/home/leo/RM_prac/install/practica2_pkg:/home/leo/RM_prac/install/practica1_pkg:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/ros2_laser_scan_matcher -- -j32 -l32
+[20.008s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/practica4_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/practica4_pkg -- -j32 -l32
+[20.019s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/practica4_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/practica4_pkg
+[20.025s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(practica4_pkg)
+[20.026s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica4_pkg' for CMake module files
+[20.026s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/practica4_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/practica4_pkg
+[20.026s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica4_pkg' for CMake config files
+[20.026s] Level 1:colcon.colcon_core.shell:create_environment_hook('practica4_pkg', 'cmake_prefix_path')
+[20.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/hook/cmake_prefix_path.ps1'
+[20.026s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/hook/cmake_prefix_path.dsv'
+[20.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/hook/cmake_prefix_path.sh'
+[20.027s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica4_pkg/lib'
+[20.027s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica4_pkg/bin'
+[20.027s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica4_pkg/lib/pkgconfig/practica4_pkg.pc'
+[20.027s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica4_pkg/lib/python3.10/site-packages'
+[20.027s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica4_pkg/bin'
+[20.027s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/package.ps1'
+[20.027s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/package.dsv'
+[20.027s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/package.sh'
+[20.027s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/package.bash'
+[20.028s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/package.zsh'
+[20.028s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leo/RM_prac/install/practica4_pkg/share/colcon-core/packages/practica4_pkg)
+[20.038s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(practica4_pkg)
+[20.038s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica4_pkg' for CMake module files
+[20.038s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica4_pkg' for CMake config files
+[20.038s] Level 1:colcon.colcon_core.shell:create_environment_hook('practica4_pkg', 'cmake_prefix_path')
+[20.038s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/hook/cmake_prefix_path.ps1'
+[20.038s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/hook/cmake_prefix_path.dsv'
+[20.038s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/hook/cmake_prefix_path.sh'
+[20.039s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica4_pkg/lib'
+[20.039s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica4_pkg/bin'
+[20.039s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica4_pkg/lib/pkgconfig/practica4_pkg.pc'
+[20.039s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica4_pkg/lib/python3.10/site-packages'
+[20.039s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/practica4_pkg/bin'
+[20.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/package.ps1'
+[20.039s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/package.dsv'
+[20.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/package.sh'
+[20.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/package.bash'
+[20.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/package.zsh'
+[20.040s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leo/RM_prac/install/practica4_pkg/share/colcon-core/packages/practica4_pkg)
+[20.119s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/ros2_laser_scan_matcher' returned '0': CMAKE_PREFIX_PATH=/home/leo/RM_prac/install/csm:/home/leo/RM_prac/install/turtlebot3_coppeliasim:/home/leo/RM_prac/install/ros2_laser_scan_matcher:/home/leo/RM_prac/install/practica4_pkg:/home/leo/RM_prac/install/practica3_pkg:/home/leo/RM_prac/install/practica2_pkg:/home/leo/RM_prac/install/practica1_pkg:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/ros2_laser_scan_matcher -- -j32 -l32
+[20.128s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/leo/RM_prac/build/ros2_laser_scan_matcher': CMAKE_PREFIX_PATH=/home/leo/RM_prac/install/csm:/home/leo/RM_prac/install/turtlebot3_coppeliasim:/home/leo/RM_prac/install/ros2_laser_scan_matcher:/home/leo/RM_prac/install/practica4_pkg:/home/leo/RM_prac/install/practica3_pkg:/home/leo/RM_prac/install/practica2_pkg:/home/leo/RM_prac/install/practica1_pkg:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/ros2_laser_scan_matcher
+[20.133s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_laser_scan_matcher)
+[20.134s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/ros2_laser_scan_matcher' for CMake module files
+[20.134s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/leo/RM_prac/build/ros2_laser_scan_matcher' returned '0': CMAKE_PREFIX_PATH=/home/leo/RM_prac/install/csm:/home/leo/RM_prac/install/turtlebot3_coppeliasim:/home/leo/RM_prac/install/ros2_laser_scan_matcher:/home/leo/RM_prac/install/practica4_pkg:/home/leo/RM_prac/install/practica3_pkg:/home/leo/RM_prac/install/practica2_pkg:/home/leo/RM_prac/install/practica1_pkg:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/ros2_laser_scan_matcher
+[20.134s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/ros2_laser_scan_matcher' for CMake config files
+[20.134s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_laser_scan_matcher', 'cmake_prefix_path')
+[20.134s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.ps1'
+[20.134s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.dsv'
+[20.134s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.sh'
+[20.135s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/ros2_laser_scan_matcher/lib'
+[20.135s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/ros2_laser_scan_matcher/bin'
+[20.135s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/ros2_laser_scan_matcher/lib/pkgconfig/ros2_laser_scan_matcher.pc'
+[20.135s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/ros2_laser_scan_matcher/lib/python3.10/site-packages'
+[20.135s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/ros2_laser_scan_matcher/bin'
+[20.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.ps1'
+[20.135s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.dsv'
+[20.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.sh'
+[20.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.bash'
+[20.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.zsh'
+[20.136s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leo/RM_prac/install/ros2_laser_scan_matcher/share/colcon-core/packages/ros2_laser_scan_matcher)
+[20.144s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_laser_scan_matcher)
+[20.144s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/ros2_laser_scan_matcher' for CMake module files
+[20.144s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/ros2_laser_scan_matcher' for CMake config files
+[20.144s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_laser_scan_matcher', 'cmake_prefix_path')
+[20.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.ps1'
+[20.145s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.dsv'
+[20.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.sh'
+[20.145s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/ros2_laser_scan_matcher/lib'
+[20.145s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/ros2_laser_scan_matcher/bin'
+[20.145s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/ros2_laser_scan_matcher/lib/pkgconfig/ros2_laser_scan_matcher.pc'
+[20.145s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/ros2_laser_scan_matcher/lib/python3.10/site-packages'
+[20.145s] Level 1:colcon.colcon_core.environment:checking '/home/leo/RM_prac/install/ros2_laser_scan_matcher/bin'
+[20.145s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.ps1'
+[20.145s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.dsv'
+[20.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.sh'
+[20.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.bash'
+[20.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.zsh'
+[20.146s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/leo/RM_prac/install/ros2_laser_scan_matcher/share/colcon-core/packages/ros2_laser_scan_matcher)
+[20.146s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[20.146s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[20.146s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[20.146s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[20.152s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[20.152s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[20.152s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[20.155s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[20.155s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leo/RM_prac/install/local_setup.ps1'
+[20.155s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/leo/RM_prac/install/_local_setup_util_ps1.py'
+[20.156s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leo/RM_prac/install/setup.ps1'
+[20.157s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leo/RM_prac/install/local_setup.sh'
+[20.157s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/leo/RM_prac/install/_local_setup_util_sh.py'
+[20.157s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leo/RM_prac/install/setup.sh'
+[20.158s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leo/RM_prac/install/local_setup.bash'
+[20.158s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leo/RM_prac/install/setup.bash'
+[20.158s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/leo/RM_prac/install/local_setup.zsh'
+[20.159s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/leo/RM_prac/install/setup.zsh'
