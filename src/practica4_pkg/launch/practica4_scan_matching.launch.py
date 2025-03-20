@@ -11,7 +11,7 @@ def generate_launch_description():
 
     declare_frame_id_cmd = DeclareLaunchArgument(
         'frame_id',
-        default_value='odom',
+        default_value='scm_odom',
         description='Frame to refer the pointcloud'
     )  
 
@@ -33,13 +33,13 @@ def generate_launch_description():
         declare_child_frame_id_cmd,
         declare_publish_tf_cmd,
 
-        #Node(
-        #    package='ros2_laser_scan_matcher',
-        #    executable='laser_scan_matcher',
-        #    name='laser_scan_matcher',
-        #    output='screen',
-        #    parameters=[{'publish_tf': publish_tf}]
-        #),
+        Node(
+            package='ros2_laser_scan_matcher',
+            executable='laser_scan_matcher',
+            name='laser_scan_matcher',
+            output='screen',
+            parameters=[{'publish_tf': publish_tf}]
+        ),
 
         Node(
             package='practica4_pkg',
