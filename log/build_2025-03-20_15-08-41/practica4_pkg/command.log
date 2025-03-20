@@ -1,0 +1,6 @@
+Invoking command in '/home/leo/RM_prac/build/practica4_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/practica4_pkg -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/practica4_pkg
+Invoked command in '/home/leo/RM_prac/build/practica4_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/practica4_pkg -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/practica4_pkg
+Invoking command in '/home/leo/RM_prac/build/practica4_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/practica4_pkg -- -j32 -l32
+Invoked command in '/home/leo/RM_prac/build/practica4_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/practica4_pkg -- -j32 -l32
+Invoking command in '/home/leo/RM_prac/build/practica4_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/practica4_pkg
+Invoked command in '/home/leo/RM_prac/build/practica4_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/practica4_pkg

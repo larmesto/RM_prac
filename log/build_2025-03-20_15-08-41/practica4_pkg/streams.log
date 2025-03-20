@@ -1,0 +1,177 @@
+[0.013s] Invoking command in '/home/leo/RM_prac/build/practica4_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/practica4_pkg -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/practica4_pkg
+[0.128s] -- The C compiler identification is GNU 11.4.0
+[0.485s] -- The CXX compiler identification is GNU 11.4.0
+[0.741s] -- Detecting C compiler ABI info
+[0.816s] -- Detecting C compiler ABI info - done
+[0.819s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.819s] -- Detecting C compile features
+[0.819s] -- Detecting C compile features - done
+[0.821s] -- Detecting CXX compiler ABI info
+[0.903s] -- Detecting CXX compiler ABI info - done
+[0.907s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.907s] -- Detecting CXX compile features
+[0.907s] -- Detecting CXX compile features - done
+[0.908s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.970s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.008s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[1.113s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.115s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.119s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.125s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.133s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.164s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.165s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.508s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.875s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.645s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.652s] -- Looking for pthread.h
+[2.743s] -- Looking for pthread.h - found
+[2.743s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.817s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.818s] -- Found Threads: TRUE  
+[2.906s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.932s] -- Found tf2: 0.25.7 (/opt/ros/humble/share/tf2/cmake)
+[2.941s] -- Found tf2_geometry_msgs: 0.25.7 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[2.969s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.970s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.970s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.156s] -- Found tf2_eigen: 0.25.7 (/opt/ros/humble/share/tf2_eigen/cmake)
+[3.160s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.216s] -- Found laser_geometry: 2.4.0 (/opt/ros/humble/share/laser_geometry/cmake)
+[3.282s] -- Found tf2_sensor_msgs: 0.25.7 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)
+[3.299s] -- Checking for module 'eigen3'
+[3.306s] --   Found eigen3, version 3.4.0
+[3.324s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[3.324s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[3.341s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[4.405s] -- Checking for module 'flann'
+[4.413s] --   Found flann, version 1.9.1
+[4.611s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[4.611s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[4.631s] -- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  
+[4.685s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[4.810s] -- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") 
+[4.810s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[4.811s] -- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[5.115s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[5.416s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+[5.425s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[6.055s] -- Found X11: /usr/include   
+[6.056s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[6.157s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[6.157s] -- Looking for gethostbyname
+[6.240s] -- Looking for gethostbyname - found
+[6.240s] -- Looking for connect
+[6.322s] -- Looking for connect - found
+[6.322s] -- Looking for remove
+[6.390s] -- Looking for remove - found
+[6.390s] -- Looking for shmat
+[6.476s] -- Looking for shmat - found
+[6.476s] -- Looking for IceConnectionNumber in ICE
+[6.553s] -- Looking for IceConnectionNumber in ICE - found
+[7.123s] -- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") 
+[7.124s] -- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  
+[7.125s] -- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") 
+[7.127s] -- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") 
+[7.246s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[7.323s] -- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  
+[7.325s] -- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[7.329s] -- Found utf8cpp: /usr/include/utf8cpp  
+[7.368s] -- Checking for module 'libusb-1.0'
+[7.373s] --   Found libusb-1.0, version 1.0.25
+[7.427s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[7.428s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[7.428s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[7.610s] -- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[7.610s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[7.610s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[8.663s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[8.666s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[8.669s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[9.665s] -- Found Qhull version 8.0.2
+[10.957s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[11.993s] -- looking for PCL_COMMON
+[11.994s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[11.994s] -- looking for PCL_KDTREE
+[11.995s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[11.995s] -- looking for PCL_OCTREE
+[11.995s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[11.995s] -- looking for PCL_SEARCH
+[11.996s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[11.996s] -- looking for PCL_SAMPLE_CONSENSUS
+[11.996s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[11.997s] -- looking for PCL_FILTERS
+[11.997s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[11.997s] -- looking for PCL_2D
+[11.997s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[11.997s] -- looking for PCL_GEOMETRY
+[11.998s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[11.998s] -- looking for PCL_IO
+[11.998s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[11.998s] -- looking for PCL_FEATURES
+[11.999s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[11.999s] -- looking for PCL_ML
+[11.999s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[11.999s] -- looking for PCL_SEGMENTATION
+[12.000s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[12.000s] -- looking for PCL_VISUALIZATION
+[12.000s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[12.000s] -- looking for PCL_SURFACE
+[12.000s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[12.001s] -- looking for PCL_REGISTRATION
+[12.001s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[12.001s] -- looking for PCL_KEYPOINTS
+[12.001s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[12.002s] -- looking for PCL_TRACKING
+[12.002s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[12.002s] -- looking for PCL_RECOGNITION
+[12.002s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[12.002s] -- looking for PCL_STEREO
+[12.003s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[12.003s] -- looking for PCL_APPS
+[12.003s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[12.003s] -- looking for PCL_IN_HAND_SCANNER
+[12.004s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[12.004s] -- looking for PCL_MODELER
+[12.004s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[12.004s] -- looking for PCL_POINT_CLOUD_EDITOR
+[12.004s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[12.004s] -- looking for PCL_OUTOFCORE
+[12.004s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[12.004s] -- looking for PCL_PEOPLE
+[12.005s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[12.005s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+[12.016s] -- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)
+[12.078s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[12.232s] -- Configuring done
+[12.250s] -- Generating done
+[12.251s] -- Build files have been written to: /home/leo/RM_prac/build/practica4_pkg
+[12.260s] Invoked command in '/home/leo/RM_prac/build/practica4_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/practica4_pkg -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/practica4_pkg
+[12.261s] Invoking command in '/home/leo/RM_prac/build/practica4_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/practica4_pkg -- -j32 -l32
+[12.280s] [ 50%] [32mBuilding CXX object CMakeFiles/map_pointcloud_node.dir/src/map_pointcloud_node.cpp.o[0m
+[17.891s] [100%] [32m[1mLinking CXX executable map_pointcloud_node[0m
+[18.176s] [100%] Built target map_pointcloud_node
+[18.180s] Invoked command in '/home/leo/RM_prac/build/practica4_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/practica4_pkg -- -j32 -l32
+[18.191s] Invoking command in '/home/leo/RM_prac/build/practica4_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/practica4_pkg
+[18.193s] -- Install configuration: ""
+[18.193s] -- Installing: /home/leo/RM_prac/install/practica4_pkg/lib/practica4_pkg/map_pointcloud_node
+[18.195s] -- Set runtime path of "/home/leo/RM_prac/install/practica4_pkg/lib/practica4_pkg/map_pointcloud_node" to ""
+[18.195s] -- Installing: /home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/launch
+[18.195s] -- Installing: /home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/launch/practica4_scan_matching.launch.py
+[18.195s] -- Installing: /home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/launch/practica4_odom.launch.py
+[18.195s] -- Installing: /home/leo/RM_prac/install/practica4_pkg/share/ament_index/resource_index/package_run_dependencies/practica4_pkg
+[18.195s] -- Installing: /home/leo/RM_prac/install/practica4_pkg/share/ament_index/resource_index/parent_prefix_path/practica4_pkg
+[18.196s] -- Installing: /home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/environment/ament_prefix_path.sh
+[18.196s] -- Installing: /home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/environment/ament_prefix_path.dsv
+[18.196s] -- Installing: /home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/environment/path.sh
+[18.196s] -- Installing: /home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/environment/path.dsv
+[18.196s] -- Installing: /home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/local_setup.bash
+[18.196s] -- Installing: /home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/local_setup.sh
+[18.196s] -- Installing: /home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/local_setup.zsh
+[18.196s] -- Installing: /home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/local_setup.dsv
+[18.196s] -- Installing: /home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/package.dsv
+[18.196s] -- Installing: /home/leo/RM_prac/install/practica4_pkg/share/ament_index/resource_index/packages/practica4_pkg
+[18.196s] -- Installing: /home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/cmake/practica4_pkgConfig.cmake
+[18.196s] -- Installing: /home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/cmake/practica4_pkgConfig-version.cmake
+[18.196s] -- Installing: /home/leo/RM_prac/install/practica4_pkg/share/practica4_pkg/package.xml
+[18.197s] Invoked command in '/home/leo/RM_prac/build/practica4_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/practica4_pkg

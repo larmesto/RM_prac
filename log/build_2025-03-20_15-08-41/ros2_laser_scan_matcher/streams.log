@@ -1,0 +1,70 @@
+[0.062s] Invoking command in '/home/leo/RM_prac/build/ros2_laser_scan_matcher': CMAKE_PREFIX_PATH=/home/leo/RM_prac/install/csm:/home/leo/RM_prac/install/turtlebot3_coppeliasim:/home/leo/RM_prac/install/ros2_laser_scan_matcher:/home/leo/RM_prac/install/practica4_pkg:/home/leo/RM_prac/install/practica3_pkg:/home/leo/RM_prac/install/practica2_pkg:/home/leo/RM_prac/install/practica1_pkg:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/ros2_laser_scan_matcher -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/ros2_laser_scan_matcher
+[0.130s] -- The C compiler identification is GNU 11.4.0
+[0.422s] -- The CXX compiler identification is GNU 11.4.0
+[0.661s] -- Detecting C compiler ABI info
+[0.741s] -- Detecting C compiler ABI info - done
+[0.745s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.745s] -- Detecting C compile features
+[0.745s] -- Detecting C compile features - done
+[0.746s] -- Detecting CXX compiler ABI info
+[0.834s] -- Detecting CXX compiler ABI info - done
+[0.837s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.838s] -- Detecting CXX compile features
+[0.838s] -- Detecting CXX compile features - done
+[0.839s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.902s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.941s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.029s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.031s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.035s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.041s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.050s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.145s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[1.173s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.174s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.873s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.616s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.060s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.064s] -- Looking for pthread.h
+[4.144s] -- Looking for pthread.h - found
+[4.144s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.208s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.209s] -- Found Threads: TRUE  
+[4.267s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[4.304s] -- Found tf2_ros: 0.25.7 (/opt/ros/humble/share/tf2_ros/cmake)
+[4.460s] -- Found tf2_geometry_msgs: 0.25.7 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[4.485s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[4.486s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[4.486s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.492s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[4.492s] -- Found csm: 0.0.0 (/home/leo/RM_prac/install/csm/share/csm/cmake)
+[4.511s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread 
+[4.541s] -- Configuring done
+[4.549s] -- Generating done
+[4.549s] -- Build files have been written to: /home/leo/RM_prac/build/ros2_laser_scan_matcher
+[4.555s] Invoked command in '/home/leo/RM_prac/build/ros2_laser_scan_matcher' returned '0': CMAKE_PREFIX_PATH=/home/leo/RM_prac/install/csm:/home/leo/RM_prac/install/turtlebot3_coppeliasim:/home/leo/RM_prac/install/ros2_laser_scan_matcher:/home/leo/RM_prac/install/practica4_pkg:/home/leo/RM_prac/install/practica3_pkg:/home/leo/RM_prac/install/practica2_pkg:/home/leo/RM_prac/install/practica1_pkg:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/ros2_laser_scan_matcher -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/ros2_laser_scan_matcher
+[4.555s] Invoking command in '/home/leo/RM_prac/build/ros2_laser_scan_matcher': CMAKE_PREFIX_PATH=/home/leo/RM_prac/install/csm:/home/leo/RM_prac/install/turtlebot3_coppeliasim:/home/leo/RM_prac/install/ros2_laser_scan_matcher:/home/leo/RM_prac/install/practica4_pkg:/home/leo/RM_prac/install/practica3_pkg:/home/leo/RM_prac/install/practica2_pkg:/home/leo/RM_prac/install/practica1_pkg:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/ros2_laser_scan_matcher -- -j32 -l32
+[4.574s] [ 50%] [32mBuilding CXX object CMakeFiles/laser_scan_matcher.dir/src/laser_scan_matcher.cpp.o[0m
+[9.576s] [100%] [32m[1mLinking CXX executable laser_scan_matcher[0m
+[9.880s] [100%] Built target laser_scan_matcher
+[9.890s] Invoked command in '/home/leo/RM_prac/build/ros2_laser_scan_matcher' returned '0': CMAKE_PREFIX_PATH=/home/leo/RM_prac/install/csm:/home/leo/RM_prac/install/turtlebot3_coppeliasim:/home/leo/RM_prac/install/ros2_laser_scan_matcher:/home/leo/RM_prac/install/practica4_pkg:/home/leo/RM_prac/install/practica3_pkg:/home/leo/RM_prac/install/practica2_pkg:/home/leo/RM_prac/install/practica1_pkg:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/ros2_laser_scan_matcher -- -j32 -l32
+[9.901s] Invoking command in '/home/leo/RM_prac/build/ros2_laser_scan_matcher': CMAKE_PREFIX_PATH=/home/leo/RM_prac/install/csm:/home/leo/RM_prac/install/turtlebot3_coppeliasim:/home/leo/RM_prac/install/ros2_laser_scan_matcher:/home/leo/RM_prac/install/practica4_pkg:/home/leo/RM_prac/install/practica3_pkg:/home/leo/RM_prac/install/practica2_pkg:/home/leo/RM_prac/install/practica1_pkg:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/ros2_laser_scan_matcher
+[9.903s] -- Install configuration: ""
+[9.903s] -- Installing: /home/leo/RM_prac/install/ros2_laser_scan_matcher/lib/ros2_laser_scan_matcher/laser_scan_matcher
+[9.905s] -- Set runtime path of "/home/leo/RM_prac/install/ros2_laser_scan_matcher/lib/ros2_laser_scan_matcher/laser_scan_matcher" to ""
+[9.905s] -- Installing: /home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ament_index/resource_index/package_run_dependencies/ros2_laser_scan_matcher
+[9.905s] -- Installing: /home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ament_index/resource_index/parent_prefix_path/ros2_laser_scan_matcher
+[9.905s] -- Installing: /home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/ament_prefix_path.sh
+[9.905s] -- Installing: /home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/ament_prefix_path.dsv
+[9.905s] -- Installing: /home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/path.sh
+[9.906s] -- Installing: /home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/path.dsv
+[9.906s] -- Installing: /home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.bash
+[9.906s] -- Installing: /home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.sh
+[9.906s] -- Installing: /home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.zsh
+[9.906s] -- Installing: /home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.dsv
+[9.906s] -- Installing: /home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.dsv
+[9.906s] -- Installing: /home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ament_index/resource_index/packages/ros2_laser_scan_matcher
+[9.906s] -- Installing: /home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/cmake/ros2_laser_scan_matcherConfig.cmake
+[9.906s] -- Installing: /home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/cmake/ros2_laser_scan_matcherConfig-version.cmake
+[9.906s] -- Installing: /home/leo/RM_prac/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.xml
+[9.907s] Invoked command in '/home/leo/RM_prac/build/ros2_laser_scan_matcher' returned '0': CMAKE_PREFIX_PATH=/home/leo/RM_prac/install/csm:/home/leo/RM_prac/install/turtlebot3_coppeliasim:/home/leo/RM_prac/install/ros2_laser_scan_matcher:/home/leo/RM_prac/install/practica4_pkg:/home/leo/RM_prac/install/practica3_pkg:/home/leo/RM_prac/install/practica2_pkg:/home/leo/RM_prac/install/practica1_pkg:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/ros2_laser_scan_matcher

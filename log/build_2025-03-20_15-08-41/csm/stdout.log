@@ -1,0 +1,93 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/leo/RM_prac/build/csm
+[  4%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/laser_data.cpp.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/utils.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/logging.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils.cpp.o[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/sm_options.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/orientation.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils_gsl.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/clustering.cpp.o[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_conversions.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_misc.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_ops.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_tricks.cpp.o[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc_utils.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_covariance.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/csm.dir/src/options/options.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_debug.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_dumb.cpp.o[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_outliers.cpp.o[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/csm.dir/src/options/options_interface.cpp.o[0m
+[ 95%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_loop.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libcsm.so[0m
+[100%] Built target csm
+-- Install configuration: ""
+-- Installing: /home/leo/RM_prac/install/csm/lib/libcsm.so
+-- Installing: /home/leo/RM_prac/install/csm/include/..//include
+-- Installing: /home/leo/RM_prac/install/csm/include/..//include/gsl_eigen
+-- Installing: /home/leo/RM_prac/install/csm/include/..//include/gsl_eigen/gsl_eigen.h
+-- Installing: /home/leo/RM_prac/install/csm/include/..//include/csm
+-- Installing: /home/leo/RM_prac/install/csm/include/..//include/csm/laser_data_inline.h
+-- Installing: /home/leo/RM_prac/install/csm/include/..//include/csm/csm.h
+-- Installing: /home/leo/RM_prac/install/csm/include/..//include/csm/algos.h
+-- Installing: /home/leo/RM_prac/install/csm/include/..//include/csm/laser_data.h
+-- Installing: /home/leo/RM_prac/install/csm/include/..//include/csm/restrict.h
+-- Installing: /home/leo/RM_prac/install/csm/share/csm/resource
+-- Installing: /home/leo/RM_prac/install/csm/share/csm/resource/csm
+-- Installing: /home/leo/RM_prac/install/csm/include/../gsl_eigen
+-- Installing: /home/leo/RM_prac/install/csm/include/../gsl_eigen/gsl_eigen.h
+-- Installing: /home/leo/RM_prac/install/csm/share/csm/environment/library_path.sh
+-- Installing: /home/leo/RM_prac/install/csm/share/csm/environment/library_path.dsv
+-- Installing: /home/leo/RM_prac/install/csm/share/ament_index/resource_index/package_run_dependencies/csm
+-- Installing: /home/leo/RM_prac/install/csm/share/ament_index/resource_index/parent_prefix_path/csm
+-- Installing: /home/leo/RM_prac/install/csm/share/csm/environment/ament_prefix_path.sh
+-- Installing: /home/leo/RM_prac/install/csm/share/csm/environment/ament_prefix_path.dsv
+-- Installing: /home/leo/RM_prac/install/csm/share/csm/environment/path.sh
+-- Installing: /home/leo/RM_prac/install/csm/share/csm/environment/path.dsv
+-- Installing: /home/leo/RM_prac/install/csm/share/csm/local_setup.bash
+-- Installing: /home/leo/RM_prac/install/csm/share/csm/local_setup.sh
+-- Installing: /home/leo/RM_prac/install/csm/share/csm/local_setup.zsh
+-- Installing: /home/leo/RM_prac/install/csm/share/csm/local_setup.dsv
+-- Installing: /home/leo/RM_prac/install/csm/share/csm/package.dsv
+-- Installing: /home/leo/RM_prac/install/csm/share/ament_index/resource_index/packages/csm
+-- Installing: /home/leo/RM_prac/install/csm/share/csm/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/leo/RM_prac/install/csm/share/csm/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/leo/RM_prac/install/csm/share/csm/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/leo/RM_prac/install/csm/share/csm/cmake/csmConfig.cmake
+-- Installing: /home/leo/RM_prac/install/csm/share/csm/cmake/csmConfig-version.cmake
+-- Installing: /home/leo/RM_prac/install/csm/share/csm/package.xml

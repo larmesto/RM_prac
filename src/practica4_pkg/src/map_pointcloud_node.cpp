@@ -25,7 +25,8 @@ public:
             "/scan", qos_profile, std::bind(&LaserToPointCloud::scan_callback, this, std::placeholders::_1));
 
         frame_id = this->declare_parameter<std::string>("frame_id","odom");
-        child_frame_id = this->declare_parameter<std::string>("child_frame_id","base_scan");
+        //child_frame_id = this->declare_parameter<std::string>("child_frame_id","base_scan");
+
 
         // Publicador de la nube de puntos transformada
         cloud_pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("/map_cloud", 10);
@@ -34,7 +35,7 @@ public:
 private:
     void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg) {
         std::string source_frame = frame_id;  // Marco de referencia fijo
-        std::string target_frame = child_frame_id; // Frame del LiDAR
+        std::string target_frame = msg->header.frame_id; // Frame del LiDAR
 
         // Obtener la transformacion
         geometry_msgs::msg::TransformStamped transform_stamped;
@@ -81,7 +82,8 @@ private:
     sensor_msgs::msg::PointCloud2 map_cloud;
     pcl::PointCloud<pcl::PointXYZ> pcl_map;
 
-    std::string frame_id,child_frame_id;
+    std::string frame_id;
+    //std::string child_frame_id;
 
 };
 

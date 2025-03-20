@@ -1,0 +1,10 @@
+/home/leo/RM_prac/build/csm/CMakeFiles/uninstall.dir
+/home/leo/RM_prac/build/csm/CMakeFiles/csm_uninstall.dir
+/home/leo/RM_prac/build/csm/CMakeFiles/csm.dir
+/home/leo/RM_prac/build/csm/CMakeFiles/test.dir
+/home/leo/RM_prac/build/csm/CMakeFiles/edit_cache.dir
+/home/leo/RM_prac/build/csm/CMakeFiles/rebuild_cache.dir
+/home/leo/RM_prac/build/csm/CMakeFiles/list_install_components.dir
+/home/leo/RM_prac/build/csm/CMakeFiles/install.dir
+/home/leo/RM_prac/build/csm/CMakeFiles/install/local.dir
+/home/leo/RM_prac/build/csm/CMakeFiles/install/strip.dir

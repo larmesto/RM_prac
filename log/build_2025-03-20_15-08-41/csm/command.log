@@ -1,0 +1,6 @@
+Invoking command in '/home/leo/RM_prac/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/csm -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/csm
+Invoked command in '/home/leo/RM_prac/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/csm -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/csm
+Invoking command in '/home/leo/RM_prac/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/csm -- -j32 -l32
+Invoked command in '/home/leo/RM_prac/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/csm -- -j32 -l32
+Invoking command in '/home/leo/RM_prac/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/csm
+Invoked command in '/home/leo/RM_prac/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/csm
