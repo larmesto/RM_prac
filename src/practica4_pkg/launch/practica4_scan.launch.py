@@ -17,7 +17,7 @@ def generate_launch_description():
 
     declare_child_frame_id_cmd = DeclareLaunchArgument(
         'child_frame_id',
-        default_value='scan_link',
+        default_value='base_scan',
         description='Frame from get the laser scans'
     )
 
@@ -42,7 +42,7 @@ def generate_launch_description():
         ),
 
         Node(
-            package='pub_sub_pkg',
+            package='practica4_pkg',
             executable='map_pointcloud_node',
             name='map_pointcloud_node',
             output='screen',

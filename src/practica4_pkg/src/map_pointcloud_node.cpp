@@ -25,7 +25,7 @@ public:
             "/scan", qos_profile, std::bind(&LaserToPointCloud::scan_callback, this, std::placeholders::_1));
 
         frame_id = this->declare_parameter<std::string>("frame_id","odom");
-        child_frame_id = this->declare_parameter<std::string>("child_frame_id","scan_link");
+        child_frame_id = this->declare_parameter<std::string>("child_frame_id","base_scan");
 
         // Publicador de la nube de puntos transformada
         cloud_pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("/map_cloud", 10);
