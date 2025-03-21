@@ -24,13 +24,22 @@ find_package(laser_geometry)
 find_package(sensor_msgs REQUIRED)
 find_package(tf2_sensor_msgs REQUIRED)
 
-find_package(PCL REQUIRED)
+find_package(PCL REQUIRED QUIET)
 find_package(pcl_conversions REQUIRED)
 
 find_package(visualization_msgs REQUIRED)
 
-find_package(pkg5_interface REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
 
+set(service_files
+    "srv/ResetMap.srv"
+  )
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${service_files}
+  DEPENDENCIES builtin_interfaces
+)
+	
 add_executable(map_pointcloud_node
 src/map_pointcloud_node.cpp)
 
@@ -45,14 +54,16 @@ laser_geometry
 tf2_sensor_msgs
 pcl_conversions
 PCL
-pkg5_interface
 )
+
+rosidl_get_typesupport_target(cpp_typesupport_target ${PROJECT_NAME} "rosidl_typesupport_cpp")
+target_link_libraries(map_pointcloud_node "${cpp_typesupport_target}")
 
 install(TARGETS
 map_pointcloud_node
 DESTINATION lib/${PROJECT_NAME})
 
-install(DIRECTORY launch
+install(DIRECTORY launch 
 DESTINATION share/${PROJECT_NAME})
 
 ament_package()

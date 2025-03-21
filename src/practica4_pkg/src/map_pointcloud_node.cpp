@@ -11,7 +11,7 @@
 #include <pcl/point_cloud.h>
 #include <pcl/point_types.h>
 
-#include "pkg5_interface/srv/reset_map.hpp"
+#include "practica4_pkg/srv/reset_map.hpp"
 
 class LaserToPointCloud : public rclcpp::Node {
 public:
@@ -27,13 +27,11 @@ public:
             "/scan", qos_profile, std::bind(&LaserToPointCloud::scan_callback, this, std::placeholders::_1));
 
         frame_id = this->declare_parameter<std::string>("frame_id","odom");
-        //child_frame_id = this->declare_parameter<std::string>("child_frame_id","base_scan");
-
-
+        
         // Publicador de la nube de puntos transformada
         cloud_pub_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("/map_cloud", 10);
 
-        service_reset_map_ = this->create_service<pkg5_interface::srv::ResetMap>(
+        service_reset_map_ = this->create_service<practica4_pkg::srv::ResetMap>(
             "reset_map",std::bind(&LaserToPointCloud::reset_map,this,std::placeholders::_1,std::placeholders::_2));
 
     }
@@ -63,7 +61,7 @@ private:
         pcl::PointCloud<pcl::PointXYZ> pcl_cloud;
         pcl::fromROSMsg(cloud_transformed, pcl_cloud);
 
-        // Acumulaar la nube de puntos
+        // Acumular la nube de puntos
         pcl_map += pcl_cloud;
 
         // Convertir a PointCloud2 para publicar
@@ -73,17 +71,12 @@ private:
         cloud_output.header.stamp = msg->header.stamp;
         
         cloud_pub_->publish(cloud_output);
-
-        // Publicar la nube de puntos transformada
-        //cloud_transformed.header.frame_id = "map";
-        //cloud_transformed.header.stamp = msg->header.stamp;
-        //cloud_pub_->publish(cloud_transformed);
     }
 
-    void reset_map(const std::shared_ptr<pkg5_interface::srv::ResetMap::Request> request,
-        std::shared_ptr<pkg5_interface::srv::ResetMap::Response> response)
+    void reset_map(const std::shared_ptr<practica4_pkg::srv::ResetMap::Request> request,
+        std::shared_ptr<practica4_pkg::srv::ResetMap::Response> response)
         {
-          RCLCPP_INFO(this->get_logger(),"Recive reset request");
+          RCLCPP_INFO(this->get_logger(),"Recieved reset request");
           if(request->reset_req){
             RCLCPP_INFO(this->get_logger(),"Request accepted");
             pcl_map.clear();
@@ -94,7 +87,7 @@ private:
             response->response = "Couldnt reset map";
           }
         }
-
+    
     rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr laser_sub_;
     rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr cloud_pub_;
     std::shared_ptr<tf2_ros::Buffer> tf_buffer_;
@@ -103,11 +96,10 @@ private:
     sensor_msgs::msg::PointCloud2 map_cloud;
     pcl::PointCloud<pcl::PointXYZ> pcl_map;
 
-    rclcpp::Service<pkg5_interface::srv::ResetMap>::SharedPtr service_reset_map_;
+    rclcpp::Service<practica4_pkg::srv::ResetMap>::SharedPtr service_reset_map_;
 
 
     std::string frame_id;
-    //std::string child_frame_id;
 
 };
 
