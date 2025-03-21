@@ -67,7 +67,7 @@ LaserScanMatcher::LaserScanMatcher() : Node("laser_scan_matcher"), initialized_(
    RCLCPP_INFO(get_logger(), "Creating laser_scan_matcher");
   add_parameter("publish_odom", rclcpp::ParameterValue(std::string("")),
     "If publish odometry from laser_scan. Empty if not, otherwise name of the topic");
-  add_parameter("publish_tf",   rclcpp::ParameterValue(true),
+  add_parameter("publish_tf",   rclcpp::ParameterValue(false),
     " If publish tf scm_odom->odom");
   add_parameter("scm_frame", rclcpp::ParameterValue(std::string("scm_odom")),
     "Which frame to use for the scm_odom");
@@ -240,6 +240,7 @@ LaserScanMatcher::LaserScanMatcher() : Node("laser_scan_matcher"), initialized_(
   prev_f2b_.setIdentity();
   f2b_kf_.setIdentity();
   o2b_.setIdentity();
+  //o2b_kf_.setIdentity();
   input_.laser[0] = 0.0;
   input_.laser[1] = 0.0;
   input_.laser[2] = 0.0;
@@ -257,6 +258,9 @@ LaserScanMatcher::LaserScanMatcher() : Node("laser_scan_matcher"), initialized_(
   if(publish_odom_){
     odom_publisher_ = this->create_publisher<nav_msgs::msg::Odometry>(odom_topic_, rclcpp::SystemDefaultsQoS());
   }
+
+  reset_odom_srv_ = this->create_service<ros2_laser_scan_matcher::srv::ResetOdom>("reset_odom",std::bind(&LaserScanMatcher::reset_odom,this,std::placeholders::_1,std::placeholders::_2));
+
 }
 
 LaserScanMatcher::~LaserScanMatcher()
@@ -581,6 +585,26 @@ void LaserScanMatcher::createTfFromXYTheta(double x, double y, double theta, tf2
   q.setRPY(0.0, 0.0, theta);
   t.setRotation(q);
 }
+
+void LaserScanMatcher::reset_odom(const std::shared_ptr<ros2_laser_scan_matcher::srv::ResetOdom::Request> request,
+  std::shared_ptr<ros2_laser_scan_matcher::srv::ResetOdom::Response> response)
+  {
+    RCLCPP_INFO(this->get_logger(),"Recive reset odom request");
+    if(request->reset){
+      RCLCPP_INFO(this->get_logger(),"Request accepted");
+      
+      f2b_.setIdentity();
+      f2b_kf_.setIdentity();
+      b2f_kf_.setIdentity();
+      initialized_=false;
+
+      response->response = "Reseted odom succeed";
+    }
+    else{
+      RCLCPP_INFO(this->get_logger(),"Request denied");
+      response->response = "Couldnt reset odom";
+    }
+  }
 
 
 }  // namespace scan_tools

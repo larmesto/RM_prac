@@ -47,6 +47,8 @@
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 #include <tf2/utils.h>
 
+#include "ros2_laser_scan_matcher/srv/reset_odom.hpp"
+
 #include "rclcpp/rclcpp.hpp"
 
 #include <csm/csm.h>  // csm defines min and max, but Eigen complains
@@ -73,6 +75,10 @@ private:
   tf2::Transform l2b_;
   std::shared_ptr<tf2_ros::Buffer> tf_buffer_;
   rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr odom_publisher_;
+
+  // Reset Service
+  rclcpp::Service<ros2_laser_scan_matcher::srv::ResetOdom>::SharedPtr reset_odom_srv_;
+
   // Coordinate parameters
   std::string scm_frame_;
   std::string base_frame_;
@@ -121,6 +127,8 @@ private:
   bool processScan(LDP& curr_ldp_scan, const rclcpp::Time& time);
   void laserScanToLDP(const sensor_msgs::msg::LaserScan::SharedPtr& scan, LDP& ldp);
   void createTfFromXYTheta(double x, double y, double theta, tf2::Transform& t);
+  void reset_odom(const std::shared_ptr<ros2_laser_scan_matcher::srv::ResetOdom::Request> request,
+    std::shared_ptr<ros2_laser_scan_matcher::srv::ResetOdom::Response> response);
 
   bool newKeyframeNeeded(const tf2::Transform& d);
 

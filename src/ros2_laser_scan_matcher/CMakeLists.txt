@@ -14,7 +14,18 @@ find_package(PkgConfig)
 find_package(csm REQUIRED)
 find_package(Eigen3 REQUIRED)
 
+find_package(rosidl_default_generators REQUIRED)
+
 find_package(Boost COMPONENTS thread REQUIRED)
+
+set(service_files
+    "srv/ResetOdom.srv"
+  )
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${service_files}
+  DEPENDENCIES builtin_interfaces
+)
 
 include_directories(
   include
@@ -41,6 +52,9 @@ ament_target_dependencies(laser_scan_matcher
   Boost
   nav_msgs
 )
+
+rosidl_get_typesupport_target(cpp_typesupport_target ${PROJECT_NAME} "rosidl_typesupport_cpp")
+target_link_libraries(laser_scan_matcher "${cpp_typesupport_target}")
 
 install(TARGETS laser_scan_matcher DESTINATION lib/${PROJECT_NAME})
 
