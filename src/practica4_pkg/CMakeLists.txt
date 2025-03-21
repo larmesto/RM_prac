@@ -63,7 +63,7 @@ install(TARGETS
 map_pointcloud_node
 DESTINATION lib/${PROJECT_NAME})
 
-install(DIRECTORY launch 
+install(DIRECTORY launch rviz 
 DESTINATION share/${PROJECT_NAME})
 
 ament_package()
