@@ -1,0 +1,96 @@
+[0.031s] Invoking command in '/home/leo/RM_prac/build/turtlebot3_coppeliasim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/turtlebot3_coppeliasim -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/turtlebot3_coppeliasim
+[9.565s] -- The C compiler identification is GNU 11.4.0
+[9.566s] -- The CXX compiler identification is GNU 11.4.0
+[9.566s] -- Detecting C compiler ABI info
+[9.566s] -- Detecting C compiler ABI info - done
+[9.568s] -- Check for working C compiler: /usr/bin/cc - skipped
+[9.568s] -- Detecting C compile features
+[9.568s] -- Detecting C compile features - done
+[9.569s] -- Detecting CXX compiler ABI info
+[9.569s] -- Detecting CXX compiler ABI info - done
+[9.569s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[9.569s] -- Detecting CXX compile features
+[9.569s] -- Detecting CXX compile features - done
+[9.570s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[9.570s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[9.570s] -- Configuring done
+[9.570s] -- Generating done
+[9.570s] -- Build files have been written to: /home/leo/RM_prac/build/turtlebot3_coppeliasim
+[9.572s] Invoked command in '/home/leo/RM_prac/build/turtlebot3_coppeliasim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/turtlebot3_coppeliasim -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/turtlebot3_coppeliasim
+[9.575s] Invoking command in '/home/leo/RM_prac/build/turtlebot3_coppeliasim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/turtlebot3_coppeliasim -- -j8 -l8
+[9.932s] Invoked command in '/home/leo/RM_prac/build/turtlebot3_coppeliasim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/turtlebot3_coppeliasim -- -j8 -l8
+[9.942s] Invoking command in '/home/leo/RM_prac/build/turtlebot3_coppeliasim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/turtlebot3_coppeliasim
+[11.378s] -- Install configuration: ""
+[11.378s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/launch
+[11.378s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/launch/turtlebot3_coppeliasim.launch.py
+[11.378s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/launch/turtlebot3_bill_coppeliasim.launch.py
+[11.378s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/launch/rviz2.launch.py
+[11.378s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/param
+[11.379s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/param/burger.yaml
+[11.379s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/scenes
+[11.379s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/scenes/turtlebot3_burger_ROS2.ttt
+[11.379s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/scenes/turtlebot3_burger_bill_ROS2.ttt
+[11.379s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/rviz
+[11.379s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/rviz/tb3_coppeliasim.rviz
+[11.379s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/urdf
+[11.379s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/urdf/common_properties.urdf
+[11.379s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/urdf/turtlebot3_waffle_pi.urdf
+[11.379s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/urdf/turtlebot3_burger_cam.urdf
+[11.379s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/urdf/turtlebot3_waffle.urdf
+[11.379s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/urdf/turtlebot3_burger.urdf
+[11.380s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models
+[11.380s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_burger
+[11.380s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_burger/model.sdf
+[11.380s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_burger/model.config
+[11.380s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_burger/model-1_4.sdf
+[11.380s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common
+[11.380s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes
+[11.380s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes/sensors
+[11.380s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes/sensors/astra.dae
+[11.380s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes/sensors/lds.stl
+[11.380s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes/sensors/astra.jpg
+[11.380s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes/sensors/r200.jpg
+[11.381s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes/sensors/r200.dae
+[11.381s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes/bases
+[11.381s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes/bases/waffle_base.stl
+[11.398s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes/bases/waffle_pi_base.stl
+[11.398s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes/bases/burger_base.stl
+[11.398s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes/waffle_pi_base.dae
+[11.398s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes/lds.dae
+[11.398s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes/waffle_base.dae
+[11.398s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes/r200.dae
+[11.398s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes/wheels
+[11.398s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes/wheels/right_tire.stl
+[11.399s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes/wheels/left_tire.stl
+[11.399s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes/burger_base.dae
+[11.399s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/meshes/tire.dae
+[11.399s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_common/model.config
+[11.399s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_waffle_pi
+[11.399s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_waffle_pi/model.sdf
+[11.399s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_waffle_pi/model.config
+[11.399s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_waffle_pi/model-1_4_.sdf
+[11.399s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_waffle
+[11.399s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_waffle/model.sdf
+[11.399s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_waffle/model.config
+[11.399s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_waffle/model-1_4.sdf
+[11.400s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_burger_cam
+[11.400s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_burger_cam/model.sdf
+[11.400s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_burger_cam/model.config
+[11.400s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/models/turtlebot3_burger_cam/model-1_4.sdf
+[11.400s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/ament_index/resource_index/package_run_dependencies/turtlebot3_coppeliasim
+[11.400s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/ament_index/resource_index/parent_prefix_path/turtlebot3_coppeliasim
+[11.400s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/environment/ament_prefix_path.sh
+[11.400s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/environment/ament_prefix_path.dsv
+[11.400s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/environment/path.sh
+[11.400s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/environment/path.dsv
+[11.400s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/local_setup.bash
+[11.400s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/local_setup.sh
+[11.401s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/local_setup.zsh
+[11.401s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/local_setup.dsv
+[11.401s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.dsv
+[11.401s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/ament_index/resource_index/packages/turtlebot3_coppeliasim
+[11.401s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.401s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/cmake/turtlebot3_coppeliasimConfig.cmake
+[11.401s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/cmake/turtlebot3_coppeliasimConfig-version.cmake
+[11.401s] -- Installing: /home/leo/RM_prac/install/turtlebot3_coppeliasim/share/turtlebot3_coppeliasim/package.xml
+[11.416s] Invoked command in '/home/leo/RM_prac/build/turtlebot3_coppeliasim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/turtlebot3_coppeliasim

@@ -1,0 +1,10 @@
+/home/leo/RM_prac/build/practica3_pkg/CMakeFiles/uninstall.dir
+/home/leo/RM_prac/build/practica3_pkg/CMakeFiles/practica3_pkg_uninstall.dir
+/home/leo/RM_prac/build/practica3_pkg/CMakeFiles/transform_listener.dir
+/home/leo/RM_prac/build/practica3_pkg/CMakeFiles/test.dir
+/home/leo/RM_prac/build/practica3_pkg/CMakeFiles/edit_cache.dir
+/home/leo/RM_prac/build/practica3_pkg/CMakeFiles/rebuild_cache.dir
+/home/leo/RM_prac/build/practica3_pkg/CMakeFiles/list_install_components.dir
+/home/leo/RM_prac/build/practica3_pkg/CMakeFiles/install.dir
+/home/leo/RM_prac/build/practica3_pkg/CMakeFiles/install/local.dir
+/home/leo/RM_prac/build/practica3_pkg/CMakeFiles/install/strip.dir

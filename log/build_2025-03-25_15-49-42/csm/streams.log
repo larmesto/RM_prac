@@ -1,0 +1,99 @@
+[0.033s] Invoking command in '/home/leo/RM_prac/build/csm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/csm -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/csm
+[0.390s] -- The C compiler identification is GNU 11.4.0
+[1.504s] -- The CXX compiler identification is GNU 11.4.0
+[2.105s] -- Detecting C compiler ABI info
+[2.385s] -- Detecting C compiler ABI info - done
+[2.392s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.392s] -- Detecting C compile features
+[2.393s] -- Detecting C compile features - done
+[2.396s] -- Detecting CXX compiler ABI info
+[2.656s] -- Detecting CXX compiler ABI info - done
+[2.666s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.666s] -- Detecting CXX compile features
+[2.667s] -- Detecting CXX compile features - done
+[2.669s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.825s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.921s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[3.152s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.156s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.162s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.171s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.185s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.222s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.224s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.306s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[7.195s] -- Found FastRTPS: /opt/ros/humble/include  
+[9.335s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[9.342s] -- Looking for pthread.h
+[9.572s] -- Looking for pthread.h - found
+[9.572s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[9.805s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[9.806s] -- Found Threads: TRUE  
+[9.937s] -- Configuring done
+[9.946s] -- Generating done
+[9.948s] -- Build files have been written to: /home/leo/RM_prac/build/csm
+[9.957s] Invoked command in '/home/leo/RM_prac/build/csm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/leo/RM_prac/src/csm -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/csm
+[9.958s] Invoking command in '/home/leo/RM_prac/build/csm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/csm -- -j8 -l8
+[10.004s] [  4%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils.cpp.o[0m
+[10.004s] [  8%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils_gsl.cpp.o[0m
+[10.007s] [ 16%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/utils.cpp.o[0m
+[10.007s] [ 16%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/logging.cpp.o[0m
+[10.012s] [ 20%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/laser_data.cpp.o[0m
+[10.015s] [ 25%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/sm_options.cpp.o[0m
+[10.035s] [ 29%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/orientation.cpp.o[0m
+[10.040s] [ 33%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/clustering.cpp.o[0m
+[12.611s] [ 37%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl.cpp.o[0m
+[12.648s] [ 41%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_conversions.cpp.o[0m
+[12.767s] [ 45%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_misc.cpp.o[0m
+[12.769s] [ 50%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_ops.cpp.o[0m
+[12.801s] [ 54%] [32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc.cpp.o[0m
+[12.877s] [ 58%] [32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc_utils.cpp.o[0m
+[13.188s] [ 62%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp.cpp.o[0m
+[13.337s] [ 66%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_dumb.cpp.o[0m
+[15.727s] [ 70%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_tricks.cpp.o[0m
+[15.768s] [ 75%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_covariance.cpp.o[0m
+[15.869s] [ 79%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_debug.cpp.o[0m
+[15.948s] [ 83%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_loop.cpp.o[0m
+[16.167s] [ 87%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_outliers.cpp.o[0m
+[16.711s] [ 91%] [32mBuilding CXX object CMakeFiles/csm.dir/src/options/options.cpp.o[0m
+[17.949s] [ 95%] [32mBuilding CXX object CMakeFiles/csm.dir/src/options/options_interface.cpp.o[0m
+[36.714s] [100%] [32m[1mLinking CXX shared library libcsm.so[0m
+[37.351s] [100%] Built target csm
+[37.361s] Invoked command in '/home/leo/RM_prac/build/csm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/leo/RM_prac/build/csm -- -j8 -l8
+[37.363s] Invoking command in '/home/leo/RM_prac/build/csm': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/csm
+[37.369s] -- Install configuration: ""
+[37.369s] -- Installing: /home/leo/RM_prac/install/csm/lib/libcsm.so
+[37.375s] -- Installing: /home/leo/RM_prac/install/csm/include/..//include
+[37.375s] -- Installing: /home/leo/RM_prac/install/csm/include/..//include/gsl_eigen
+[37.375s] -- Installing: /home/leo/RM_prac/install/csm/include/..//include/gsl_eigen/gsl_eigen.h
+[37.376s] -- Installing: /home/leo/RM_prac/install/csm/include/..//include/csm
+[37.376s] -- Installing: /home/leo/RM_prac/install/csm/include/..//include/csm/csm.h
+[37.376s] -- Installing: /home/leo/RM_prac/install/csm/include/..//include/csm/restrict.h
+[37.376s] -- Installing: /home/leo/RM_prac/install/csm/include/..//include/csm/algos.h
+[37.377s] -- Installing: /home/leo/RM_prac/install/csm/include/..//include/csm/laser_data.h
+[37.377s] -- Installing: /home/leo/RM_prac/install/csm/include/..//include/csm/laser_data_inline.h
+[37.377s] -- Installing: /home/leo/RM_prac/install/csm/share/csm/resource
+[37.377s] -- Installing: /home/leo/RM_prac/install/csm/share/csm/resource/csm
+[37.377s] -- Installing: /home/leo/RM_prac/install/csm/include/../gsl_eigen
+[37.377s] -- Installing: /home/leo/RM_prac/install/csm/include/../gsl_eigen/gsl_eigen.h
+[37.377s] -- Installing: /home/leo/RM_prac/install/csm/share/csm/environment/library_path.sh
+[37.378s] -- Installing: /home/leo/RM_prac/install/csm/share/csm/environment/library_path.dsv
+[37.378s] -- Installing: /home/leo/RM_prac/install/csm/share/ament_index/resource_index/package_run_dependencies/csm
+[37.378s] -- Installing: /home/leo/RM_prac/install/csm/share/ament_index/resource_index/parent_prefix_path/csm
+[37.378s] -- Installing: /home/leo/RM_prac/install/csm/share/csm/environment/ament_prefix_path.sh
+[37.379s] -- Installing: /home/leo/RM_prac/install/csm/share/csm/environment/ament_prefix_path.dsv
+[37.379s] -- Installing: /home/leo/RM_prac/install/csm/share/csm/environment/path.sh
+[37.379s] -- Installing: /home/leo/RM_prac/install/csm/share/csm/environment/path.dsv
+[37.379s] -- Installing: /home/leo/RM_prac/install/csm/share/csm/local_setup.bash
+[37.379s] -- Installing: /home/leo/RM_prac/install/csm/share/csm/local_setup.sh
+[37.379s] -- Installing: /home/leo/RM_prac/install/csm/share/csm/local_setup.zsh
+[37.379s] -- Installing: /home/leo/RM_prac/install/csm/share/csm/local_setup.dsv
+[37.380s] -- Installing: /home/leo/RM_prac/install/csm/share/csm/package.dsv
+[37.380s] -- Installing: /home/leo/RM_prac/install/csm/share/ament_index/resource_index/packages/csm
+[37.380s] -- Installing: /home/leo/RM_prac/install/csm/share/csm/cmake/ament_cmake_export_dependencies-extras.cmake
+[37.380s] -- Installing: /home/leo/RM_prac/install/csm/share/csm/cmake/ament_cmake_export_include_directories-extras.cmake
+[37.380s] -- Installing: /home/leo/RM_prac/install/csm/share/csm/cmake/ament_cmake_export_libraries-extras.cmake
+[37.381s] -- Installing: /home/leo/RM_prac/install/csm/share/csm/cmake/csmConfig.cmake
+[37.381s] -- Installing: /home/leo/RM_prac/install/csm/share/csm/cmake/csmConfig-version.cmake
+[37.381s] -- Installing: /home/leo/RM_prac/install/csm/share/csm/package.xml
+[37.382s] Invoked command in '/home/leo/RM_prac/build/csm' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/leo/RM_prac/build/csm

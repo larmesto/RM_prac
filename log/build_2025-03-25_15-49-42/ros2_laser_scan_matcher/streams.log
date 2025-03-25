@@ -1,0 +1,115 @@
+[0.281s] Invoking command in '/home/leo/RM_prac/build/ros2_laser_scan_matcher': AMENT_PREFIX_PATH=/home/leo/RM_prac/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leo/RM_prac/install/csm:/opt/ros/humble LD_LIBRARY_PATH=/home/leo/RM_prac/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/leo/RM_prac/src/ros2_laser_scan_matcher -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/ros2_laser_scan_matcher
+[0.604s] -- The C compiler identification is GNU 11.4.0
+[1.700s] -- The CXX compiler identification is GNU 11.4.0
+[2.635s] -- Detecting C compiler ABI info
+[2.994s] -- Detecting C compiler ABI info - done
+[2.999s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.000s] -- Detecting C compile features
+[3.000s] -- Detecting C compile features - done
+[3.002s] -- Detecting CXX compiler ABI info
+[3.383s] -- Detecting CXX compiler ABI info - done
+[3.388s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.388s] -- Detecting CXX compile features
+[3.389s] -- Detecting CXX compile features - done
+[3.391s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.515s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.582s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.942s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.945s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.951s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.960s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.972s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.015s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[4.042s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.044s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[7.083s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[10.520s] -- Found FastRTPS: /opt/ros/humble/include  
+[16.980s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[16.986s] -- Looking for pthread.h
+[17.312s] -- Looking for pthread.h - found
+[17.312s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[17.653s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[17.654s] -- Found Threads: TRUE  
+[17.689s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[17.714s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[17.836s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[17.943s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[17.944s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[17.944s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[17.952s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[17.953s] -- Found csm: 0.0.0 (/home/leo/RM_prac/install/csm/share/csm/cmake)
+[17.959s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[17.985s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread 
+[18.311s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[18.609s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[18.736s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[19.026s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[19.028s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[20.031s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[20.031s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[20.031s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[20.032s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[20.047s] -- Found PythonExtra: .so  
+[20.194s] -- Configuring done
+[20.226s] -- Generating done
+[20.238s] -- Build files have been written to: /home/leo/RM_prac/build/ros2_laser_scan_matcher
+[20.256s] Invoked command in '/home/leo/RM_prac/build/ros2_laser_scan_matcher' returned '0': AMENT_PREFIX_PATH=/home/leo/RM_prac/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leo/RM_prac/install/csm:/opt/ros/humble LD_LIBRARY_PATH=/home/leo/RM_prac/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/leo/RM_prac/src/ros2_laser_scan_matcher -DCMAKE_INSTALL_PREFIX=/home/leo/RM_prac/install/ros2_laser_scan_matcher
+[20.258s] Invoking command in '/home/leo/RM_prac/build/ros2_laser_scan_matcher': AMENT_PREFIX_PATH=/home/leo/RM_prac/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/leo/RM_prac/install/csm:/opt/ros/humble LD_LIBRARY_PATH=/home/leo/RM_prac/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/leo/RM_prac/build/ros2_laser_scan_matcher -- -j8 -l8
+[20.287s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[20.298s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[20.301s] [  6%] Built target ament_cmake_python_copy_ros2_laser_scan_matcher
+[20.594s] running egg_info
+[20.595s] creating ros2_laser_scan_matcher.egg-info
+[20.595s] writing ros2_laser_scan_matcher.egg-info/PKG-INFO
+[20.595s] writing dependency_links to ros2_laser_scan_matcher.egg-info/dependency_links.txt
+[20.595s] writing top-level names to ros2_laser_scan_matcher.egg-info/top_level.txt
+[20.596s] writing manifest file 'ros2_laser_scan_matcher.egg-info/SOURCES.txt'
+[20.598s] reading manifest file 'ros2_laser_scan_matcher.egg-info/SOURCES.txt'
+[20.599s] writing manifest file 'ros2_laser_scan_matcher.egg-info/SOURCES.txt'
+[20.631s] [  6%] Built target ament_cmake_python_build_ros2_laser_scan_matcher_egg
+[20.654s] [  6%] Built target ros2_laser_scan_matcher__cpp
+[20.655s] [  9%] [32mBuilding C object CMakeFiles/ros2_laser_scan_matcher__rosidl_generator_c.dir/rosidl_generator_c/ros2_laser_scan_matcher/srv/detail/reset_odom__functions.c.o[0m
+[20.664s] [ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[20.664s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[20.664s] [ 18%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[20.723s] [ 21%] [32m[1mLinking C shared library libros2_laser_scan_matcher__rosidl_generator_c.so[0m
+[20.984s] [ 27%] [32mBuilding CXX object CMakeFiles/ros2_laser_scan_matcher__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros2_laser_scan_matcher/srv/reset_odom__type_support.cpp.o[0m
+[20.985s] [ 27%] [32mBuilding CXX object CMakeFiles/ros2_laser_scan_matcher__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros2_laser_scan_matcher/srv/detail/reset_odom__type_support.cpp.o[0m
+[21.007s] [ 27%] Built target ros2_laser_scan_matcher__rosidl_generator_c
+[21.014s] [ 30%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[21.015s] [ 33%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[21.015s] [ 36%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[21.044s] [ 39%] [32mBuilding CXX object CMakeFiles/ros2_laser_scan_matcher__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros2_laser_scan_matcher/srv/detail/dds_fastrtps/reset_odom__type_support.cpp.o[0m
+[21.308s] [ 42%] [32m[1mLinking CXX shared library libros2_laser_scan_matcher__rosidl_typesupport_cpp.so[0m
+[21.384s] [ 45%] [32mBuilding CXX object CMakeFiles/ros2_laser_scan_matcher__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros2_laser_scan_matcher/srv/reset_odom__type_support.cpp.o[0m
+[21.404s] [ 48%] [32mBuilding C object CMakeFiles/ros2_laser_scan_matcher__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_laser_scan_matcher/srv/detail/reset_odom__type_support.c.o[0m
+[21.418s] [ 51%] [32m[1mLinking CXX shared library libros2_laser_scan_matcher__rosidl_typesupport_c.so[0m
+[21.435s] [ 54%] [32mBuilding CXX object CMakeFiles/ros2_laser_scan_matcher__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros2_laser_scan_matcher/srv/detail/reset_odom__type_support_c.cpp.o[0m
+[21.445s] [ 57%] [32m[1mLinking C shared library libros2_laser_scan_matcher__rosidl_typesupport_introspection_c.so[0m
+[21.456s] [ 60%] [32m[1mLinking CXX shared library libros2_laser_scan_matcher__rosidl_typesupport_introspection_cpp.so[0m
+[21.547s] [ 63%] [32m[1mLinking CXX shared library libros2_laser_scan_matcher__rosidl_typesupport_fastrtps_cpp.so[0m
+[21.615s] [ 63%] Built target ros2_laser_scan_matcher__rosidl_typesupport_cpp
+[21.637s] [ 66%] [32mBuilding CXX object CMakeFiles/laser_scan_matcher.dir/src/laser_scan_matcher.cpp.o[0m
+[21.730s] [ 66%] Built target ros2_laser_scan_matcher__rosidl_typesupport_c
+[21.745s] [ 66%] Built target ros2_laser_scan_matcher__rosidl_typesupport_introspection_c
+[21.788s] [ 66%] Built target ros2_laser_scan_matcher__rosidl_typesupport_introspection_cpp
+[21.828s] [ 69%] [32m[1mLinking CXX shared library libros2_laser_scan_matcher__rosidl_typesupport_fastrtps_c.so[0m
+[21.892s] [ 69%] Built target ros2_laser_scan_matcher__rosidl_typesupport_fastrtps_cpp
+[22.145s] [ 69%] Built target ros2_laser_scan_matcher__rosidl_typesupport_fastrtps_c
+[22.160s] [ 69%] Built target ros2_laser_scan_matcher
+[22.177s] [ 72%] [34m[1mGenerating Python code for ROS interfaces[0m
+[22.625s] [ 72%] Built target ros2_laser_scan_matcher__py
+[22.641s] [ 75%] [32mBuilding C object CMakeFiles/ros2_laser_scan_matcher__rosidl_generator_py.dir/rosidl_generator_py/ros2_laser_scan_matcher/srv/_reset_odom_s.c.o[0m
+[22.742s] [ 78%] [32m[1mLinking C shared library rosidl_generator_py/ros2_laser_scan_matcher/libros2_laser_scan_matcher__rosidl_generator_py.so[0m
+[23.031s] [ 78%] Built target ros2_laser_scan_matcher__rosidl_generator_py
+[23.048s] [ 81%] [32mBuilding C object CMakeFiles/ros2_laser_scan_matcher__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ros2_laser_scan_matcher/_ros2_laser_scan_matcher_s.ep.rosidl_typesupport_c.c.o[0m
+[23.048s] [ 84%] [32mBuilding C object CMakeFiles/ros2_laser_scan_matcher__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ros2_laser_scan_matcher/_ros2_laser_scan_matcher_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[23.048s] [ 87%] [32mBuilding C object CMakeFiles/ros2_laser_scan_matcher__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ros2_laser_scan_matcher/_ros2_laser_scan_matcher_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[23.153s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/ros2_laser_scan_matcher/ros2_laser_scan_matcher_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[23.158s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/ros2_laser_scan_matcher/ros2_laser_scan_matcher_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[23.165s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/ros2_laser_scan_matcher/ros2_laser_scan_matcher_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[23.363s] [ 96%] Built target ros2_laser_scan_matcher__rosidl_typesupport_fastrtps_c__pyext
+[23.363s] [ 96%] Built target ros2_laser_scan_matcher__rosidl_typesupport_c__pyext
+[23.460s] [ 96%] Built target ros2_laser_scan_matcher__rosidl_typesupport_introspection_c__pyext
+[32.748s] [100%] [32m[1mLinking CXX executable laser_scan_matcher[0m
+[33.506s] [100%] Built target laser_scan_matcher

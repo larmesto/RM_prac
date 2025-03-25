@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from practica4_pkg/srv/ResetMap.srv
+// generated code does not contain a copyright notice
+
+
+module practica4_pkg {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request")
+    struct ResetMap_Request {
+      boolean reset_req;
+    };
+    @verbatim (language="comment", text=
+      "Response")
+    struct ResetMap_Response {
+      string response;
+    };
+  };
+};

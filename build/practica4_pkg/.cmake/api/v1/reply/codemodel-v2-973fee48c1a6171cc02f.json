@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-4ce1c36a08238430904c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "practica4_pkg__py",
+					"jsonFile" : "directory-practica4_pkg__py-3a879501144a2dce237c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/leo/RM_prac/build/practica4_pkg/practica4_pkg__py",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "practica4_pkg",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_practica4_pkg_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_practica4_pkg_egg-27fce059892e501bae9a.json",
+					"name" : "ament_cmake_python_build_practica4_pkg_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_practica4_pkg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_practica4_pkg-f4f95b27c6c8ef69c772.json",
+					"name" : "ament_cmake_python_copy_practica4_pkg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_pointcloud_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_pointcloud_node-864efff81f6212e33791.json",
+					"name" : "map_pointcloud_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "practica4_pkg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-practica4_pkg-d9cf39acddd3c3e251e7.json",
+					"name" : "practica4_pkg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "practica4_pkg__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-practica4_pkg__cpp-9cb4a2318590832ca4be.json",
+					"name" : "practica4_pkg__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "practica4_pkg__py::@a0cd9239a65518c3d290",
+					"jsonFile" : "target-practica4_pkg__py-401a55aca565b8f9017c.json",
+					"name" : "practica4_pkg__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "practica4_pkg__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-practica4_pkg__rosidl_generator_c-4ed9629dabb3257d0780.json",
+					"name" : "practica4_pkg__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "practica4_pkg__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-practica4_pkg__rosidl_generator_py-baa473b10c1176c83b26.json",
+					"name" : "practica4_pkg__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "practica4_pkg__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-practica4_pkg__rosidl_typesupport_c-274c7b2102bc1e2e91ed.json",
+					"name" : "practica4_pkg__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "practica4_pkg__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-practica4_pkg__rosidl_typesupport_c__pyext-3d0889582ad4d73d6f2f.json",
+					"name" : "practica4_pkg__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "practica4_pkg__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-practica4_pkg__rosidl_typesupport_cpp-826a66ab47e0450369ef.json",
+					"name" : "practica4_pkg__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "practica4_pkg__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-practica4_pkg__rosidl_typesupport_fastrtps_c-4bd42d979a034dc439e3.json",
+					"name" : "practica4_pkg__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "practica4_pkg__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-practica4_pkg__rosidl_typesupport_fastrtps_c__pyext-19765c2d3cb424a16ec1.json",
+					"name" : "practica4_pkg__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "practica4_pkg__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-practica4_pkg__rosidl_typesupport_fastrtps_cpp-4802642f955199064122.json",
+					"name" : "practica4_pkg__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "practica4_pkg__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-practica4_pkg__rosidl_typesupport_introspection_c-9a405d84b5406cb6f521.json",
+					"name" : "practica4_pkg__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "practica4_pkg__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-practica4_pkg__rosidl_typesupport_introspection_c__pyext-2eb47758f63638baa269.json",
+					"name" : "practica4_pkg__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "practica4_pkg__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-practica4_pkg__rosidl_typesupport_introspection_cpp-696b9b95325e978270f0.json",
+					"name" : "practica4_pkg__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "practica4_pkg_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-practica4_pkg_uninstall-1793e66083e8f1f14650.json",
+					"name" : "practica4_pkg_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-4692abd494dd206c3dcd.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/leo/RM_prac/build/practica4_pkg",
+		"source" : "/home/leo/RM_prac/src/practica4_pkg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

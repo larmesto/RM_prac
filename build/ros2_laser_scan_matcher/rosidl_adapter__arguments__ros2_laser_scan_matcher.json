@@ -1,0 +1,6 @@
+{
+  "package_name": "ros2_laser_scan_matcher",
+  "non_idl_tuples": [
+    "/home/leo/RM_prac/src/ros2_laser_scan_matcher:srv/ResetOdom.srv"
+  ]
+}

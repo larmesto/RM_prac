@@ -1,0 +1,16 @@
+/home/leo/RM_prac/install/practica3_pkg/lib/practica3_pkg/transform_listener
+/home/leo/RM_prac/install/practica3_pkg/share/ament_index/resource_index/package_run_dependencies/practica3_pkg
+/home/leo/RM_prac/install/practica3_pkg/share/ament_index/resource_index/parent_prefix_path/practica3_pkg
+/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/environment/ament_prefix_path.sh
+/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/environment/ament_prefix_path.dsv
+/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/environment/path.sh
+/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/environment/path.dsv
+/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/local_setup.bash
+/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/local_setup.sh
+/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/local_setup.zsh
+/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/local_setup.dsv
+/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/package.dsv
+/home/leo/RM_prac/install/practica3_pkg/share/ament_index/resource_index/packages/practica3_pkg
+/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/cmake/practica3_pkgConfig.cmake
+/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/cmake/practica3_pkgConfig-version.cmake
+/home/leo/RM_prac/install/practica3_pkg/share/practica3_pkg/package.xml

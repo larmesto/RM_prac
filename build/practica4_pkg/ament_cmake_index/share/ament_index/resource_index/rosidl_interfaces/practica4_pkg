@@ -1,0 +1,4 @@
+srv/ResetMap.idl
+srv/ResetMap.srv
+srv/ResetMap_Request.msg
+srv/ResetMap_Response.msg

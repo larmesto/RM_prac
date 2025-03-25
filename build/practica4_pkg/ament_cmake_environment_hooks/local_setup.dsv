@@ -1,0 +1,4 @@
+source;share/practica4_pkg/environment/ament_prefix_path.sh
+source;share/practica4_pkg/environment/library_path.sh
+source;share/practica4_pkg/environment/path.sh
+source;share/practica4_pkg/environment/pythonpath.sh

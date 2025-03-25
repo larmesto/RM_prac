@@ -1,0 +1,16 @@
+/home/leo/RM_prac/install/practica2_pkg/lib/practica2_pkg/ejercicio_practica2
+/home/leo/RM_prac/install/practica2_pkg/share/ament_index/resource_index/package_run_dependencies/practica2_pkg
+/home/leo/RM_prac/install/practica2_pkg/share/ament_index/resource_index/parent_prefix_path/practica2_pkg
+/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/environment/ament_prefix_path.sh
+/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/environment/ament_prefix_path.dsv
+/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/environment/path.sh
+/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/environment/path.dsv
+/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/local_setup.bash
+/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/local_setup.sh
+/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/local_setup.zsh
+/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/local_setup.dsv
+/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/package.dsv
+/home/leo/RM_prac/install/practica2_pkg/share/ament_index/resource_index/packages/practica2_pkg
+/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/cmake/practica2_pkgConfig.cmake
+/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/cmake/practica2_pkgConfig-version.cmake
+/home/leo/RM_prac/install/practica2_pkg/share/practica2_pkg/package.xml
