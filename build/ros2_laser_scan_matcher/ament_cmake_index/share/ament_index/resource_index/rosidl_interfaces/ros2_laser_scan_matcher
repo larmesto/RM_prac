@@ -1,4 +1,0 @@
-srv/ResetOdom.idl
-srv/ResetOdom.srv
-srv/ResetOdom_Request.msg
-srv/ResetOdom_Response.msg

@@ -1,8 +1,0 @@
-source;share/practica4_pkg/hook/ld_library_path_lib.ps1
-source;share/practica4_pkg/hook/ld_library_path_lib.dsv
-source;share/practica4_pkg/hook/ld_library_path_lib.sh
-source;share/practica4_pkg/local_setup.bash
-source;share/practica4_pkg/local_setup.dsv
-source;share/practica4_pkg/local_setup.ps1
-source;share/practica4_pkg/local_setup.sh
-source;share/practica4_pkg/local_setup.zsh

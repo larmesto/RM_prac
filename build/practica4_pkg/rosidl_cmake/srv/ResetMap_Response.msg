@@ -1,3 +1,0 @@
-
-#Response
-string response

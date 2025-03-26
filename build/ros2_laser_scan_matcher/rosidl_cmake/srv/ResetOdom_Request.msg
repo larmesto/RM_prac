@@ -1,2 +1,0 @@
-#Request
-bool reset
