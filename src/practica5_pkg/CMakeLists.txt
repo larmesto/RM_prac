@@ -65,7 +65,7 @@ controller_odom
 infinite_reference_node
 DESTINATION lib/${PROJECT_NAME})
 
-install(DIRECTORY msg
+install(DIRECTORY msg launch
 DESTINATION share/${PROJECT_NAME})
 
 ament_package()

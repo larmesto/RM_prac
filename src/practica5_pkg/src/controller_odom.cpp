@@ -49,29 +49,45 @@ private:
 
     void odom_callback(const nav_msgs::msg::Odometry::SharedPtr odom_msg){
 
-        std::string parent_frame = odom_msg->header.frame_id;
-        std::string child_frame = odom_msg->child_frame_id;
+        if (!initialized_odom){
+    
+                x_rob_0 = odom_msg->pose.pose.position.x;
+                y_rob_0 = odom_msg->pose.pose.position.y;
+    
+                tf2::Quaternion q( 
+                    odom_msg->pose.pose.orientation.x,
+                    odom_msg->pose.pose.orientation.y,
+                    odom_msg->pose.pose.orientation.z,
+                    odom_msg->pose.pose.orientation.w);
+    
+                double roll, pitch, yaw;
+                tf2::Matrix3x3 m(q);
+                m.getRPY(roll,pitch,yaw);
+    
+                theta_rob_0 = yaw;
+                initialized_odom = true;
+            }
 
-        x_rob = odom_msg->pose.pose.position.x;
-        y_rob = odom_msg->pose.pose.position.y;
+            x_rob = odom_msg->pose.pose.position.x;
+            y_rob = odom_msg->pose.pose.position.y;
+    
+            tf2::Quaternion q( 
+                odom_msg->pose.pose.orientation.x,
+                odom_msg->pose.pose.orientation.y,
+                odom_msg->pose.pose.orientation.z,
+                odom_msg->pose.pose.orientation.w);
 
-        tf2::Quaternion q( 
-            odom_msg->pose.pose.orientation.x,
-            odom_msg->pose.pose.orientation.y,
-            odom_msg->pose.pose.orientation.z,
-            odom_msg->pose.pose.orientation.w);
+            double roll, pitch, yaw;
+            tf2::Matrix3x3 m(q);
+            m.getRPY(roll,pitch,yaw);
 
-        double roll, pitch, yaw;
-        tf2::Matrix3x3 m(q);
-        m.getRPY(roll,pitch,yaw);
-
-        theta_rob = yaw;
+            theta_rob = yaw;
     }
 
     void reference_callback(const practica5_pkg::msg::Reference::SharedPtr ref_msg){
 
-        x_ref = ref_msg->pose.position.x;
-        y_ref = ref_msg->pose.position.y; 
+        double x_ref_ = ref_msg->pose.position.x;
+        double y_ref_ = ref_msg->pose.position.y; 
         tf2::Quaternion q(
             ref_msg->pose.orientation.x,
             ref_msg->pose.orientation.y,
@@ -80,10 +96,16 @@ private:
         tf2::Matrix3x3 m(q);
         double roll,pitch,yaw;
         m.getRPY(roll,pitch,yaw);
-        theta_ref = yaw;
+        double theta_ref_ = yaw;
 
-        xp_ref = ref_msg->velocity.linear.x;
-        yp_ref = ref_msg->velocity.linear.y;
+        x_ref=cos(theta_rob_0)*x_ref_-sin(theta_rob_0)*y_ref_+x_rob_0;
+		y_ref=sin(theta_rob_0)*x_ref+cos(theta_rob_0)*y_ref+y_rob_0;
+
+        theta_ref=theta_rob_0+theta_ref_;
+
+        xp_ref=cos(theta_rob_0)*ref_msg->velocity.linear.x-sin(theta_rob_0)*ref_msg->velocity.linear.y;
+		yp_ref=sin(theta_rob_0)*ref_msg->velocity.linear.x+cos(theta_rob_0)*ref_msg->velocity.linear.y;
+
     }
 
     void controller(){
@@ -98,8 +120,11 @@ rclcpp::Subscription<practica5_pkg::msg::Reference>::SharedPtr ref_subs;
 rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub;
 
 double x_rob,y_rob,theta_rob;
+double x_rob_0,y_rob_0,theta_rob_0;
 double x_ref,y_ref,theta_ref,xp_ref,yp_ref;
 double b = (0.16/2);
+bool initialized_odom = false;
+
 };
 
 int main(int argc, char *argv[]){

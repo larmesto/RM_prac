@@ -8,8 +8,6 @@
 
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp> //Uso de tf2 para pasar de RPY a Quaternios
 
-#include "tf2_ros/transform_broadcaster.h" //Uso del broadcaster
-
 #include "practica5_pkg/msg/reference.hpp"
 
 #include "visualization_msgs/msg/marker.hpp"
@@ -18,7 +16,6 @@
 class ReferenceNode : public rclcpp::Node
 {
     public:
-    std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster;
 
     ReferenceNode() : Node("reference_node")
     {
