@@ -107,6 +107,7 @@ private:
 
         xp_ref=cos(theta_rob_0)*ref_msg->velocity.linear.x-sin(theta_rob_0)*ref_msg->velocity.linear.y;
 		yp_ref=sin(theta_rob_0)*ref_msg->velocity.linear.x+cos(theta_rob_0)*ref_msg->velocity.linear.y;
+		thetap_ref=ref_msg->velocity.angular.z;
 		reference_marker(x_ref,y_ref,theta_ref);
     }
 	
@@ -156,7 +157,7 @@ rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub;
 
 double x_rob,y_rob,theta_rob;
 double x_rob_0,y_rob_0,theta_rob_0;
-double x_ref,y_ref,theta_ref,xp_ref,yp_ref;
+double x_ref,y_ref,theta_ref,xp_ref,yp_ref,thetap_ref;
 double b = (0.16/2);
 bool initialized_odom = false;
 
