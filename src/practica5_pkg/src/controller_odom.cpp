@@ -24,6 +24,7 @@
 
 //msg reference
 #include "practica5_pkg/msg/reference.hpp"
+#include "visualization_msgs/msg/marker.hpp"
 
 
 class ControllerOdom : public rclcpp::Node
@@ -41,6 +42,7 @@ public: ControllerOdom() : Node("controller")
         "reference",10,std::bind(&ControllerOdom::reference_callback, this, std::placeholders::_1));
 
     cmd_vel_pub = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel",10);
+	marker_pub = this->create_publisher<visualization_msgs::msg::Marker>("reference_marker",10);
 
 }
 
@@ -105,6 +107,38 @@ private:
 
         xp_ref=cos(theta_rob_0)*ref_msg->velocity.linear.x-sin(theta_rob_0)*ref_msg->velocity.linear.y;
 		yp_ref=sin(theta_rob_0)*ref_msg->velocity.linear.x+cos(theta_rob_0)*ref_msg->velocity.linear.y;
+		reference_marker(x_ref,y_ref,theta_ref);
+    }
+	
+	void reference_marker(double x, double y, double theta)
+    {
+        geometry_msgs::msg::Point start_tf, end_tf;
+        start_tf.x = x;
+        start_tf.y = y;
+        start_tf.z = 0.0;
+        
+        end_tf.x = x+0.25*cos(theta);
+        end_tf.y = y+0.25*sin(theta);
+        end_tf.z = 0;       
+
+        visualization_msgs::msg::Marker marker_msg;
+        marker_msg.header.stamp = this->get_clock()->now();  
+        marker_msg.header.frame_id = "odom";
+        marker_msg.points.push_back(start_tf);
+        marker_msg.points.push_back(end_tf); 
+        marker_msg.ns = "marker_arrow";
+        marker_msg.id = 0;
+        marker_msg.type = visualization_msgs::msg::Marker::ARROW;
+        marker_msg.action = visualization_msgs::msg::Marker::ADD;
+        marker_msg.scale.x = 0.05;
+        marker_msg.scale.y = 0.1;
+        marker_msg.scale.z = 0.1;
+        marker_msg.color.a = 1.0;
+        marker_msg.color.r = 0.0;
+        marker_msg.color.g = 1.0;
+        marker_msg.color.b = 0.0;        
+
+        marker_pub->publish(marker_msg);
 
     }
 
@@ -118,6 +152,7 @@ rclcpp::TimerBase::SharedPtr timer_controller;
 rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_subscriber;
 rclcpp::Subscription<practica5_pkg::msg::Reference>::SharedPtr ref_subs;
 rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub;
+rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub;
 
 double x_rob,y_rob,theta_rob;
 double x_rob_0,y_rob_0,theta_rob_0;

@@ -44,6 +44,7 @@ ament_target_dependencies(
   tf2_ros
   tf2
   tf2_geometry_msgs
+  visualization_msgs
 )
 
 ament_target_dependencies(
@@ -65,7 +66,7 @@ controller_odom
 infinite_reference_node
 DESTINATION lib/${PROJECT_NAME})
 
-install(DIRECTORY msg launch
+install(DIRECTORY msg launch rviz
 DESTINATION share/${PROJECT_NAME})
 
 ament_package()

@@ -29,7 +29,7 @@ class ReferenceNode : public rclcpp::Node
         // Publicador
         ref_pub = this->create_publisher<practica5_pkg::msg::Reference>("reference", 10);
         
-        marker_pub = this->create_publisher<visualization_msgs::msg::Marker>("reference_marker",10);
+        //marker_pub = this->create_publisher<visualization_msgs::msg::Marker>("reference_marker",10);
 
     }
 
@@ -57,7 +57,7 @@ class ReferenceNode : public rclcpp::Node
         //Publicamos la referencia
         publish_reference(x,y,theta,xp,yp,thetap);
         //Publicamos la transformacion
-        reference_marker(x,y,theta);       
+        //reference_marker(x,y,theta);       
     }
 
     void publish_reference(double x, double y, double theta, double xp, double yp, double thetap)
@@ -88,7 +88,7 @@ class ReferenceNode : public rclcpp::Node
         ref_pub->publish(ref_msg);
     }
 
-    void reference_marker(double x, double y, double theta)
+    /*void reference_marker(double x, double y, double theta)
     {
         geometry_msgs::msg::Point start_tf, end_tf;
         start_tf.x = x;
@@ -118,12 +118,12 @@ class ReferenceNode : public rclcpp::Node
 
         marker_pub->publish(marker_msg);
 
-    }
+    }*/
     
     rclcpp::Time init_time;
     rclcpp::TimerBase::SharedPtr timer;
     rclcpp::Publisher<practica5_pkg::msg::Reference>::SharedPtr ref_pub;
-    rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub;
+    //rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub;
 
 
 };
