@@ -31,6 +31,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
     std_msgs
  )
  
+rosidl_get_typesupport_target(cpp_typesupport_target ${PROJECT_NAME} "rosidl_typesupport_cpp")
+
 include_directories(
   include
   ${CMAKE_BINARY_DIR}/rosidl_generator_cpp
@@ -40,6 +42,22 @@ add_library(
   waypoint_tools_lib
   "src/waypoint_tools/WayPointPathTools.cpp"
 )
+
+target_include_directories(waypoint_tools_lib PUBLIC
+  ${CMAKE_CURRENT_SOURCE_DIR}/include
+  ${CMAKE_BINARY_DIR}/rosidl_generator_cpp
+)
+
+ament_target_dependencies(
+  waypoint_tools_lib
+  rclcpp
+  std_msgs
+  geometry_msgs
+  visualization_msgs
+  rosidl_default_runtime
+)
+
+add_dependencies(waypoint_tools_lib ${cpp_typesupport_target})
 
 add_executable(pure_pursuit_odom
 src/pure_pursuit_odom.cpp)
@@ -55,14 +73,6 @@ ament_target_dependencies(
   visualization_msgs
 )
 
-ament_target_dependencies(
-  waypoint_tools_lib
-  rclcpp
-  std_msgs
-  geometry_msgs
-  visualization_msgs
-  rosidl_default_runtime
-)
 
 add_executable(waypoints_node
 src/waypoints_node.cpp)
@@ -75,12 +85,9 @@ ament_target_dependencies(
   visualization_msgs
 )
 
-target_include_directories(waypoint_tools_lib PUBLIC
-  ${CMAKE_CURRENT_SOURCE_DIR}/include
-  ${CMAKE_BINARY_DIR}/rosidl_generator_cpp
-)
+add_dependencies(pure_pursuit_odom ${cpp_typesupport_target})
+add_dependencies(waypoints_node ${cpp_typesupport_target})
 
-rosidl_get_typesupport_target(cpp_typesupport_target ${PROJECT_NAME} "rosidl_typesupport_cpp")
 target_link_libraries(pure_pursuit_odom waypoint_tools_lib "${cpp_typesupport_target}")
 target_link_libraries(waypoints_node yaml-cpp "${cpp_typesupport_target}")
 

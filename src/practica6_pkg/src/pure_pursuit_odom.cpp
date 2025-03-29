@@ -9,6 +9,7 @@
 #include "practica6_pkg/WayPointPathTools.hpp"
 
 #include <rclcpp/rclcpp.hpp>
+    #include <rclcpp/qos.hpp>
 
 #include <nav_msgs/msg/odometry.hpp>
 
@@ -24,7 +25,7 @@
 
 
 
-class PurePursuitOdom : public rclcpp::Node
+class PurePursuitOdom : public rclcpp::Node	
 {
 
 public: PurePursuitOdom() : Node("pure_pursuit")
@@ -72,19 +73,19 @@ private:
 			initialized_odom = true;
 		}
 		x_rob = odom_msg->pose.pose.position.x;
-        	y_rob = odom_msg->pose.pose.position.y;
+        y_rob = odom_msg->pose.pose.position.y;
 
-        	tf2::Quaternion q( 
-        	    odom_msg->pose.pose.orientation.x,
-        	    odom_msg->pose.pose.orientation.y,
-        	    odom_msg->pose.pose.orientation.z,
-        	    odom_msg->pose.pose.orientation.w);
+        tf2::Quaternion q( 
+            odom_msg->pose.pose.orientation.x,
+            odom_msg->pose.pose.orientation.y,
+            odom_msg->pose.pose.orientation.z,
+            odom_msg->pose.pose.orientation.w);
 
-        	double roll, pitch, yaw;
-        	tf2::Matrix3x3 m(q);
-        	m.getRPY(roll,pitch,yaw);
-
-        	theta_rob = yaw;
+        double roll, pitch, yaw;
+        tf2::Matrix3x3 m(q);
+        m.getRPY(roll,pitch,yaw);
+		
+        theta_rob = yaw;
     }
 
     void waypoint_callback(const practica6_pkg::msg::WayPointPath::SharedPtr waypoint_path_msg){
@@ -133,7 +134,10 @@ private:
 
     void controller(){
 
-		WayPointPathTools waypoint(path,L);
+		geometry_msgs::msg::Point goalPoint;
+		double dClosest;
+
+		//TODO: Instantiate an object belong to WayPointPathTools class
 
 		if (isPathReceived)
 		{
@@ -141,6 +145,7 @@ private:
 			//		based on latest pose of the robot and waypoints	and publish a Twist message 
 			// 		on /cmd_vel with the linear and angular velocites
 		}
+
     }
 
 rclcpp::TimerBase::SharedPtr timer_controller;
