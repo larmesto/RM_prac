@@ -136,8 +136,10 @@ private:
 
 		geometry_msgs::msg::Point goalPoint;
 		double dClosest;
-
-		//TODO: Instantiate an object belong to WayPointPathTools class
+        
+        (void)dClosest; //To avoid warning "unused variable" during compilation proccess
+		
+        //TODO: Instantiate an object belong to WayPointPathTools class
 
 		if (isPathReceived)
 		{

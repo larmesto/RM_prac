@@ -4,23 +4,20 @@
 #include <string>
 #include <math.h>
 
+#include <csignal> //interruptions
+
+
 #include <rclcpp/rclcpp.hpp>
 
 #include <nav_msgs/msg/odometry.hpp>
 
 #include "std_msgs/msg/header.hpp"
 
-//#include "std_msgs/msg/float64_multi_array.hpp"
 
 #include "builtin_interfaces/msg/time.hpp"
 
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
 
-
-//lookup_transform
-#include "tf2_ros/transform_listener.h"
-#include "tf2_ros/buffer.h"
-#include "tf2/exceptions.h"
 
 //msg reference
 #include "practica5_pkg/msg/reference.hpp"
@@ -43,7 +40,18 @@ public: ControllerOdom() : Node("controller")
 
     cmd_vel_pub = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel",10);
 	marker_pub = this->create_publisher<visualization_msgs::msg::Marker>("reference_marker",10);
+}
 
+void stop_to_cmd_vel(){
+
+    geometry_msgs::msg::Twist stop_msg;
+    stop_msg.linear.x = 0.0;
+    stop_msg.angular.z = 0.0;
+  
+    cmd_vel_pub->publish(stop_msg);
+    
+    RCLCPP_INFO(this->get_logger(),"Stop command sent");
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 }
 
 private:
@@ -163,11 +171,26 @@ bool initialized_odom = false;
 
 };
 
+std::shared_ptr<ControllerOdom> node = nullptr;
+
+void signal_handler(int signum) {
+
+    if (rclcpp::ok()) {
+        node->stop_to_cmd_vel();
+    }
+    rclcpp::shutdown();
+    exit(signum);
+}
+
 int main(int argc, char *argv[]){
 
     rclcpp::init(argc,argv);
-    rclcpp::spin(std::make_shared<ControllerOdom>());
-    rclcpp::shutdown();
-    return 0;
 
+    node = std::make_shared<ControllerOdom>();
+
+    std::signal(SIGINT, signal_handler);
+
+    rclcpp::spin(node);
+
+    return 0;
 }
