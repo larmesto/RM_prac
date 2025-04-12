@@ -96,7 +96,7 @@ pure_pursuit_odom
 waypoints_node
 DESTINATION lib/${PROJECT_NAME})
 
-install(DIRECTORY msg config
+install(DIRECTORY msg config launch
 DESTINATION share/${PROJECT_NAME})
 
 install(
