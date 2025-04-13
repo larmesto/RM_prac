@@ -6,6 +6,8 @@
 #include <vector>
 #include <algorithm>
 
+#include <csignal> //interruptions
+
 #include "practica6_pkg/WayPointPathTools.hpp"
 
 #include <rclcpp/rclcpp.hpp>
@@ -49,6 +51,18 @@ public: PurePursuitOdom() : Node("pure_pursuit")
 
 	marker_pub_ = this->create_publisher<visualization_msgs::msg::Marker>("marker_path_controller",qos_profile);
 
+}
+
+void stop_to_cmd_vel(){
+
+    geometry_msgs::msg::Twist stop_msg;
+    stop_msg.linear.x = 0.0;
+    stop_msg.angular.z = 0.0;
+  
+    cmd_vel_pub->publish(stop_msg);
+
+    RCLCPP_INFO(this->get_logger(),"Stop command sent");
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 }
 
 private:
@@ -166,11 +180,29 @@ double v_ref = 0.1;
 bool initialized_odom = false;
 };
 
+std::shared_ptr<PurePursuitOdom> node = nullptr;
+
+void signal_handler(int signum) {
+
+    if (rclcpp::ok()) {
+        node->stop_to_cmd_vel();
+    }
+    rclcpp::shutdown();
+    exit(signum);
+}
+
+
 int main(int argc, char *argv[]){
 
     rclcpp::init(argc,argv);
-    rclcpp::spin(std::make_shared<PurePursuitOdom>());
-    rclcpp::shutdown();
-    return 0;
 
+    node = std::make_shared<PurePursuitOdom>();
+
+    std::signal(SIGINT, signal_handler);
+
+    rclcpp::spin(node);
+
+    rclcpp::shutdown();
+
+    return 0;
 }
