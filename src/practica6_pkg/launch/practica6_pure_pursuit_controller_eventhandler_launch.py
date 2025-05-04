@@ -14,6 +14,7 @@ def launch_setup(context, *args, **kwargs):
         executable='pure_pursuit_odom',
         name='pure_pursuit_odom',
         output='screen',
+        remappings=[('/odom','/amcl_odom')]
     )
 
     waypoints_node = Node(
@@ -22,6 +23,7 @@ def launch_setup(context, *args, **kwargs):
         name='waypoints_node',
         output='screen',
         parameters=[{'path_file': path_file}],
+        
     )
 
     return [
