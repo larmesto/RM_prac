@@ -5,16 +5,12 @@ from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import (DeclareLaunchArgument, GroupAction,
                             IncludeLaunchDescription, ExecuteProcess)
-from launch.conditions import IfCondition
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.substitutions import LaunchConfiguration, PythonExpression
+from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
-from launch_ros.descriptions import ParameterFile
 
 def generate_launch_description():
     # Get the launch directory
-    coppeliasim_pkg = get_package_share_directory('turtlebot3_coppeliasim')
-    coppeliasim_dir = os.path.join(coppeliasim_pkg, 'launch')
 
     localization_pkg = get_package_share_directory('nav2_bringup')
     localiation_dir = os.path.join(localization_pkg, 'launch')
@@ -35,10 +31,6 @@ def generate_launch_description():
         ),
 
         declare_map_cmd,
-
-        #IncludeLaunchDescription(
-        #    PythonLaunchDescriptionSource(os.path.join(coppeliasim_dir, 'turtlebot3_coppeliasim.launch.py')),
-        #    ),
 
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource(os.path.join(localiation_dir,'localization_launch.py')),
