@@ -34,11 +34,11 @@ public:
   void         projectEndpoints();
 
 private:
-  std::vector<unsigned int> indices_;
   // Data structures
   CachedData c_data_;
   RangeData r_data_;
   Params params_;
+  std::vector<unsigned int> indices_;
   PointParams p_params_;
   // Point variances used for least squares
   std::vector<double> point_scalar_vars_;

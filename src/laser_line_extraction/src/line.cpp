@@ -18,12 +18,12 @@ Line::Line(const CachedData &c_data, const RangeData &r_data, const Params &para
 Line::Line(double angle, double radius, const boost::array<double, 4> &covariance,
        const boost::array<double, 2> &start, const boost::array<double, 2> &end,
        const std::vector<unsigned int> &indices):
+  indices_(indices),
   angle_(angle),
   radius_(radius),
-  covariance_(covariance),
   start_(start),
   end_(end),
-  indices_(indices)
+  covariance_(covariance)
 {
 }
 
@@ -170,8 +170,8 @@ double Line::angleIncrement()
   const std::vector<double> &b = p_params_.b;
   const std::vector<double> &bp = p_params_.bp;
   const std::vector<double> &bpp = p_params_.bpp;
-  const std::vector<double> &c = p_params_.c;
-  const std::vector<double> &s = p_params_.s;
+  //const std::vector<double> &c = p_params_.c;
+  //const std::vector<double> &s = p_params_.s;
 
   double numerator = 0; 
   double denominator = 0;
@@ -194,8 +194,8 @@ void Line::calcCovariance()
   const std::vector<double> &b = p_params_.b;
   const std::vector<double> &bp = p_params_.bp;
   const std::vector<double> &bpp = p_params_.bpp;
-  const std::vector<double> &c = p_params_.c;
-  const std::vector<double> &s = p_params_.s;
+  //const std::vector<double> &c = p_params_.c;
+  //const std::vector<double> &s = p_params_.s;
 
   double G = 0;
   double A = 0;
