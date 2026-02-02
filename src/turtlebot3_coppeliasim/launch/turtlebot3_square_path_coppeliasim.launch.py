@@ -78,8 +78,8 @@ def generate_launch_description():
             shell=True
         ),
 
-        #IncludeLaunchDescription(
-        #    PythonLaunchDescriptionSource([rviz_dir, '/rviz2.launch.py'])),
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource([rviz_dir, '/rviz2.launch.py'])),
 
         Node(
             package='robot_state_publisher',
