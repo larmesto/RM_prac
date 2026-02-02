@@ -5,7 +5,7 @@
 
 #include <ament_index_cpp/get_package_share_directory.hpp>
 #include <yaml-cpp/yaml.h>
-
+using namespace std::chrono_literals;
 
 typedef struct Point
 {
@@ -20,7 +20,7 @@ class WayPointsNode : public rclcpp::Node{
 
         rclcpp::QoS qos_profile(10);
         qos_profile.reliability(RMW_QOS_POLICY_RELIABILITY_RELIABLE); 
-        qos_profile.durability(RMW_QOS_POLICY_DURABILITY_TRANSIENT_LOCAL);
+        qos_profile.durability(RMW_QOS_POLICY_DURABILITY_VOLATILE);
 
         waypoint_pub_ = this->create_publisher<practica6_pkg::msg::WayPointPath>("waypoints",qos_profile);
         //marker_pub_ = this->create_publisher<visualization_msgs::msg::Marker>("marker_path",qos_profile);
@@ -28,10 +28,12 @@ class WayPointsNode : public rclcpp::Node{
         path_yaml = this->declare_parameter<std::string>("path_file", ament_index_cpp::get_package_share_directory("practica6_pkg") + "/config/path.yaml");
 
         get_path();
-        create_waypoints();
+
+        timer_waypoint_ = this->create_wall_timer(1s,std::bind(&WayPointsNode::timer_waypoints_callback, this));
+        //create_waypoints();
     }
 
-    void create_waypoints(){
+    void timer_waypoints_callback(){
 
         practica6_pkg::msg::WayPointPath path_msg;
         geometry_msgs::msg::Point p;
