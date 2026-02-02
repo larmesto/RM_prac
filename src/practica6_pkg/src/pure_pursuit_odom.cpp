@@ -34,7 +34,7 @@ public: PurePursuitOdom() : Node("pure_pursuit")
 {
 	rclcpp::QoS qos_profile(10);
         qos_profile.reliability(RMW_QOS_POLICY_RELIABILITY_RELIABLE); 
-        qos_profile.durability(RMW_QOS_POLICY_DURABILITY_TRANSIENT_LOCAL);
+        qos_profile.durability(RMW_QOS_POLICY_DURABILITY_VOLATILE);
 
     std::chrono::milliseconds period_control = std::chrono::milliseconds(50);
     timer_controller = this->create_wall_timer(period_control,std::bind(&PurePursuitOdom::controller,this));
@@ -206,3 +206,4 @@ int main(int argc, char *argv[]){
 
     return 0;
 }
+
