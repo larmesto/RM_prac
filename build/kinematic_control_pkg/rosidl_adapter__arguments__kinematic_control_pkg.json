@@ -1,6 +1,0 @@
-{
-  "package_name": "kinematic_control_pkg",
-  "non_idl_tuples": [
-    "/home/rinese/RM/RM_prac/src/kinematic_control_pkg:msg/Reference.msg"
-  ]
-}
