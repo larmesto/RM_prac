@@ -1,0 +1,157 @@
+[0.000000] (-) TimerEvent: {}
+[0.000320] (-) JobUnselected: {'identifier': 'intro_ros_pkg'}
+[0.000339] (-) JobUnselected: {'identifier': 'kinematic_controller_pkg'}
+[0.000350] (-) JobUnselected: {'identifier': 'navigation_pkg'}
+[0.000360] (-) JobUnselected: {'identifier': 'pure_pursuit_pkg'}
+[0.000370] (-) JobUnselected: {'identifier': 'slam_pkg'}
+[0.000379] (-) JobUnselected: {'identifier': 'transformations_pkg'}
+[0.000388] (-) JobUnselected: {'identifier': 'turtlebot3_coppeliasim'}
+[0.000399] (bringup_turtlebot3_pkg) JobQueued: {'identifier': 'bringup_turtlebot3_pkg', 'dependencies': OrderedDict()}
+[0.000411] (bringup_turtlebot3_pkg) JobStarted: {'identifier': 'bringup_turtlebot3_pkg'}
+[0.005237] (bringup_turtlebot3_pkg) JobProgress: {'identifier': 'bringup_turtlebot3_pkg', 'progress': 'cmake'}
+[0.005555] (bringup_turtlebot3_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/rinese/RM/RM_prac/src/bringup_turtlebot3_pkg', '-DCMAKE_INSTALL_PREFIX=/home/rinese/RM/RM_prac/install/bringup_turtlebot3_pkg'], 'cwd': '/home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rinese'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rinese'), ('OLDPWD', '/home/rinese/RM/RM_prac/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1562'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rinese'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rinese'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/rinese/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-machine:@/tmp/.ICE-unix/1534,unix/ubuntu-machine:/tmp/.ICE-unix/1534'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6fdd0cf9_07a9_41c8_85bd_a20eab474674'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DR98J3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.129'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.071991] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099914] (-) TimerEvent: {}
+[0.112000] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.116668] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.163181] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.168240] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.168361] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.168488] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.170413] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.200026] (-) TimerEvent: {}
+[0.225238] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.233538] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.233724] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.234231] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.236347] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300110] (-) TimerEvent: {}
+[0.337332] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.400240] (-) TimerEvent: {}
+[0.400622] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.432081] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.435542] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.442044] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.449936] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.460491] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.487238] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.488679] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.500405] (-) TimerEvent: {}
+[0.542410] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.560458] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.588121] (bringup_turtlebot3_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.595080] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.600501] (-) TimerEvent: {}
+[0.647638] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.647932] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.698355] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.699118] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.700573] (-) TimerEvent: {}
+[0.733431] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.742882] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.749385] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.758675] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.759570] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[0.759639] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.800755] (-) TimerEvent: {}
+[0.827113] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.842811] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.894203] (bringup_turtlebot3_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.894334] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.894377] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.894644] (bringup_turtlebot3_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.895118] (bringup_turtlebot3_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.895184] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.895282] (bringup_turtlebot3_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.895948] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.900841] (-) TimerEvent: {}
+[0.902812] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[0.906190] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg\n'}
+[0.914046] (bringup_turtlebot3_pkg) CommandEnded: {'returncode': 0}
+[0.914456] (bringup_turtlebot3_pkg) JobProgress: {'identifier': 'bringup_turtlebot3_pkg', 'progress': 'build'}
+[0.914909] (bringup_turtlebot3_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg', '--', '-j8', '-l8'], 'cwd': '/home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rinese'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rinese'), ('OLDPWD', '/home/rinese/RM/RM_prac/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1562'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rinese'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rinese'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/rinese/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-machine:@/tmp/.ICE-unix/1534,unix/ubuntu-machine:/tmp/.ICE-unix/1534'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6fdd0cf9_07a9_41c8_85bd_a20eab474674'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DR98J3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.129'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.948280] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/cmd_vel_publisher.dir/src/cmd_vel_publisher.cpp.o\x1b[0m\n'}
+[1.001021] (-) TimerEvent: {}
+[1.101315] (-) TimerEvent: {}
+[1.201631] (-) TimerEvent: {}
+[1.301914] (-) TimerEvent: {}
+[1.402220] (-) TimerEvent: {}
+[1.502462] (-) TimerEvent: {}
+[1.602698] (-) TimerEvent: {}
+[1.703016] (-) TimerEvent: {}
+[1.803334] (-) TimerEvent: {}
+[1.903673] (-) TimerEvent: {}
+[2.003996] (-) TimerEvent: {}
+[2.104492] (-) TimerEvent: {}
+[2.204903] (-) TimerEvent: {}
+[2.305467] (-) TimerEvent: {}
+[2.405811] (-) TimerEvent: {}
+[2.506068] (-) TimerEvent: {}
+[2.606386] (-) TimerEvent: {}
+[2.706677] (-) TimerEvent: {}
+[2.806923] (-) TimerEvent: {}
+[2.907158] (-) TimerEvent: {}
+[3.007393] (-) TimerEvent: {}
+[3.107634] (-) TimerEvent: {}
+[3.207847] (-) TimerEvent: {}
+[3.308091] (-) TimerEvent: {}
+[3.408329] (-) TimerEvent: {}
+[3.508584] (-) TimerEvent: {}
+[3.608812] (-) TimerEvent: {}
+[3.709075] (-) TimerEvent: {}
+[3.809323] (-) TimerEvent: {}
+[3.909569] (-) TimerEvent: {}
+[4.009789] (-) TimerEvent: {}
+[4.110028] (-) TimerEvent: {}
+[4.210348] (-) TimerEvent: {}
+[4.310611] (-) TimerEvent: {}
+[4.410886] (-) TimerEvent: {}
+[4.511158] (-) TimerEvent: {}
+[4.611384] (-) TimerEvent: {}
+[4.711620] (-) TimerEvent: {}
+[4.811827] (-) TimerEvent: {}
+[4.912071] (-) TimerEvent: {}
+[5.012298] (-) TimerEvent: {}
+[5.112533] (-) TimerEvent: {}
+[5.212840] (-) TimerEvent: {}
+[5.313141] (-) TimerEvent: {}
+[5.413437] (-) TimerEvent: {}
+[5.513752] (-) TimerEvent: {}
+[5.614052] (-) TimerEvent: {}
+[5.714349] (-) TimerEvent: {}
+[5.814669] (-) TimerEvent: {}
+[5.914966] (-) TimerEvent: {}
+[6.015276] (-) TimerEvent: {}
+[6.115566] (-) TimerEvent: {}
+[6.215878] (-) TimerEvent: {}
+[6.316214] (-) TimerEvent: {}
+[6.416500] (-) TimerEvent: {}
+[6.436433] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable cmd_vel_publisher\x1b[0m\n'}
+[6.516685] (-) TimerEvent: {}
+[6.616989] (-) TimerEvent: {}
+[6.717254] (-) TimerEvent: {}
+[6.729327] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'[100%] Built target cmd_vel_publisher\n'}
+[6.738932] (bringup_turtlebot3_pkg) CommandEnded: {'returncode': 0}
+[6.739462] (bringup_turtlebot3_pkg) JobProgress: {'identifier': 'bringup_turtlebot3_pkg', 'progress': 'install'}
+[6.745626] (bringup_turtlebot3_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg'], 'cwd': '/home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rinese'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rinese'), ('OLDPWD', '/home/rinese/RM/RM_prac/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1562'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rinese'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rinese'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/rinese/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-machine:@/tmp/.ICE-unix/1534,unix/ubuntu-machine:/tmp/.ICE-unix/1534'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6fdd0cf9_07a9_41c8_85bd_a20eab474674'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DR98J3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.129'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[6.751566] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.751794] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/bringup_turtlebot3_pkg/lib/bringup_turtlebot3_pkg/cmd_vel_publisher\n'}
+[6.753478] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/rinese/RM/RM_prac/install/bringup_turtlebot3_pkg/lib/bringup_turtlebot3_pkg/cmd_vel_publisher" to ""\n'}
+[6.753690] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/bringup_turtlebot3_pkg/share/ament_index/resource_index/package_run_dependencies/bringup_turtlebot3_pkg\n'}
+[6.753828] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/bringup_turtlebot3_pkg/share/ament_index/resource_index/parent_prefix_path/bringup_turtlebot3_pkg\n'}
+[6.753918] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/environment/ament_prefix_path.sh\n'}
+[6.753994] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/environment/ament_prefix_path.dsv\n'}
+[6.754066] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/environment/path.sh\n'}
+[6.754160] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/environment/path.dsv\n'}
+[6.754235] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/local_setup.bash\n'}
+[6.754326] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/local_setup.sh\n'}
+[6.754408] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/local_setup.zsh\n'}
+[6.754514] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/local_setup.dsv\n'}
+[6.754585] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/package.dsv\n'}
+[6.754665] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/bringup_turtlebot3_pkg/share/ament_index/resource_index/packages/bringup_turtlebot3_pkg\n'}
+[6.754743] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/cmake/bringup_turtlebot3_pkgConfig.cmake\n'}
+[6.754831] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/cmake/bringup_turtlebot3_pkgConfig-version.cmake\n'}
+[6.754884] (bringup_turtlebot3_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/package.xml\n'}
+[6.756304] (bringup_turtlebot3_pkg) CommandEnded: {'returncode': 0}
+[6.768849] (bringup_turtlebot3_pkg) JobEnded: {'identifier': 'bringup_turtlebot3_pkg', 'rc': 0}
+[6.769309] (-) EventReactorShutdown: {}

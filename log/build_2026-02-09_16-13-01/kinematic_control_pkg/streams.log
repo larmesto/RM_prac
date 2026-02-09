@@ -1,0 +1,261 @@
+[0.007s] Invoking command in '/home/rinese/RM/RM_prac/build/kinematic_control_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rinese/RM/RM_prac/src/kinematic_control_pkg -DCMAKE_INSTALL_PREFIX=/home/rinese/RM/RM_prac/install/kinematic_control_pkg
+[0.073s] -- The C compiler identification is GNU 11.4.0
+[0.117s] -- The CXX compiler identification is GNU 11.4.0
+[0.122s] -- Detecting C compiler ABI info
+[0.168s] -- Detecting C compiler ABI info - done
+[0.173s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.173s] -- Detecting C compile features
+[0.174s] -- Detecting C compile features - done
+[0.176s] -- Detecting CXX compiler ABI info
+[0.229s] -- Detecting CXX compiler ABI info - done
+[0.234s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.234s] -- Detecting CXX compile features
+[0.234s] -- Detecting CXX compile features - done
+[0.236s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.335s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.402s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.438s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.442s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.447s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.455s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.466s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.494s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.496s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.549s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.569s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.597s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.603s] -- Looking for pthread.h
+[0.652s] -- Looking for pthread.h - found
+[0.652s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.703s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.704s] -- Found Threads: TRUE  
+[0.740s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[0.756s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.765s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.766s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.766s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.833s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.864s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.876s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.076s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.360s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.468s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.483s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.485s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.502s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.502s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.502s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.502s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.516s] -- Found PythonExtra: .so  
+[1.566s] -- Configuring done
+[1.595s] -- Generating done
+[1.607s] -- Build files have been written to: /home/rinese/RM/RM_prac/build/kinematic_control_pkg
+[1.617s] Invoked command in '/home/rinese/RM/RM_prac/build/kinematic_control_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rinese/RM/RM_prac/src/kinematic_control_pkg -DCMAKE_INSTALL_PREFIX=/home/rinese/RM/RM_prac/install/kinematic_control_pkg
+[1.618s] Invoking command in '/home/rinese/RM/RM_prac/build/kinematic_control_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM/RM_prac/build/kinematic_control_pkg -- -j8 -l8
+[1.647s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.653s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.659s] [  5%] Built target ament_cmake_python_copy_kinematic_control_pkg
+[1.839s] [  5%] Built target kinematic_control_pkg__cpp
+[1.847s] running egg_info
+[1.848s] [  8%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.848s] creating kinematic_control_pkg.egg-info
+[1.848s] [ 14%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.848s] [ 14%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.848s] writing kinematic_control_pkg.egg-info/PKG-INFO
+[1.848s] writing dependency_links to kinematic_control_pkg.egg-info/dependency_links.txt
+[1.848s] writing top-level names to kinematic_control_pkg.egg-info/top_level.txt
+[1.851s] writing manifest file 'kinematic_control_pkg.egg-info/SOURCES.txt'
+[1.856s] [ 17%] [32mBuilding C object CMakeFiles/kinematic_control_pkg__rosidl_generator_c.dir/rosidl_generator_c/kinematic_control_pkg/msg/detail/reference__functions.c.o[0m
+[1.856s] reading manifest file 'kinematic_control_pkg.egg-info/SOURCES.txt'
+[1.856s] writing manifest file 'kinematic_control_pkg.egg-info/SOURCES.txt'
+[1.883s] [ 17%] Built target ament_cmake_python_build_kinematic_control_pkg_egg
+[1.909s] [ 20%] [32m[1mLinking C shared library libkinematic_control_pkg__rosidl_generator_c.so[0m
+[1.934s] [ 20%] Built target kinematic_control_pkg__rosidl_generator_c
+[1.943s] [ 22%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.944s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.944s] [ 28%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.041s] [ 31%] [32mBuilding CXX object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/kinematic_control_pkg/msg/detail/reference__type_support.cpp.o[0m
+[2.078s] [ 34%] [32mBuilding CXX object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/kinematic_control_pkg/msg/reference__type_support.cpp.o[0m
+[2.102s] [ 37%] [32mBuilding CXX object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/kinematic_control_pkg/msg/detail/dds_fastrtps/reference__type_support.cpp.o[0m
+[2.143s] [ 40%] [32mBuilding C object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.o[0m
+[2.169s] [ 42%] [32m[1mLinking C shared library libkinematic_control_pkg__rosidl_typesupport_introspection_c.so[0m
+[2.194s] [ 42%] Built target kinematic_control_pkg__rosidl_typesupport_introspection_c
+[2.208s] [ 45%] [32mBuilding CXX object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/kinematic_control_pkg/msg/reference__type_support.cpp.o[0m
+[2.229s] [ 48%] [32m[1mLinking CXX shared library libkinematic_control_pkg__rosidl_typesupport_c.so[0m
+[2.247s] [ 51%] [32mBuilding CXX object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/kinematic_control_pkg/msg/detail/reference__type_support_c.cpp.o[0m
+[2.273s] [ 51%] Built target kinematic_control_pkg__rosidl_typesupport_c
+[2.307s] [ 54%] [32m[1mLinking CXX shared library libkinematic_control_pkg__rosidl_typesupport_cpp.so[0m
+[2.337s] [ 54%] Built target kinematic_control_pkg__rosidl_typesupport_cpp
+[2.356s] [ 57%] [32mBuilding CXX object CMakeFiles/infinite_reference_node.dir/src/infinite_reference_node.cpp.o[0m
+[2.359s] [ 60%] [32mBuilding CXX object CMakeFiles/controller_odom.dir/src/controller_odom.cpp.o[0m
+[2.395s] [ 62%] [32m[1mLinking CXX shared library libkinematic_control_pkg__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.408s] [ 65%] [32m[1mLinking CXX shared library libkinematic_control_pkg__rosidl_typesupport_introspection_cpp.so[0m
+[2.458s] [ 65%] Built target kinematic_control_pkg__rosidl_typesupport_introspection_cpp
+[2.479s] [ 65%] Built target kinematic_control_pkg__rosidl_typesupport_fastrtps_cpp
+[2.490s] [ 68%] [32m[1mLinking CXX shared library libkinematic_control_pkg__rosidl_typesupport_fastrtps_c.so[0m
+[2.543s] [ 68%] Built target kinematic_control_pkg__rosidl_typesupport_fastrtps_c
+[2.557s] [ 68%] Built target kinematic_control_pkg
+[2.570s] [ 71%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.794s] [ 71%] Built target kinematic_control_pkg__py
+[2.808s] [ 74%] [32mBuilding C object CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.o[0m
+[2.883s] [ 77%] [32m[1mLinking C shared library rosidl_generator_py/kinematic_control_pkg/libkinematic_control_pkg__rosidl_generator_py.so[0m
+[2.917s] [ 77%] Built target kinematic_control_pkg__rosidl_generator_py
+[2.932s] [ 80%] [32mBuilding C object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/kinematic_control_pkg/_kinematic_control_pkg_s.ep.rosidl_typesupport_c.c.o[0m
+[2.932s] [ 82%] [32mBuilding C object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/kinematic_control_pkg/_kinematic_control_pkg_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.933s] [ 85%] [32mBuilding C object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/kinematic_control_pkg/_kinematic_control_pkg_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.005s] [ 88%] [32m[1mLinking C shared library rosidl_generator_py/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.034s] [ 88%] Built target kinematic_control_pkg__rosidl_typesupport_fastrtps_c__pyext
+[3.043s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.043s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.071s] [ 94%] Built target kinematic_control_pkg__rosidl_typesupport_introspection_c__pyext
+[3.071s] [ 94%] Built target kinematic_control_pkg__rosidl_typesupport_c__pyext
+[5.639s] [ 97%] [32m[1mLinking CXX executable infinite_reference_node[0m
+[5.804s] [ 97%] Built target infinite_reference_node
+[10.411s] [100%] [32m[1mLinking CXX executable controller_odom[0m
+[10.855s] [100%] Built target controller_odom
+[10.865s] Invoked command in '/home/rinese/RM/RM_prac/build/kinematic_control_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM/RM_prac/build/kinematic_control_pkg -- -j8 -l8
+[10.872s] Invoking command in '/home/rinese/RM/RM_prac/build/kinematic_control_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rinese/RM/RM_prac/build/kinematic_control_pkg
+[10.877s] -- Install configuration: ""
+[10.877s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/ament_index/resource_index/rosidl_interfaces/kinematic_control_pkg
+[10.878s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg
+[10.878s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg
+[10.878s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/reference.h
+[10.878s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail
+[10.878s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__functions.c
+[10.878s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__type_support.h
+[10.878s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__struct.h
+[10.878s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__functions.h
+[10.878s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/rosidl_generator_c__visibility_control.h
+[10.878s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/environment/library_path.sh
+[10.878s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/environment/library_path.dsv
+[10.878s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_generator_c.so
+[10.878s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_generator_c.so" to ""
+[10.878s] -- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg
+[10.879s] -- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg
+[10.879s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[10.879s] -- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail
+[10.879s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__rosidl_typesupport_fastrtps_c.h
+[10.879s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_fastrtps_c.so
+[10.879s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_fastrtps_c.so" to ""
+[10.879s] -- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg
+[10.879s] -- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg
+[10.879s] -- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail
+[10.879s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__builder.hpp
+[10.879s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__struct.hpp
+[10.879s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__traits.hpp
+[10.879s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__type_support.hpp
+[10.879s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/reference.hpp
+[10.879s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/rosidl_generator_cpp__visibility_control.hpp
+[10.880s] -- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg
+[10.880s] -- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg
+[10.880s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[10.880s] -- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail
+[10.880s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/dds_fastrtps
+[10.880s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__rosidl_typesupport_fastrtps_cpp.hpp
+[10.880s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_fastrtps_cpp.so
+[10.880s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_fastrtps_cpp.so" to ""
+[10.880s] -- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg
+[10.880s] -- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg
+[10.880s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[10.880s] -- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail
+[10.880s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__rosidl_typesupport_introspection_c.h
+[10.880s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__type_support.c
+[10.880s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_introspection_c.so
+[10.880s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_introspection_c.so" to ""
+[10.880s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_c.so
+[10.880s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_c.so" to ""
+[10.880s] -- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg
+[10.881s] -- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg
+[10.881s] -- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail
+[10.881s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__type_support.cpp
+[10.881s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__rosidl_typesupport_introspection_cpp.hpp
+[10.881s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_introspection_cpp.so
+[10.881s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_introspection_cpp.so" to ""
+[10.881s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_cpp.so
+[10.881s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_cpp.so" to ""
+[10.881s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/environment/pythonpath.sh
+[10.881s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/environment/pythonpath.dsv
+[10.881s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg-0.0.0-py3.10.egg-info
+[10.881s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg-0.0.0-py3.10.egg-info/dependency_links.txt
+[10.881s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg-0.0.0-py3.10.egg-info/SOURCES.txt
+[10.881s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg-0.0.0-py3.10.egg-info/PKG-INFO
+[10.881s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg-0.0.0-py3.10.egg-info/top_level.txt
+[10.882s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg
+[10.882s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[10.882s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/msg
+[10.882s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/msg/_reference.py
+[10.882s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/msg/_reference_s.c
+[10.882s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/msg/__init__.py
+[10.882s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/libkinematic_control_pkg__rosidl_generator_py.so
+[10.882s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/_kinematic_control_pkg_s.ep.rosidl_typesupport_c.c
+[10.882s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/_kinematic_control_pkg_s.ep.rosidl_typesupport_fastrtps_c.c
+[10.882s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[10.882s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[10.882s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/_kinematic_control_pkg_s.ep.rosidl_typesupport_introspection_c.c
+[10.882s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/__init__.py
+[10.905s] Listing '/home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg'...
+[10.905s] Compiling '/home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/__init__.py'...
+[10.905s] Listing '/home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/msg'...
+[10.905s] Compiling '/home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/msg/__init__.py'...
+[10.905s] Compiling '/home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/msg/_reference.py'...
+[10.908s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[10.908s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[10.908s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[10.909s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[10.909s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[10.909s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[10.909s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_generator_py.so
+[10.909s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_generator_py.so" to ""
+[10.909s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/msg/Reference.idl
+[10.909s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/msg/Reference.msg
+[10.909s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/kinematic_control_pkg/controller_odom
+[10.913s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/kinematic_control_pkg/controller_odom" to ""
+[10.913s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/kinematic_control_pkg/infinite_reference_node
+[10.914s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/kinematic_control_pkg/infinite_reference_node" to ""
+[10.914s] -- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/msg
+[10.914s] -- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/msg/Reference.msg
+[10.914s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/launch
+[10.914s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/launch/rviz2.launch.py
+[10.914s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/launch/kinematic_controller.launch.py
+[10.914s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/rviz
+[10.914s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/rviz/tb3_rviz2.rviz
+[10.914s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/ament_index/resource_index/package_run_dependencies/kinematic_control_pkg
+[10.914s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/ament_index/resource_index/parent_prefix_path/kinematic_control_pkg
+[10.914s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/environment/ament_prefix_path.sh
+[10.914s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/environment/ament_prefix_path.dsv
+[10.915s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/environment/path.sh
+[10.915s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/environment/path.dsv
+[10.915s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/local_setup.bash
+[10.915s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/local_setup.sh
+[10.915s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/local_setup.zsh
+[10.915s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/local_setup.dsv
+[10.915s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/package.dsv
+[10.915s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/ament_index/resource_index/packages/kinematic_control_pkg
+[10.915s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/export_kinematic_control_pkg__rosidl_generator_cExport.cmake
+[10.915s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/export_kinematic_control_pkg__rosidl_generator_cExport-noconfig.cmake
+[10.915s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/export_kinematic_control_pkg__rosidl_typesupport_fastrtps_cExport.cmake
+[10.915s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/export_kinematic_control_pkg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[10.915s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/export_kinematic_control_pkg__rosidl_generator_cppExport.cmake
+[10.915s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/export_kinematic_control_pkg__rosidl_typesupport_fastrtps_cppExport.cmake
+[10.915s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/export_kinematic_control_pkg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[10.915s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkg__rosidl_typesupport_introspection_cExport.cmake
+[10.916s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[10.916s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkg__rosidl_typesupport_cExport.cmake
+[10.916s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkg__rosidl_typesupport_cExport-noconfig.cmake
+[10.916s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkg__rosidl_typesupport_introspection_cppExport.cmake
+[10.916s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[10.916s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkg__rosidl_typesupport_cppExport.cmake
+[10.916s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkg__rosidl_typesupport_cppExport-noconfig.cmake
+[10.916s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/export_kinematic_control_pkg__rosidl_generator_pyExport.cmake
+[10.916s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/export_kinematic_control_pkg__rosidl_generator_pyExport-noconfig.cmake
+[10.916s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/rosidl_cmake-extras.cmake
+[10.916s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.916s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.917s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/ament_cmake_export_libraries-extras.cmake
+[10.917s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/ament_cmake_export_targets-extras.cmake
+[10.917s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[10.917s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[10.917s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkgConfig.cmake
+[10.917s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkgConfig-version.cmake
+[10.917s] -- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/package.xml
+[10.919s] Invoked command in '/home/rinese/RM/RM_prac/build/kinematic_control_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rinese/RM/RM_prac/build/kinematic_control_pkg

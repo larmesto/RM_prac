@@ -1,5 +1,0 @@
-#Request
-bool reset_req
----
-#Response
-string response

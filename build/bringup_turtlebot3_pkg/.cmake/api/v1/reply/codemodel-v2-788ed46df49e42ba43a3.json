@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-1cf0466137b3e6b5f00d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "bringup_turtlebot3_pkg",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "bringup_turtlebot3_pkg_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-bringup_turtlebot3_pkg_uninstall-5bcefeec8877bcccd33f.json",
+					"name" : "bringup_turtlebot3_pkg_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "cmd_vel_publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cmd_vel_publisher-d466488a6ff3e86cef59.json",
+					"name" : "cmd_vel_publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-ea2ae71d00992bdc36ad.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg",
+		"source" : "/home/rinese/RM/RM_prac/src/bringup_turtlebot3_pkg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

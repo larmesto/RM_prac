@@ -1,0 +1,10 @@
+/home/rinese/RM/RM_prac/build/transformations_pkg/CMakeFiles/uninstall.dir
+/home/rinese/RM/RM_prac/build/transformations_pkg/CMakeFiles/transformations_pkg_uninstall.dir
+/home/rinese/RM/RM_prac/build/transformations_pkg/CMakeFiles/transform_listener.dir
+/home/rinese/RM/RM_prac/build/transformations_pkg/CMakeFiles/test.dir
+/home/rinese/RM/RM_prac/build/transformations_pkg/CMakeFiles/edit_cache.dir
+/home/rinese/RM/RM_prac/build/transformations_pkg/CMakeFiles/rebuild_cache.dir
+/home/rinese/RM/RM_prac/build/transformations_pkg/CMakeFiles/list_install_components.dir
+/home/rinese/RM/RM_prac/build/transformations_pkg/CMakeFiles/install.dir
+/home/rinese/RM/RM_prac/build/transformations_pkg/CMakeFiles/install/local.dir
+/home/rinese/RM/RM_prac/build/transformations_pkg/CMakeFiles/install/strip.dir

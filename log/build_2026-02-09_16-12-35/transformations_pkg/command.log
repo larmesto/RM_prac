@@ -1,0 +1,6 @@
+Invoking command in '/home/rinese/RM/RM_prac/build/transformations_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rinese/RM/RM_prac/src/transformations_pkg -DCMAKE_INSTALL_PREFIX=/home/rinese/RM/RM_prac/install/transformations_pkg
+Invoked command in '/home/rinese/RM/RM_prac/build/transformations_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rinese/RM/RM_prac/src/transformations_pkg -DCMAKE_INSTALL_PREFIX=/home/rinese/RM/RM_prac/install/transformations_pkg
+Invoking command in '/home/rinese/RM/RM_prac/build/transformations_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM/RM_prac/build/transformations_pkg -- -j8 -l8
+Invoked command in '/home/rinese/RM/RM_prac/build/transformations_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM/RM_prac/build/transformations_pkg -- -j8 -l8
+Invoking command in '/home/rinese/RM/RM_prac/build/transformations_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rinese/RM/RM_prac/build/transformations_pkg
+Invoked command in '/home/rinese/RM/RM_prac/build/transformations_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rinese/RM/RM_prac/build/transformations_pkg

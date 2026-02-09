@@ -1,0 +1,6 @@
+Invoking command in '/home/rinese/RM/RM_prac/build/intro_ros_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rinese/RM/RM_prac/src/intro_ros_pkg -DCMAKE_INSTALL_PREFIX=/home/rinese/RM/RM_prac/install/intro_ros_pkg
+Invoked command in '/home/rinese/RM/RM_prac/build/intro_ros_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rinese/RM/RM_prac/src/intro_ros_pkg -DCMAKE_INSTALL_PREFIX=/home/rinese/RM/RM_prac/install/intro_ros_pkg
+Invoking command in '/home/rinese/RM/RM_prac/build/intro_ros_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM/RM_prac/build/intro_ros_pkg -- -j8 -l8
+Invoked command in '/home/rinese/RM/RM_prac/build/intro_ros_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM/RM_prac/build/intro_ros_pkg -- -j8 -l8
+Invoking command in '/home/rinese/RM/RM_prac/build/intro_ros_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rinese/RM/RM_prac/build/intro_ros_pkg
+Invoked command in '/home/rinese/RM/RM_prac/build/intro_ros_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rinese/RM/RM_prac/build/intro_ros_pkg

@@ -1,0 +1,113 @@
+[0.006s] Invoking command in '/home/rinese/RM/RM_prac/build/pure_pursuit_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rinese/RM/RM_prac/src/pure_pursuit_pkg -DCMAKE_INSTALL_PREFIX=/home/rinese/RM/RM_prac/install/pure_pursuit_pkg
+[0.070s] -- The C compiler identification is GNU 11.4.0
+[0.114s] -- The CXX compiler identification is GNU 11.4.0
+[0.119s] -- Detecting C compiler ABI info
+[0.167s] -- Detecting C compiler ABI info - done
+[0.172s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.173s] -- Detecting C compile features
+[0.173s] -- Detecting C compile features - done
+[0.175s] -- Detecting CXX compiler ABI info
+[0.229s] -- Detecting CXX compiler ABI info - done
+[0.234s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.234s] -- Detecting CXX compile features
+[0.235s] -- Detecting CXX compile features - done
+[0.236s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.337s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.401s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.430s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.434s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.440s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.447s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.458s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.487s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.489s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.543s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.562s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.591s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.596s] -- Looking for pthread.h
+[0.645s] -- Looking for pthread.h - found
+[0.645s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.695s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.696s] -- Found Threads: TRUE  
+[0.733s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.742s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[0.749s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.759s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.759s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.759s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.819s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.844s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.856s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.055s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.340s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.448s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.464s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.465s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.482s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.482s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.482s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.482s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.497s] -- Found PythonExtra: .so  
+[1.543s] -- Configuring done
+[1.576s] -- Generating done
+[1.598s] -- Build files have been written to: /home/rinese/RM/RM_prac/build/pure_pursuit_pkg
+[1.616s] Invoked command in '/home/rinese/RM/RM_prac/build/pure_pursuit_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rinese/RM/RM_prac/src/pure_pursuit_pkg -DCMAKE_INSTALL_PREFIX=/home/rinese/RM/RM_prac/install/pure_pursuit_pkg
+[1.618s] Invoking command in '/home/rinese/RM/RM_prac/build/pure_pursuit_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM/RM_prac/build/pure_pursuit_pkg -- -j8 -l8
+[1.649s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.656s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.660s] [  5%] Built target ament_cmake_python_copy_pure_pursuit_pkg
+[1.836s] [  5%] Built target pure_pursuit_pkg__cpp
+[1.839s] [  8%] [32mBuilding C object CMakeFiles/pure_pursuit_pkg__rosidl_generator_c.dir/rosidl_generator_c/pure_pursuit_pkg/msg/detail/way_point_path__functions.c.o[0m
+[1.843s] running egg_info
+[1.843s] creating pure_pursuit_pkg.egg-info
+[1.844s] writing pure_pursuit_pkg.egg-info/PKG-INFO
+[1.844s] writing dependency_links to pure_pursuit_pkg.egg-info/dependency_links.txt
+[1.845s] writing top-level names to pure_pursuit_pkg.egg-info/top_level.txt
+[1.845s] [ 10%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.845s] [ 13%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.845s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.845s] writing manifest file 'pure_pursuit_pkg.egg-info/SOURCES.txt'
+[1.848s] reading manifest file 'pure_pursuit_pkg.egg-info/SOURCES.txt'
+[1.849s] writing manifest file 'pure_pursuit_pkg.egg-info/SOURCES.txt'
+[1.881s] [ 16%] Built target ament_cmake_python_build_pure_pursuit_pkg_egg
+[1.887s] [ 18%] [32m[1mLinking C shared library libpure_pursuit_pkg__rosidl_generator_c.so[0m
+[1.913s] [ 18%] Built target pure_pursuit_pkg__rosidl_generator_c
+[1.921s] [ 21%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.923s] [ 27%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.923s] [ 27%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.038s] [ 29%] [32mBuilding CXX object CMakeFiles/pure_pursuit_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pure_pursuit_pkg/msg/detail/dds_fastrtps/way_point_path__type_support.cpp.o[0m
+[2.076s] [ 32%] [32mBuilding CXX object CMakeFiles/pure_pursuit_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pure_pursuit_pkg/msg/way_point_path__type_support.cpp.o[0m
+[2.106s] [ 35%] [32mBuilding CXX object CMakeFiles/pure_pursuit_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pure_pursuit_pkg/msg/detail/way_point_path__type_support.cpp.o[0m
+[2.147s] [ 37%] [32mBuilding CXX object CMakeFiles/pure_pursuit_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/pure_pursuit_pkg/msg/way_point_path__type_support.cpp.o[0m
+[2.153s] [ 40%] [32mBuilding CXX object CMakeFiles/pure_pursuit_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pure_pursuit_pkg/msg/detail/way_point_path__type_support_c.cpp.o[0m
+[2.170s] [ 43%] [32m[1mLinking CXX shared library libpure_pursuit_pkg__rosidl_typesupport_c.so[0m
+[2.202s] [ 43%] Built target pure_pursuit_pkg__rosidl_typesupport_c
+[2.222s] [ 45%] [32mBuilding C object CMakeFiles/pure_pursuit_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pure_pursuit_pkg/msg/detail/way_point_path__type_support.c.o[0m
+[2.251s] [ 48%] [32m[1mLinking C shared library libpure_pursuit_pkg__rosidl_typesupport_introspection_c.so[0m
+[2.273s] [ 48%] Built target pure_pursuit_pkg__rosidl_typesupport_introspection_c
+[2.313s] [ 51%] [32m[1mLinking CXX shared library libpure_pursuit_pkg__rosidl_typesupport_cpp.so[0m
+[2.342s] [ 51%] Built target pure_pursuit_pkg__rosidl_typesupport_cpp
+[2.357s] [ 56%] [32mBuilding CXX object CMakeFiles/waypoints_node.dir/src/waypoints_node.cpp.o[0m
+[2.357s] [ 56%] [32mBuilding CXX object CMakeFiles/waypoint_tools_lib.dir/src/waypoint_tools/WayPointPathTools.cpp.o[0m
+[2.395s] [ 59%] [32m[1mLinking CXX shared library libpure_pursuit_pkg__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.442s] In file included from [01m[K/home/rinese/RM/RM_prac/src/pure_pursuit_pkg/src/waypoint_tools/WayPointPathTools.cpp:3[m[K:
+[2.442s] [01m[K/home/rinese/RM/RM_prac/src/pure_pursuit_pkg/include/pure_pursuit_controller_pkg/WayPointPathTools.hpp:5:10:[m[K [01;31m[Kfatal error: [m[Kpure_pursuit_controller_pkg/msg/way_point_path.hpp: No existe el archivo o el directorio
+[2.442s]     5 | #include [01;31m[K"pure_pursuit_controller_pkg/msg/way_point_path.hpp"[m[K
+[2.442s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.442s] compilation terminated.
+[2.443s] gmake[2]: *** [CMakeFiles/waypoint_tools_lib.dir/build.make:76: CMakeFiles/waypoint_tools_lib.dir/src/waypoint_tools/WayPointPathTools.cpp.o] Error 1
+[2.443s] gmake[1]: *** [CMakeFiles/Makefile2:596: CMakeFiles/waypoint_tools_lib.dir/all] Error 2
+[2.443s] gmake[1]: *** Se espera a que terminen otras tareas....
+[2.454s] [ 59%] Built target pure_pursuit_pkg__rosidl_typesupport_fastrtps_cpp
+[2.506s] [01m[K/home/rinese/RM/RM_prac/src/pure_pursuit_pkg/src/waypoints_node.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kpure_pursuit_controller_pkg/msg/way_point_path.hpp: No existe el archivo o el directorio
+[2.506s]     2 | #include [01;31m[K"pure_pursuit_controller_pkg/msg/way_point_path.hpp"[m[K
+[2.506s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.506s] compilation terminated.
+[2.508s] [ 62%] [32m[1mLinking CXX shared library libpure_pursuit_pkg__rosidl_typesupport_fastrtps_c.so[0m
+[2.508s] gmake[2]: *** [CMakeFiles/waypoints_node.dir/build.make:76: CMakeFiles/waypoints_node.dir/src/waypoints_node.cpp.o] Error 1
+[2.509s] gmake[1]: *** [CMakeFiles/Makefile2:651: CMakeFiles/waypoints_node.dir/all] Error 2
+[2.518s] [ 64%] [32m[1mLinking CXX shared library libpure_pursuit_pkg__rosidl_typesupport_introspection_cpp.so[0m
+[2.568s] [ 64%] Built target pure_pursuit_pkg__rosidl_typesupport_fastrtps_c
+[2.575s] [ 64%] Built target pure_pursuit_pkg__rosidl_typesupport_introspection_cpp
+[2.575s] gmake: *** [Makefile:146: all] Error 2
+[2.577s] Invoked command in '/home/rinese/RM/RM_prac/build/pure_pursuit_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM/RM_prac/build/pure_pursuit_pkg -- -j8 -l8

@@ -1,0 +1,57 @@
+[0.007s] Invoking command in '/home/rinese/RM/RM_prac/build/pure_pursuit_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM/RM_prac/build/pure_pursuit_pkg -- -j8 -l8
+[0.041s] [  2%] Built target pure_pursuit_pkg__cpp
+[0.041s] [ 10%] Built target pure_pursuit_pkg__rosidl_generator_c
+[0.052s] [ 10%] Built target ament_cmake_python_copy_pure_pursuit_pkg
+[0.062s] [ 32%] Built target pure_pursuit_pkg__rosidl_typesupport_c
+[0.062s] [ 32%] Built target pure_pursuit_pkg__rosidl_typesupport_cpp
+[0.062s] [ 37%] Built target pure_pursuit_pkg__rosidl_typesupport_introspection_c
+[0.062s] [ 45%] Built target pure_pursuit_pkg__rosidl_typesupport_introspection_cpp
+[0.063s] [ 51%] Built target pure_pursuit_pkg__rosidl_typesupport_fastrtps_cpp
+[0.070s] [ 59%] Built target pure_pursuit_pkg__rosidl_typesupport_fastrtps_c
+[0.070s] [35m[1mConsolidate compiler generated dependencies of target waypoint_tools_lib[0m
+[0.078s] [ 62%] [32mBuilding CXX object CMakeFiles/waypoints_node.dir/src/waypoints_node.cpp.o[0m
+[0.080s] [ 64%] [32mBuilding CXX object CMakeFiles/waypoint_tools_lib.dir/src/waypoint_tools/WayPointPathTools.cpp.o[0m
+[0.085s] [ 64%] Built target pure_pursuit_pkg
+[0.100s] [ 67%] Built target pure_pursuit_pkg__py
+[0.114s] [ 70%] [32mBuilding C object CMakeFiles/pure_pursuit_pkg__rosidl_generator_py.dir/rosidl_generator_py/pure_pursuit_pkg/msg/_way_point_path_s.c.o[0m
+[0.187s] [ 72%] [32m[1mLinking C shared library rosidl_generator_py/pure_pursuit_pkg/libpure_pursuit_pkg__rosidl_generator_py.so[0m
+[0.217s] [ 72%] Built target pure_pursuit_pkg__rosidl_generator_py
+[0.229s] [01m[K/home/rinese/RM/RM_prac/src/pure_pursuit_pkg/src/waypoints_node.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kpure_pursuit_controller_pkg/msg/way_point_path.hpp: No existe el archivo o el directorio
+[0.229s]     2 | #include [01;31m[K"pure_pursuit_controller_pkg/msg/way_point_path.hpp"[m[K
+[0.229s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.231s] compilation terminated.
+[0.234s] [ 75%] [32mBuilding C object CMakeFiles/pure_pursuit_pkg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/pure_pursuit_pkg/_pure_pursuit_pkg_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[0.234s] gmake[2]: *** [CMakeFiles/waypoints_node.dir/build.make:76: CMakeFiles/waypoints_node.dir/src/waypoints_node.cpp.o] Error 1
+[0.234s] gmake[1]: *** [CMakeFiles/Makefile2:651: CMakeFiles/waypoints_node.dir/all] Error 2
+[0.234s] gmake[1]: *** Se espera a que terminen otras tareas....
+[0.236s] [ 78%] [32mBuilding C object CMakeFiles/pure_pursuit_pkg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/pure_pursuit_pkg/_pure_pursuit_pkg_s.ep.rosidl_typesupport_c.c.o[0m
+[0.236s] [ 81%] [32mBuilding C object CMakeFiles/pure_pursuit_pkg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/pure_pursuit_pkg/_pure_pursuit_pkg_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[0.239s] running egg_info
+[0.241s] writing pure_pursuit_pkg.egg-info/PKG-INFO
+[0.241s] writing dependency_links to pure_pursuit_pkg.egg-info/dependency_links.txt
+[0.241s] writing top-level names to pure_pursuit_pkg.egg-info/top_level.txt
+[0.244s] reading manifest file 'pure_pursuit_pkg.egg-info/SOURCES.txt'
+[0.244s] writing manifest file 'pure_pursuit_pkg.egg-info/SOURCES.txt'
+[0.276s] [ 81%] Built target ament_cmake_python_build_pure_pursuit_pkg_egg
+[0.311s] [ 83%] [32m[1mLinking C shared library rosidl_generator_py/pure_pursuit_pkg/pure_pursuit_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[0.315s] [ 86%] [32m[1mLinking C shared library rosidl_generator_py/pure_pursuit_pkg/pure_pursuit_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[0.321s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/pure_pursuit_pkg/pure_pursuit_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[0.339s] [ 89%] Built target pure_pursuit_pkg__rosidl_typesupport_c__pyext
+[0.341s] [ 89%] Built target pure_pursuit_pkg__rosidl_typesupport_fastrtps_c__pyext
+[0.349s] [ 89%] Built target pure_pursuit_pkg__rosidl_typesupport_introspection_c__pyext
+[0.467s] [01m[K/home/rinese/RM/RM_prac/src/pure_pursuit_pkg/src/waypoint_tools/WayPointPathTools.cpp:6:45:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+[0.467s]     6 |         WayPointPathTools::WayPointPathTools[01;31m[K([m[Kpure_pursuit_controller_pkg::msg::WayPointPath path_points, double l)
+[0.467s]       |                                             [01;31m[K^[m[K
+[0.467s] [01m[K/home/rinese/RM/RM_prac/src/pure_pursuit_pkg/src/waypoint_tools/WayPointPathTools.cpp:7:28:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K,[m[K’ token
+[0.467s]     7 |         : path{path_points}[01;31m[K,[m[K L{l} {}
+[0.467s]       |                            [01;31m[K^[m[K
+[0.467s] [01m[K/home/rinese/RM/RM_prac/src/pure_pursuit_pkg/src/waypoint_tools/WayPointPathTools.cpp:7:31:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K{[m[K’ token
+[0.467s]     7 |         : path{path_points}, L[01;31m[K{[m[Kl} {}
+[0.467s]       |                               [01;31m[K^[m[K
+[0.468s] [01m[K/home/rinese/RM/RM_prac/src/pure_pursuit_pkg/src/waypoint_tools/WayPointPathTools.cpp:7:35:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K{[m[K’ token
+[0.468s]     7 |         : path{path_points}, L{l} [01;31m[K{[m[K}
+[0.468s]       |                                   [01;31m[K^[m[K
+[0.538s] gmake[2]: *** [CMakeFiles/waypoint_tools_lib.dir/build.make:76: CMakeFiles/waypoint_tools_lib.dir/src/waypoint_tools/WayPointPathTools.cpp.o] Error 1
+[0.538s] gmake[1]: *** [CMakeFiles/Makefile2:596: CMakeFiles/waypoint_tools_lib.dir/all] Error 2
+[0.538s] gmake: *** [Makefile:146: all] Error 2
+[0.539s] Invoked command in '/home/rinese/RM/RM_prac/build/pure_pursuit_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM/RM_prac/build/pure_pursuit_pkg -- -j8 -l8

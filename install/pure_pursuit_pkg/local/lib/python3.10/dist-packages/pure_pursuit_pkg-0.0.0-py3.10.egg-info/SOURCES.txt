@@ -1,0 +1,8 @@
+setup.py
+pure_pursuit_pkg/__init__.py
+pure_pursuit_pkg.egg-info/PKG-INFO
+pure_pursuit_pkg.egg-info/SOURCES.txt
+pure_pursuit_pkg.egg-info/dependency_links.txt
+pure_pursuit_pkg.egg-info/top_level.txt
+pure_pursuit_pkg/msg/__init__.py
+pure_pursuit_pkg/msg/_way_point_path.py

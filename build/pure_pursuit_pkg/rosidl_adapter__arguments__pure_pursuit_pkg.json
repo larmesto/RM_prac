@@ -1,0 +1,6 @@
+{
+  "package_name": "pure_pursuit_pkg",
+  "non_idl_tuples": [
+    "/home/rinese/RM/RM_prac/src/pure_pursuit_pkg:msg/WayPointPath.msg"
+  ]
+}

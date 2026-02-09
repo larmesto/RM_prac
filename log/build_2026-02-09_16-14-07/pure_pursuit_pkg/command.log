@@ -1,0 +1,4 @@
+Invoking command in '/home/rinese/RM/RM_prac/build/pure_pursuit_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rinese/RM/RM_prac/src/pure_pursuit_pkg -DCMAKE_INSTALL_PREFIX=/home/rinese/RM/RM_prac/install/pure_pursuit_pkg
+Invoked command in '/home/rinese/RM/RM_prac/build/pure_pursuit_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rinese/RM/RM_prac/src/pure_pursuit_pkg -DCMAKE_INSTALL_PREFIX=/home/rinese/RM/RM_prac/install/pure_pursuit_pkg
+Invoking command in '/home/rinese/RM/RM_prac/build/pure_pursuit_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM/RM_prac/build/pure_pursuit_pkg -- -j8 -l8
+Invoked command in '/home/rinese/RM/RM_prac/build/pure_pursuit_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM/RM_prac/build/pure_pursuit_pkg -- -j8 -l8

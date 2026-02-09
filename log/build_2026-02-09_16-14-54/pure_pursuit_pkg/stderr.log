@@ -1,0 +1,22 @@
+[01m[K/home/rinese/RM/RM_prac/src/pure_pursuit_pkg/src/waypoints_node.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kpure_pursuit_controller_pkg/msg/way_point_path.hpp: No existe el archivo o el directorio
+    2 | #include [01;31m[K"pure_pursuit_controller_pkg/msg/way_point_path.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/waypoints_node.dir/build.make:76: CMakeFiles/waypoints_node.dir/src/waypoints_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:651: CMakeFiles/waypoints_node.dir/all] Error 2
+gmake[1]: *** Se espera a que terminen otras tareas....
+[01m[K/home/rinese/RM/RM_prac/src/pure_pursuit_pkg/src/waypoint_tools/WayPointPathTools.cpp:6:45:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+    6 |         WayPointPathTools::WayPointPathTools[01;31m[K([m[Kpure_pursuit_controller_pkg::msg::WayPointPath path_points, double l)
+      |                                             [01;31m[K^[m[K
+[01m[K/home/rinese/RM/RM_prac/src/pure_pursuit_pkg/src/waypoint_tools/WayPointPathTools.cpp:7:28:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K,[m[K’ token
+    7 |         : path{path_points}[01;31m[K,[m[K L{l} {}
+      |                            [01;31m[K^[m[K
+[01m[K/home/rinese/RM/RM_prac/src/pure_pursuit_pkg/src/waypoint_tools/WayPointPathTools.cpp:7:31:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K{[m[K’ token
+    7 |         : path{path_points}, L[01;31m[K{[m[Kl} {}
+      |                               [01;31m[K^[m[K
+[01m[K/home/rinese/RM/RM_prac/src/pure_pursuit_pkg/src/waypoint_tools/WayPointPathTools.cpp:7:35:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K{[m[K’ token
+    7 |         : path{path_points}, L{l} [01;31m[K{[m[K}
+      |                                   [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/waypoint_tools_lib.dir/build.make:76: CMakeFiles/waypoint_tools_lib.dir/src/waypoint_tools/WayPointPathTools.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:596: CMakeFiles/waypoint_tools_lib.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

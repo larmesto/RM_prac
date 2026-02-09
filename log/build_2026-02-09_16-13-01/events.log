@@ -1,0 +1,385 @@
+[0.000000] (-) TimerEvent: {}
+[0.000304] (-) JobUnselected: {'identifier': 'bringup_turtlebot3_pkg'}
+[0.000323] (-) JobUnselected: {'identifier': 'intro_ros_pkg'}
+[0.000339] (-) JobUnselected: {'identifier': 'navigation_pkg'}
+[0.000429] (-) JobUnselected: {'identifier': 'pure_pursuit_pkg'}
+[0.000440] (-) JobUnselected: {'identifier': 'slam_pkg'}
+[0.000450] (-) JobUnselected: {'identifier': 'transformations_pkg'}
+[0.000459] (-) JobUnselected: {'identifier': 'turtlebot3_coppeliasim'}
+[0.000473] (kinematic_control_pkg) JobQueued: {'identifier': 'kinematic_control_pkg', 'dependencies': OrderedDict()}
+[0.000485] (kinematic_control_pkg) JobStarted: {'identifier': 'kinematic_control_pkg'}
+[0.005922] (kinematic_control_pkg) JobProgress: {'identifier': 'kinematic_control_pkg', 'progress': 'cmake'}
+[0.006206] (kinematic_control_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/rinese/RM/RM_prac/src/kinematic_control_pkg', '-DCMAKE_INSTALL_PREFIX=/home/rinese/RM/RM_prac/install/kinematic_control_pkg'], 'cwd': '/home/rinese/RM/RM_prac/build/kinematic_control_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rinese'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rinese'), ('OLDPWD', '/home/rinese/RM/RM_prac/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1562'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rinese'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rinese'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/rinese/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-machine:@/tmp/.ICE-unix/1534,unix/ubuntu-machine:/tmp/.ICE-unix/1534'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6fdd0cf9_07a9_41c8_85bd_a20eab474674'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DR98J3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.129'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rinese/RM/RM_prac/build/kinematic_control_pkg'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.073656] (kinematic_control_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099903] (-) TimerEvent: {}
+[0.117339] (kinematic_control_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.122608] (kinematic_control_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.168304] (kinematic_control_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.173560] (kinematic_control_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.173740] (kinematic_control_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.173977] (kinematic_control_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.176018] (kinematic_control_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.200015] (-) TimerEvent: {}
+[0.229291] (kinematic_control_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.234398] (kinematic_control_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.234602] (kinematic_control_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.234847] (kinematic_control_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.236433] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300115] (-) TimerEvent: {}
+[0.335875] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.400210] (-) TimerEvent: {}
+[0.402723] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.438753] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.442430] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.447683] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.455824] (kinematic_control_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.466137] (kinematic_control_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.494198] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.496004] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.500292] (-) TimerEvent: {}
+[0.549158] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.569127] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.597813] (kinematic_control_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.600384] (-) TimerEvent: {}
+[0.603387] (kinematic_control_pkg) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.652469] (kinematic_control_pkg) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.652750] (kinematic_control_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.700477] (-) TimerEvent: {}
+[0.703476] (kinematic_control_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.704555] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.740763] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)\n'}
+[0.756546] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.765864] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.766686] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[0.766762] (kinematic_control_pkg) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.800562] (-) TimerEvent: {}
+[0.833897] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[0.864550] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.876287] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.900649] (-) TimerEvent: {}
+[1.000903] (-) TimerEvent: {}
+[1.076528] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.101017] (-) TimerEvent: {}
+[1.201248] (-) TimerEvent: {}
+[1.301458] (-) TimerEvent: {}
+[1.360491] (kinematic_control_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.401546] (-) TimerEvent: {}
+[1.467993] (kinematic_control_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.483563] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.485150] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.501626] (-) TimerEvent: {}
+[1.502610] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.502761] (kinematic_control_pkg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.502827] (kinematic_control_pkg) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.502884] (kinematic_control_pkg) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.516827] (kinematic_control_pkg) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.566234] (kinematic_control_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.595463] (kinematic_control_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[1.601714] (-) TimerEvent: {}
+[1.607635] (kinematic_control_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/rinese/RM/RM_prac/build/kinematic_control_pkg\n'}
+[1.616978] (kinematic_control_pkg) CommandEnded: {'returncode': 0}
+[1.618089] (kinematic_control_pkg) JobProgress: {'identifier': 'kinematic_control_pkg', 'progress': 'build'}
+[1.618131] (kinematic_control_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rinese/RM/RM_prac/build/kinematic_control_pkg', '--', '-j8', '-l8'], 'cwd': '/home/rinese/RM/RM_prac/build/kinematic_control_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rinese'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rinese'), ('OLDPWD', '/home/rinese/RM/RM_prac/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1562'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rinese'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rinese'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/rinese/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-machine:@/tmp/.ICE-unix/1534,unix/ubuntu-machine:/tmp/.ICE-unix/1534'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6fdd0cf9_07a9_41c8_85bd_a20eab474674'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DR98J3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.129'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rinese/RM/RM_prac/build/kinematic_control_pkg'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.647086] (kinematic_control_pkg) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.653455] (kinematic_control_pkg) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.659339] (kinematic_control_pkg) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_kinematic_control_pkg\n'}
+[1.701805] (-) TimerEvent: {}
+[1.802071] (-) TimerEvent: {}
+[1.839825] (kinematic_control_pkg) StdoutLine: {'line': b'[  5%] Built target kinematic_control_pkg__cpp\n'}
+[1.847600] (kinematic_control_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[1.848325] (kinematic_control_pkg) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.848488] (kinematic_control_pkg) StdoutLine: {'line': b'creating kinematic_control_pkg.egg-info\n'}
+[1.848596] (kinematic_control_pkg) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.848666] (kinematic_control_pkg) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.848772] (kinematic_control_pkg) StdoutLine: {'line': b'writing kinematic_control_pkg.egg-info/PKG-INFO\n'}
+[1.848846] (kinematic_control_pkg) StdoutLine: {'line': b'writing dependency_links to kinematic_control_pkg.egg-info/dependency_links.txt\n'}
+[1.848926] (kinematic_control_pkg) StdoutLine: {'line': b'writing top-level names to kinematic_control_pkg.egg-info/top_level.txt\n'}
+[1.851171] (kinematic_control_pkg) StdoutLine: {'line': b"writing manifest file 'kinematic_control_pkg.egg-info/SOURCES.txt'\n"}
+[1.856107] (kinematic_control_pkg) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/kinematic_control_pkg__rosidl_generator_c.dir/rosidl_generator_c/kinematic_control_pkg/msg/detail/reference__functions.c.o\x1b[0m\n'}
+[1.856321] (kinematic_control_pkg) StdoutLine: {'line': b"reading manifest file 'kinematic_control_pkg.egg-info/SOURCES.txt'\n"}
+[1.856423] (kinematic_control_pkg) StdoutLine: {'line': b"writing manifest file 'kinematic_control_pkg.egg-info/SOURCES.txt'\n"}
+[1.883725] (kinematic_control_pkg) StdoutLine: {'line': b'[ 17%] Built target ament_cmake_python_build_kinematic_control_pkg_egg\n'}
+[1.902226] (-) TimerEvent: {}
+[1.909236] (kinematic_control_pkg) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libkinematic_control_pkg__rosidl_generator_c.so\x1b[0m\n'}
+[1.934787] (kinematic_control_pkg) StdoutLine: {'line': b'[ 20%] Built target kinematic_control_pkg__rosidl_generator_c\n'}
+[1.942918] (kinematic_control_pkg) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.944278] (kinematic_control_pkg) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.944860] (kinematic_control_pkg) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.002398] (-) TimerEvent: {}
+[2.041387] (kinematic_control_pkg) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/kinematic_control_pkg/msg/detail/reference__type_support.cpp.o\x1b[0m\n'}
+[2.077765] (kinematic_control_pkg) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/kinematic_control_pkg/msg/reference__type_support.cpp.o\x1b[0m\n'}
+[2.102006] (kinematic_control_pkg) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/kinematic_control_pkg/msg/detail/dds_fastrtps/reference__type_support.cpp.o\x1b[0m\n'}
+[2.102644] (-) TimerEvent: {}
+[2.143481] (kinematic_control_pkg) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/kinematic_control_pkg/msg/detail/reference__type_support.c.o\x1b[0m\n'}
+[2.168730] (kinematic_control_pkg) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking C shared library libkinematic_control_pkg__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.194740] (kinematic_control_pkg) StdoutLine: {'line': b'[ 42%] Built target kinematic_control_pkg__rosidl_typesupport_introspection_c\n'}
+[2.202980] (-) TimerEvent: {}
+[2.208041] (kinematic_control_pkg) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_c.dir/rosidl_typesupport_c/kinematic_control_pkg/msg/reference__type_support.cpp.o\x1b[0m\n'}
+[2.229733] (kinematic_control_pkg) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libkinematic_control_pkg__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.247440] (kinematic_control_pkg) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/kinematic_control_pkg/msg/detail/reference__type_support_c.cpp.o\x1b[0m\n'}
+[2.273023] (kinematic_control_pkg) StdoutLine: {'line': b'[ 51%] Built target kinematic_control_pkg__rosidl_typesupport_c\n'}
+[2.303050] (-) TimerEvent: {}
+[2.307824] (kinematic_control_pkg) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libkinematic_control_pkg__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.336842] (kinematic_control_pkg) StdoutLine: {'line': b'[ 54%] Built target kinematic_control_pkg__rosidl_typesupport_cpp\n'}
+[2.356555] (kinematic_control_pkg) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/infinite_reference_node.dir/src/infinite_reference_node.cpp.o\x1b[0m\n'}
+[2.359275] (kinematic_control_pkg) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/controller_odom.dir/src/controller_odom.cpp.o\x1b[0m\n'}
+[2.394986] (kinematic_control_pkg) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libkinematic_control_pkg__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.403353] (-) TimerEvent: {}
+[2.408545] (kinematic_control_pkg) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libkinematic_control_pkg__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.458337] (kinematic_control_pkg) StdoutLine: {'line': b'[ 65%] Built target kinematic_control_pkg__rosidl_typesupport_introspection_cpp\n'}
+[2.478895] (kinematic_control_pkg) StdoutLine: {'line': b'[ 65%] Built target kinematic_control_pkg__rosidl_typesupport_fastrtps_cpp\n'}
+[2.490192] (kinematic_control_pkg) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library libkinematic_control_pkg__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.503560] (-) TimerEvent: {}
+[2.543509] (kinematic_control_pkg) StdoutLine: {'line': b'[ 68%] Built target kinematic_control_pkg__rosidl_typesupport_fastrtps_c\n'}
+[2.557115] (kinematic_control_pkg) StdoutLine: {'line': b'[ 68%] Built target kinematic_control_pkg\n'}
+[2.570500] (kinematic_control_pkg) StdoutLine: {'line': b'[ 71%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.603670] (-) TimerEvent: {}
+[2.704210] (-) TimerEvent: {}
+[2.794470] (kinematic_control_pkg) StdoutLine: {'line': b'[ 71%] Built target kinematic_control_pkg__py\n'}
+[2.804368] (-) TimerEvent: {}
+[2.808557] (kinematic_control_pkg) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding C object CMakeFiles/kinematic_control_pkg__rosidl_generator_py.dir/rosidl_generator_py/kinematic_control_pkg/msg/_reference_s.c.o\x1b[0m\n'}
+[2.883581] (kinematic_control_pkg) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/kinematic_control_pkg/libkinematic_control_pkg__rosidl_generator_py.so\x1b[0m\n'}
+[2.904547] (-) TimerEvent: {}
+[2.917540] (kinematic_control_pkg) StdoutLine: {'line': b'[ 77%] Built target kinematic_control_pkg__rosidl_generator_py\n'}
+[2.932521] (kinematic_control_pkg) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/kinematic_control_pkg/_kinematic_control_pkg_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[2.932845] (kinematic_control_pkg) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/kinematic_control_pkg/_kinematic_control_pkg_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[2.933429] (kinematic_control_pkg) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/kinematic_control_pkg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/kinematic_control_pkg/_kinematic_control_pkg_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.005397] (-) TimerEvent: {}
+[3.005684] (kinematic_control_pkg) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.033907] (kinematic_control_pkg) StdoutLine: {'line': b'[ 88%] Built target kinematic_control_pkg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.042890] (kinematic_control_pkg) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.043348] (kinematic_control_pkg) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.071657] (kinematic_control_pkg) StdoutLine: {'line': b'[ 94%] Built target kinematic_control_pkg__rosidl_typesupport_introspection_c__pyext\n'}
+[3.071844] (kinematic_control_pkg) StdoutLine: {'line': b'[ 94%] Built target kinematic_control_pkg__rosidl_typesupport_c__pyext\n'}
+[3.105486] (-) TimerEvent: {}
+[3.205752] (-) TimerEvent: {}
+[3.306003] (-) TimerEvent: {}
+[3.406347] (-) TimerEvent: {}
+[3.506590] (-) TimerEvent: {}
+[3.606832] (-) TimerEvent: {}
+[3.707090] (-) TimerEvent: {}
+[3.807391] (-) TimerEvent: {}
+[3.907627] (-) TimerEvent: {}
+[4.007893] (-) TimerEvent: {}
+[4.108140] (-) TimerEvent: {}
+[4.208389] (-) TimerEvent: {}
+[4.308628] (-) TimerEvent: {}
+[4.408881] (-) TimerEvent: {}
+[4.509137] (-) TimerEvent: {}
+[4.609394] (-) TimerEvent: {}
+[4.709642] (-) TimerEvent: {}
+[4.809967] (-) TimerEvent: {}
+[4.910228] (-) TimerEvent: {}
+[5.010460] (-) TimerEvent: {}
+[5.110699] (-) TimerEvent: {}
+[5.210973] (-) TimerEvent: {}
+[5.313399] (-) TimerEvent: {}
+[5.413775] (-) TimerEvent: {}
+[5.514011] (-) TimerEvent: {}
+[5.614341] (-) TimerEvent: {}
+[5.639539] (kinematic_control_pkg) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking CXX executable infinite_reference_node\x1b[0m\n'}
+[5.714469] (-) TimerEvent: {}
+[5.804644] (kinematic_control_pkg) StdoutLine: {'line': b'[ 97%] Built target infinite_reference_node\n'}
+[5.814554] (-) TimerEvent: {}
+[5.914888] (-) TimerEvent: {}
+[6.015161] (-) TimerEvent: {}
+[6.115408] (-) TimerEvent: {}
+[6.215653] (-) TimerEvent: {}
+[6.316152] (-) TimerEvent: {}
+[6.416740] (-) TimerEvent: {}
+[6.517430] (-) TimerEvent: {}
+[6.617935] (-) TimerEvent: {}
+[6.718178] (-) TimerEvent: {}
+[6.818506] (-) TimerEvent: {}
+[6.918863] (-) TimerEvent: {}
+[7.019139] (-) TimerEvent: {}
+[7.119405] (-) TimerEvent: {}
+[7.219635] (-) TimerEvent: {}
+[7.319890] (-) TimerEvent: {}
+[7.420150] (-) TimerEvent: {}
+[7.520486] (-) TimerEvent: {}
+[7.620719] (-) TimerEvent: {}
+[7.721048] (-) TimerEvent: {}
+[7.821376] (-) TimerEvent: {}
+[7.921714] (-) TimerEvent: {}
+[8.021986] (-) TimerEvent: {}
+[8.122261] (-) TimerEvent: {}
+[8.222664] (-) TimerEvent: {}
+[8.322924] (-) TimerEvent: {}
+[8.423254] (-) TimerEvent: {}
+[8.523609] (-) TimerEvent: {}
+[8.623993] (-) TimerEvent: {}
+[8.724356] (-) TimerEvent: {}
+[8.824683] (-) TimerEvent: {}
+[8.925027] (-) TimerEvent: {}
+[9.025351] (-) TimerEvent: {}
+[9.125598] (-) TimerEvent: {}
+[9.225924] (-) TimerEvent: {}
+[9.326252] (-) TimerEvent: {}
+[9.426617] (-) TimerEvent: {}
+[9.526966] (-) TimerEvent: {}
+[9.627308] (-) TimerEvent: {}
+[9.727574] (-) TimerEvent: {}
+[9.827916] (-) TimerEvent: {}
+[9.928177] (-) TimerEvent: {}
+[10.028515] (-) TimerEvent: {}
+[10.128788] (-) TimerEvent: {}
+[10.229169] (-) TimerEvent: {}
+[10.329595] (-) TimerEvent: {}
+[10.411560] (kinematic_control_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable controller_odom\x1b[0m\n'}
+[10.429682] (-) TimerEvent: {}
+[10.529940] (-) TimerEvent: {}
+[10.630240] (-) TimerEvent: {}
+[10.730512] (-) TimerEvent: {}
+[10.830795] (-) TimerEvent: {}
+[10.855698] (kinematic_control_pkg) StdoutLine: {'line': b'[100%] Built target controller_odom\n'}
+[10.865717] (kinematic_control_pkg) CommandEnded: {'returncode': 0}
+[10.866253] (kinematic_control_pkg) JobProgress: {'identifier': 'kinematic_control_pkg', 'progress': 'install'}
+[10.872014] (kinematic_control_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rinese/RM/RM_prac/build/kinematic_control_pkg'], 'cwd': '/home/rinese/RM/RM_prac/build/kinematic_control_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rinese'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rinese'), ('OLDPWD', '/home/rinese/RM/RM_prac/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1562'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'rinese'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rinese'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/rinese/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu-machine:@/tmp/.ICE-unix/1534,unix/ubuntu-machine:/tmp/.ICE-unix/1534'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6fdd0cf9_07a9_41c8_85bd_a20eab474674'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'es_ES.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.DR98J3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.129'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rinese/RM/RM_prac/build/kinematic_control_pkg'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[10.877740] (kinematic_control_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.877918] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/ament_index/resource_index/rosidl_interfaces/kinematic_control_pkg\n'}
+[10.878020] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg\n'}
+[10.878114] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg\n'}
+[10.878187] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/reference.h\n'}
+[10.878243] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail\n'}
+[10.878319] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__functions.c\n'}
+[10.878401] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__type_support.h\n'}
+[10.878473] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__struct.h\n'}
+[10.878540] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__functions.h\n'}
+[10.878606] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/rosidl_generator_c__visibility_control.h\n'}
+[10.878662] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/environment/library_path.sh\n'}
+[10.878698] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/environment/library_path.dsv\n'}
+[10.878734] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_generator_c.so\n'}
+[10.878877] (kinematic_control_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_generator_c.so" to ""\n'}
+[10.878955] (kinematic_control_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg\n'}
+[10.878995] (kinematic_control_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg\n'}
+[10.879035] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[10.879090] (kinematic_control_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail\n'}
+[10.879132] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__rosidl_typesupport_fastrtps_c.h\n'}
+[10.879185] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_fastrtps_c.so\n'}
+[10.879302] (kinematic_control_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[10.879367] (kinematic_control_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg\n'}
+[10.879645] (kinematic_control_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg\n'}
+[10.879687] (kinematic_control_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail\n'}
+[10.879724] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__builder.hpp\n'}
+[10.879763] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__struct.hpp\n'}
+[10.879803] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__traits.hpp\n'}
+[10.879840] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__type_support.hpp\n'}
+[10.879877] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/reference.hpp\n'}
+[10.879931] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[10.880003] (kinematic_control_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg\n'}
+[10.880050] (kinematic_control_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg\n'}
+[10.880093] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[10.880160] (kinematic_control_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail\n'}
+[10.880199] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/dds_fastrtps\n'}
+[10.880268] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.880348] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[10.880392] (kinematic_control_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[10.880429] (kinematic_control_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg\n'}
+[10.880465] (kinematic_control_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg\n'}
+[10.880502] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[10.880576] (kinematic_control_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail\n'}
+[10.880613] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__rosidl_typesupport_introspection_c.h\n'}
+[10.880649] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__type_support.c\n'}
+[10.880694] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_introspection_c.so\n'}
+[10.880730] (kinematic_control_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_introspection_c.so" to ""\n'}
+[10.880780] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_c.so\n'}
+[10.880873] (kinematic_control_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_c.so" to ""\n'}
+[10.880918] (kinematic_control_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg\n'}
+[10.880975] (kinematic_control_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg\n'}
+[10.881022] (kinematic_control_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail\n'}
+[10.881062] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__type_support.cpp\n'}
+[10.881117] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/include/kinematic_control_pkg/kinematic_control_pkg/msg/detail/reference__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.881173] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_introspection_cpp.so\n'}
+[10.881285] (kinematic_control_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[10.881367] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_cpp.so\n'}
+[10.881524] (kinematic_control_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_typesupport_cpp.so" to ""\n'}
+[10.881575] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/environment/pythonpath.sh\n'}
+[10.881634] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/environment/pythonpath.dsv\n'}
+[10.881695] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg-0.0.0-py3.10.egg-info\n'}
+[10.881776] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[10.881828] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[10.881877] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[10.881923] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[10.881993] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg\n'}
+[10.882043] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.882098] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/msg\n'}
+[10.882149] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/msg/_reference.py\n'}
+[10.882199] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/msg/_reference_s.c\n'}
+[10.882248] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/msg/__init__.py\n'}
+[10.882293] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/libkinematic_control_pkg__rosidl_generator_py.so\n'}
+[10.882354] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/_kinematic_control_pkg_s.ep.rosidl_typesupport_c.c\n'}
+[10.882499] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/_kinematic_control_pkg_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[10.882550] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.882607] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.882666] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/_kinematic_control_pkg_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[10.882721] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/__init__.py\n'}
+[10.905557] (kinematic_control_pkg) StdoutLine: {'line': b"Listing '/home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg'...\n"}
+[10.905672] (kinematic_control_pkg) StdoutLine: {'line': b"Compiling '/home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/__init__.py'...\n"}
+[10.905712] (kinematic_control_pkg) StdoutLine: {'line': b"Listing '/home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/msg'...\n"}
+[10.905748] (kinematic_control_pkg) StdoutLine: {'line': b"Compiling '/home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/msg/__init__.py'...\n"}
+[10.905782] (kinematic_control_pkg) StdoutLine: {'line': b"Compiling '/home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/msg/_reference.py'...\n"}
+[10.908613] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.908736] (kinematic_control_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[10.908832] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.908988] (kinematic_control_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[10.909073] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.909217] (kinematic_control_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/local/lib/python3.10/dist-packages/kinematic_control_pkg/kinematic_control_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[10.909266] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_generator_py.so\n'}
+[10.909435] (kinematic_control_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/libkinematic_control_pkg__rosidl_generator_py.so" to ""\n'}
+[10.909493] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/msg/Reference.idl\n'}
+[10.909558] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/msg/Reference.msg\n'}
+[10.909646] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/kinematic_control_pkg/controller_odom\n'}
+[10.913312] (kinematic_control_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/kinematic_control_pkg/controller_odom" to ""\n'}
+[10.913513] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/kinematic_control_pkg/infinite_reference_node\n'}
+[10.914350] (kinematic_control_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/rinese/RM/RM_prac/install/kinematic_control_pkg/lib/kinematic_control_pkg/infinite_reference_node" to ""\n'}
+[10.914420] (kinematic_control_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/msg\n'}
+[10.914486] (kinematic_control_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/msg/Reference.msg\n'}
+[10.914567] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/launch\n'}
+[10.914603] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/launch/rviz2.launch.py\n'}
+[10.914642] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/launch/kinematic_controller.launch.py\n'}
+[10.914681] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/rviz\n'}
+[10.914721] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/rviz/tb3_rviz2.rviz\n'}
+[10.914784] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/ament_index/resource_index/package_run_dependencies/kinematic_control_pkg\n'}
+[10.914832] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/ament_index/resource_index/parent_prefix_path/kinematic_control_pkg\n'}
+[10.914879] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/environment/ament_prefix_path.sh\n'}
+[10.914920] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/environment/ament_prefix_path.dsv\n'}
+[10.914979] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/environment/path.sh\n'}
+[10.915020] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/environment/path.dsv\n'}
+[10.915073] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/local_setup.bash\n'}
+[10.915125] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/local_setup.sh\n'}
+[10.915179] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/local_setup.zsh\n'}
+[10.915234] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/local_setup.dsv\n'}
+[10.915290] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/package.dsv\n'}
+[10.915350] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/ament_index/resource_index/packages/kinematic_control_pkg\n'}
+[10.915435] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/export_kinematic_control_pkg__rosidl_generator_cExport.cmake\n'}
+[10.915502] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/export_kinematic_control_pkg__rosidl_generator_cExport-noconfig.cmake\n'}
+[10.915570] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/export_kinematic_control_pkg__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[10.915637] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/export_kinematic_control_pkg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[10.915704] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/export_kinematic_control_pkg__rosidl_generator_cppExport.cmake\n'}
+[10.915774] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/export_kinematic_control_pkg__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[10.915837] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/export_kinematic_control_pkg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[10.915905] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[10.915968] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[10.916036] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkg__rosidl_typesupport_cExport.cmake\n'}
+[10.916099] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[10.916167] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[10.916231] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[10.916302] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkg__rosidl_typesupport_cppExport.cmake\n'}
+[10.916385] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[10.916477] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/export_kinematic_control_pkg__rosidl_generator_pyExport.cmake\n'}
+[10.916587] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/export_kinematic_control_pkg__rosidl_generator_pyExport-noconfig.cmake\n'}
+[10.916663] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/rosidl_cmake-extras.cmake\n'}
+[10.916745] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.916887] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[10.916969] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[10.917035] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[10.917120] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[10.917187] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[10.917272] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkgConfig.cmake\n'}
+[10.917337] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/cmake/kinematic_control_pkgConfig-version.cmake\n'}
+[10.917402] (kinematic_control_pkg) StdoutLine: {'line': b'-- Installing: /home/rinese/RM/RM_prac/install/kinematic_control_pkg/share/kinematic_control_pkg/package.xml\n'}
+[10.918757] (kinematic_control_pkg) CommandEnded: {'returncode': 0}
+[10.930859] (-) TimerEvent: {}
+[10.931713] (kinematic_control_pkg) JobEnded: {'identifier': 'kinematic_control_pkg', 'rc': 0}
+[10.932185] (-) EventReactorShutdown: {}

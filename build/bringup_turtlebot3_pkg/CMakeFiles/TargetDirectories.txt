@@ -1,0 +1,10 @@
+/home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg/CMakeFiles/uninstall.dir
+/home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg/CMakeFiles/bringup_turtlebot3_pkg_uninstall.dir
+/home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg/CMakeFiles/cmd_vel_publisher.dir
+/home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg/CMakeFiles/test.dir
+/home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg/CMakeFiles/edit_cache.dir
+/home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg/CMakeFiles/rebuild_cache.dir
+/home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg/CMakeFiles/list_install_components.dir
+/home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg/CMakeFiles/install.dir
+/home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg/CMakeFiles/install/local.dir
+/home/rinese/RM/RM_prac/build/bringup_turtlebot3_pkg/CMakeFiles/install/strip.dir

@@ -1,0 +1,219 @@
+[0.007s] Invoking command in '/home/rinese/RM/RM_prac/build/pure_pursuit_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM/RM_prac/build/pure_pursuit_pkg -- -j8 -l8
+[0.023s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.099s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.117s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.118s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.122s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.129s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.138s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.161s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.162s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.223s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.254s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.261s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[0.264s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.266s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.266s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.315s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.339s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.350s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.546s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.808s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.912s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.925s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.940s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.940s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.940s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.971s] -- Configuring done
+[1.009s] -- Generating done
+[1.023s] -- Build files have been written to: /home/rinese/RM/RM_prac/build/pure_pursuit_pkg
+[1.046s] [35m[1mConsolidate compiler generated dependencies of target pure_pursuit_pkg__rosidl_generator_c[0m
+[1.056s] [  2%] Built target pure_pursuit_pkg__cpp
+[1.056s] [ 10%] Built target pure_pursuit_pkg__rosidl_generator_c
+[1.065s] [ 10%] Built target ament_cmake_python_copy_pure_pursuit_pkg
+[1.065s] [35m[1mConsolidate compiler generated dependencies of target pure_pursuit_pkg__rosidl_typesupport_cpp[0m
+[1.066s] [35m[1mConsolidate compiler generated dependencies of target pure_pursuit_pkg__rosidl_typesupport_introspection_cpp[0m
+[1.072s] [35m[1mConsolidate compiler generated dependencies of target pure_pursuit_pkg__rosidl_typesupport_fastrtps_cpp[0m
+[1.080s] [35m[1mConsolidate compiler generated dependencies of target pure_pursuit_pkg__rosidl_typesupport_c[0m
+[1.080s] [35m[1mConsolidate compiler generated dependencies of target pure_pursuit_pkg__rosidl_typesupport_introspection_c[0m
+[1.080s] [35m[1mConsolidate compiler generated dependencies of target pure_pursuit_pkg__rosidl_typesupport_fastrtps_c[0m
+[1.082s] [ 18%] Built target pure_pursuit_pkg__rosidl_typesupport_cpp
+[1.083s] [ 27%] Built target pure_pursuit_pkg__rosidl_typesupport_introspection_cpp
+[1.094s] [ 35%] Built target pure_pursuit_pkg__rosidl_typesupport_fastrtps_cpp
+[1.094s] [ 43%] Built target pure_pursuit_pkg__rosidl_typesupport_c
+[1.096s] [ 51%] Built target pure_pursuit_pkg__rosidl_typesupport_introspection_c
+[1.096s] [35m[1mConsolidate compiler generated dependencies of target waypoint_tools_lib[0m
+[1.096s] [ 59%] Built target pure_pursuit_pkg__rosidl_typesupport_fastrtps_c
+[1.097s] [35m[1mConsolidate compiler generated dependencies of target waypoints_node[0m
+[1.113s] [ 62%] [32mBuilding CXX object CMakeFiles/waypoint_tools_lib.dir/src/waypoint_tools/WayPointPathTools.cpp.o[0m
+[1.120s] [ 67%] Built target waypoints_node
+[1.123s] [ 67%] Built target pure_pursuit_pkg
+[1.147s] [ 70%] Built target pure_pursuit_pkg__py
+[1.158s] [35m[1mConsolidate compiler generated dependencies of target pure_pursuit_pkg__rosidl_generator_py[0m
+[1.170s] [ 75%] Built target pure_pursuit_pkg__rosidl_generator_py
+[1.179s] [35m[1mConsolidate compiler generated dependencies of target pure_pursuit_pkg__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.179s] [35m[1mConsolidate compiler generated dependencies of target pure_pursuit_pkg__rosidl_typesupport_introspection_c__pyext[0m
+[1.183s] [35m[1mConsolidate compiler generated dependencies of target pure_pursuit_pkg__rosidl_typesupport_c__pyext[0m
+[1.191s] [ 83%] Built target pure_pursuit_pkg__rosidl_typesupport_introspection_c__pyext
+[1.191s] [ 86%] Built target pure_pursuit_pkg__rosidl_typesupport_fastrtps_c__pyext
+[1.197s] [ 91%] Built target pure_pursuit_pkg__rosidl_typesupport_c__pyext
+[1.352s] running egg_info
+[1.353s] writing pure_pursuit_pkg.egg-info/PKG-INFO
+[1.353s] writing dependency_links to pure_pursuit_pkg.egg-info/dependency_links.txt
+[1.353s] writing top-level names to pure_pursuit_pkg.egg-info/top_level.txt
+[1.356s] reading manifest file 'pure_pursuit_pkg.egg-info/SOURCES.txt'
+[1.356s] writing manifest file 'pure_pursuit_pkg.egg-info/SOURCES.txt'
+[1.376s] [ 91%] Built target ament_cmake_python_build_pure_pursuit_pkg_egg
+[1.629s] [ 94%] [32m[1mLinking CXX shared library libwaypoint_tools_lib.so[0m
+[1.725s] [ 94%] Built target waypoint_tools_lib
+[1.738s] [ 97%] [32mBuilding CXX object CMakeFiles/pure_pursuit_odom.dir/src/pure_pursuit_odom.cpp.o[0m
+[9.179s] [100%] [32m[1mLinking CXX executable pure_pursuit_odom[0m
+[9.604s] [100%] Built target pure_pursuit_odom
+[9.613s] Invoked command in '/home/rinese/RM/RM_prac/build/pure_pursuit_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM/RM_prac/build/pure_pursuit_pkg -- -j8 -l8
+[9.620s] Invoking command in '/home/rinese/RM/RM_prac/build/pure_pursuit_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rinese/RM/RM_prac/build/pure_pursuit_pkg
+[9.625s] -- Install configuration: ""
+[9.625s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/ament_index/resource_index/rosidl_interfaces/pure_pursuit_pkg
+[9.625s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg
+[9.625s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg
+[9.625s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail
+[9.626s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail/way_point_path__type_support.h
+[9.626s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail/way_point_path__struct.h
+[9.626s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail/way_point_path__functions.h
+[9.626s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail/way_point_path__functions.c
+[9.626s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/way_point_path.h
+[9.626s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/rosidl_generator_c__visibility_control.h
+[9.626s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/environment/library_path.sh
+[9.626s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/environment/library_path.dsv
+[9.626s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/libpure_pursuit_pkg__rosidl_generator_c.so
+[9.626s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/libpure_pursuit_pkg__rosidl_generator_c.so" to ""
+[9.626s] -- Up-to-date: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg
+[9.626s] -- Up-to-date: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg
+[9.626s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[9.627s] -- Up-to-date: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail
+[9.627s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail/way_point_path__rosidl_typesupport_fastrtps_c.h
+[9.627s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/libpure_pursuit_pkg__rosidl_typesupport_fastrtps_c.so
+[9.627s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/libpure_pursuit_pkg__rosidl_typesupport_fastrtps_c.so" to ""
+[9.627s] -- Up-to-date: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg
+[9.627s] -- Up-to-date: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg
+[9.627s] -- Up-to-date: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail
+[9.627s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail/way_point_path__struct.hpp
+[9.627s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail/way_point_path__builder.hpp
+[9.627s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail/way_point_path__type_support.hpp
+[9.627s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail/way_point_path__traits.hpp
+[9.627s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/rosidl_generator_cpp__visibility_control.hpp
+[9.627s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/way_point_path.hpp
+[9.627s] -- Up-to-date: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg
+[9.628s] -- Up-to-date: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg
+[9.628s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[9.628s] -- Up-to-date: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail
+[9.628s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail/dds_fastrtps
+[9.628s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail/way_point_path__rosidl_typesupport_fastrtps_cpp.hpp
+[9.628s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/libpure_pursuit_pkg__rosidl_typesupport_fastrtps_cpp.so
+[9.628s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/libpure_pursuit_pkg__rosidl_typesupport_fastrtps_cpp.so" to ""
+[9.628s] -- Up-to-date: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg
+[9.628s] -- Up-to-date: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg
+[9.628s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[9.628s] -- Up-to-date: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail
+[9.628s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail/way_point_path__rosidl_typesupport_introspection_c.h
+[9.628s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail/way_point_path__type_support.c
+[9.628s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/libpure_pursuit_pkg__rosidl_typesupport_introspection_c.so
+[9.629s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/libpure_pursuit_pkg__rosidl_typesupport_introspection_c.so" to ""
+[9.629s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/libpure_pursuit_pkg__rosidl_typesupport_c.so
+[9.629s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/libpure_pursuit_pkg__rosidl_typesupport_c.so" to ""
+[9.629s] -- Up-to-date: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg
+[9.629s] -- Up-to-date: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg
+[9.629s] -- Up-to-date: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail
+[9.629s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail/way_point_path__rosidl_typesupport_introspection_cpp.hpp
+[9.629s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/include/pure_pursuit_pkg/pure_pursuit_pkg/msg/detail/way_point_path__type_support.cpp
+[9.629s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/libpure_pursuit_pkg__rosidl_typesupport_introspection_cpp.so
+[9.629s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/libpure_pursuit_pkg__rosidl_typesupport_introspection_cpp.so" to ""
+[9.629s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/libpure_pursuit_pkg__rosidl_typesupport_cpp.so
+[9.629s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/libpure_pursuit_pkg__rosidl_typesupport_cpp.so" to ""
+[9.629s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/environment/pythonpath.sh
+[9.630s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/environment/pythonpath.dsv
+[9.630s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg-0.0.0-py3.10.egg-info
+[9.630s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg-0.0.0-py3.10.egg-info/dependency_links.txt
+[9.630s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg-0.0.0-py3.10.egg-info/SOURCES.txt
+[9.630s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg-0.0.0-py3.10.egg-info/PKG-INFO
+[9.630s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg-0.0.0-py3.10.egg-info/top_level.txt
+[9.630s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg
+[9.630s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/msg
+[9.630s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/msg/_way_point_path_s.c
+[9.630s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/msg/_way_point_path.py
+[9.630s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/msg/__init__.py
+[9.630s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/pure_pursuit_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[9.631s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/_pure_pursuit_pkg_s.ep.rosidl_typesupport_c.c
+[9.631s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/pure_pursuit_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[9.631s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/pure_pursuit_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[9.631s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/_pure_pursuit_pkg_s.ep.rosidl_typesupport_fastrtps_c.c
+[9.631s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/libpure_pursuit_pkg__rosidl_generator_py.so
+[9.631s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/_pure_pursuit_pkg_s.ep.rosidl_typesupport_introspection_c.c
+[9.631s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/__init__.py
+[9.655s] Listing '/home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg'...
+[9.655s] Compiling '/home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/__init__.py'...
+[9.655s] Listing '/home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/msg'...
+[9.656s] Compiling '/home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/msg/__init__.py'...
+[9.656s] Compiling '/home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/msg/_way_point_path.py'...
+[9.659s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/pure_pursuit_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[9.659s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/pure_pursuit_pkg_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[9.659s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/pure_pursuit_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[9.659s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/pure_pursuit_pkg_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[9.659s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/pure_pursuit_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[9.659s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/pure_pursuit_pkg/local/lib/python3.10/dist-packages/pure_pursuit_pkg/pure_pursuit_pkg_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[9.659s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/libpure_pursuit_pkg__rosidl_generator_py.so
+[9.659s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/libpure_pursuit_pkg__rosidl_generator_py.so" to ""
+[9.659s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/msg/WayPointPath.idl
+[9.660s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/msg/WayPointPath.msg
+[9.660s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/pure_pursuit_pkg/pure_pursuit_odom
+[9.664s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/pure_pursuit_pkg/pure_pursuit_odom" to ""
+[9.664s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/pure_pursuit_pkg/waypoints_node
+[9.665s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/pure_pursuit_pkg/waypoints_node" to ""
+[9.665s] -- Up-to-date: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/msg
+[9.665s] -- Up-to-date: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/msg/WayPointPath.msg
+[9.665s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/config
+[9.665s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/config/path.yaml
+[9.665s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/launch
+[9.665s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/launch/pure_pursuit_controller.launch.py
+[9.665s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/launch/pure_pursuit_controller_eventhandler.launch.py
+[9.665s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/libwaypoint_tools_lib.so
+[9.665s] -- Set runtime path of "/home/rinese/RM/RM_prac/install/pure_pursuit_pkg/lib/libwaypoint_tools_lib.so" to ""
+[9.665s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/ament_index/resource_index/package_run_dependencies/pure_pursuit_pkg
+[9.666s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/ament_index/resource_index/parent_prefix_path/pure_pursuit_pkg
+[9.666s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/environment/ament_prefix_path.sh
+[9.666s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/environment/ament_prefix_path.dsv
+[9.666s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/environment/path.sh
+[9.666s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/environment/path.dsv
+[9.666s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/local_setup.bash
+[9.666s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/local_setup.sh
+[9.666s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/local_setup.zsh
+[9.666s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/local_setup.dsv
+[9.667s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/package.dsv
+[9.667s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/ament_index/resource_index/packages/pure_pursuit_pkg
+[9.667s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/export_pure_pursuit_pkg__rosidl_generator_cExport.cmake
+[9.667s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/export_pure_pursuit_pkg__rosidl_generator_cExport-noconfig.cmake
+[9.667s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/export_pure_pursuit_pkg__rosidl_typesupport_fastrtps_cExport.cmake
+[9.667s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/export_pure_pursuit_pkg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[9.667s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/export_pure_pursuit_pkg__rosidl_generator_cppExport.cmake
+[9.667s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/export_pure_pursuit_pkg__rosidl_typesupport_fastrtps_cppExport.cmake
+[9.667s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/export_pure_pursuit_pkg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[9.667s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/pure_pursuit_pkg__rosidl_typesupport_introspection_cExport.cmake
+[9.668s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/pure_pursuit_pkg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.668s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/pure_pursuit_pkg__rosidl_typesupport_cExport.cmake
+[9.668s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/pure_pursuit_pkg__rosidl_typesupport_cExport-noconfig.cmake
+[9.668s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/pure_pursuit_pkg__rosidl_typesupport_introspection_cppExport.cmake
+[9.668s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/pure_pursuit_pkg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[9.668s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/pure_pursuit_pkg__rosidl_typesupport_cppExport.cmake
+[9.668s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/pure_pursuit_pkg__rosidl_typesupport_cppExport-noconfig.cmake
+[9.668s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/export_pure_pursuit_pkg__rosidl_generator_pyExport.cmake
+[9.668s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/export_pure_pursuit_pkg__rosidl_generator_pyExport-noconfig.cmake
+[9.668s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/rosidl_cmake-extras.cmake
+[9.669s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.669s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.669s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/ament_cmake_export_libraries-extras.cmake
+[9.669s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/ament_cmake_export_targets-extras.cmake
+[9.669s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[9.669s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[9.669s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/pure_pursuit_pkgConfig.cmake
+[9.669s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/cmake/pure_pursuit_pkgConfig-version.cmake
+[9.669s] -- Installing: /home/rinese/RM/RM_prac/install/pure_pursuit_pkg/share/pure_pursuit_pkg/package.xml
+[9.671s] Invoked command in '/home/rinese/RM/RM_prac/build/pure_pursuit_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/rinese/RM/RM_prac/build/pure_pursuit_pkg
