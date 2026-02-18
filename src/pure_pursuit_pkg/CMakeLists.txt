@@ -23,6 +23,7 @@ find_package(visualization_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 find_package(yaml-cpp REQUIRED)
+find_package(ament_index_cpp REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/WayPointPath.msg"
@@ -83,6 +84,7 @@ ament_target_dependencies(
   std_msgs
   geometry_msgs
   visualization_msgs
+  ament_index_cpp
 )
 
 add_dependencies(pure_pursuit_odom ${cpp_typesupport_target})
