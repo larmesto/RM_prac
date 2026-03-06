@@ -13,7 +13,7 @@ def generate_launch_description():
     # Get the launch directory
 
     localization_pkg = get_package_share_directory('nav2_bringup')
-    localiation_dir = os.path.join(localization_pkg, 'launch')
+    localization_dir = os.path.join(localization_pkg, 'launch')
 
     # Arguments
     map = LaunchConfiguration('map')
@@ -33,7 +33,7 @@ def generate_launch_description():
         declare_map_cmd,
 
         IncludeLaunchDescription(
-            PythonLaunchDescriptionSource(os.path.join(localiation_dir,'localization_launch.py')),
+            PythonLaunchDescriptionSource(os.path.join(localization_dir,'localization_launch.py')),
             launch_arguments={'map': map}.items()
            ),
         
