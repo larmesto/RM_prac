@@ -16,7 +16,7 @@ def generate_launch_description():
             executable='publisher',
             name='publisher1',
             output='screen',
-            remappings=[{'/topic_pose','/pose1'}] 
+            remappings=[('/topic_pose','/pose1')] 
             
         ),
         Node(
@@ -24,7 +24,7 @@ def generate_launch_description():
             executable='publisher',
             name='publisher2',
             output='screen',
-            remappings=[{'/topic_pose','/pose2'}] 
+            remappings=[('/topic_pose','/pose2')] 
 
         ),
     ]
