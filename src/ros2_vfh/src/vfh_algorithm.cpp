@@ -431,9 +431,9 @@ int VFH_Algorithm::selectDirection()
     //    - extras con offset progresivo (no umbral duro 80°)
     //    - añadir Desired_Angle si cae dentro del hueco
     // ============================================================
-    const float min_opening = 10.0f * static_cast<float>(M_PI) / 180.0f;  // 10°
-    const float max_offset  = 40.0f * static_cast<float>(M_PI) / 180.0f;  // 40°
-    const float margin      = 5.0f  * static_cast<float>(M_PI) / 180.0f;  // 5° margen a borde
+    const float min_opening = 2.0f * static_cast<float>(M_PI) / 180.0f;  // 10°
+    const float max_offset  = 5.0f * static_cast<float>(M_PI) / 180.0f;  // 40°
+    const float margin      = 1.0f  * static_cast<float>(M_PI) / 180.0f;  // 5° margen a borde
 
     for (const auto &op : openings)
     {

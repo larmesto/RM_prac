@@ -57,4 +57,10 @@ ament_target_dependencies(
 
 install(TARGETS vfh_node DESTINATION lib/${PROJECT_NAME})
 
+install(DIRECTORY launch
+DESTINATION share/${PROJECT_NAME})
+
+install(DIRECTORY rviz
+DESTINATION share/${PROJECT_NAME})
+
 ament_package()

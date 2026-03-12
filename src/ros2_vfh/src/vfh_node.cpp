@@ -26,15 +26,21 @@
 
 #include <geometry_msgs/msg/point.hpp>
 
+#include <csignal> //interruptions
+
+
 
 VFH_node::VFH_node()
 : Node("vfh_node")
 {
 
-    m_robot_radius   = this->declare_parameter("m_robot_radius",0.18);
+    m_robot_radius   = this->declare_parameter("m_robot_radius",0.08);
     m_cell_size      = this->declare_parameter("m_cell_size",0.05);   
-    m_window_diameter= this->declare_parameter("m_window_diameter",60);
+    m_window_diameter= this->declare_parameter("m_window_diameter",30);
     m_sectors_number   = this->declare_parameter("sectors_number",72);
+	
+	use_amcl = this->declare_parameter("use_amcl",true);
+
 
     
 
@@ -59,9 +65,19 @@ VFH_node::VFH_node()
 
 	laser_sub_ = this->create_subscription<sensor_msgs::msg::LaserScan>(
             "/scan", scan_qos, std::bind(&VFH_node::scanCallback, this, std::placeholders::_1));
-			
-	odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
+	
+	if(use_amcl)
+	{
+		odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
+            "/amcl_odom", qos_profile, std::bind(&VFH_node::odomCallback, this, std::placeholders::_1));
+	}
+
+
+	else{
+		odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
             "/odom", qos_profile, std::bind(&VFH_node::odomCallback, this, std::placeholders::_1));
+	}
+	
 
 	goalPose_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
             "/goal_pose", qos_profile, std::bind(&VFH_node::goalPose_callback, this, std::placeholders::_1));
@@ -74,6 +90,10 @@ VFH_node::VFH_node()
 	goal_line_pub_ = this->create_publisher<visualization_msgs::msg::Marker>("goal_line_marker", 10);
 
 	vfh_markers_pub_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("vfh_visualization", 10);
+
+	//.---------------- Extra Visualization --------------
+
+	grid_marker_pub_ = this->create_publisher<visualization_msgs::msg::Marker>("vfh_grid_marker", 10);
 
 }
 
@@ -94,7 +114,11 @@ void VFH_node::goalPose_callback(const geometry_msgs::msg::PoseStamped::SharedPt
 
 void VFH_node::doTransform()
 {
-  std::string target_frame = "odom";
+  std::string target_frame;
+  if(use_amcl)
+  	target_frame="map";
+  else
+  	target_frame="odom";
   std::string source_frame = "base_footprint";
   geometry_msgs::msg::TransformStamped transform;
   rclcpp::Time now = this->get_clock()->now();
@@ -125,7 +149,34 @@ void VFH_node::doTransform()
 
 void VFH_node::odomCallback (const nav_msgs::msg::Odometry::SharedPtr odom_msg)
 {
-	doTransform();
+	double xdiff,ydiff;
+	xdiff=goal_position.x-odom_msg->pose.pose.position.x;
+	ydiff=goal_position.y-odom_msg->pose.pose.position.y;
+
+	tf2::Quaternion q( 
+        	    odom_msg->pose.pose.orientation.x,
+        	    odom_msg->pose.pose.orientation.y,
+        	    odom_msg->pose.pose.orientation.z,
+        	    odom_msg->pose.pose.orientation.w);
+
+    double roll, pitch, yaw;
+    tf2::Matrix3x3 m(q);
+    m.getRPY(roll,pitch,yaw);
+
+	double theta=yaw;
+	p_out.x=cos(theta)*xdiff+sin(theta)*ydiff;
+	p_out.y=-sin(theta)*xdiff+cos(theta)*ydiff;
+	desired_dist = sqrt(pow(p_out.x,2)+pow(p_out.y,2));
+ 	desired_angle = atan2(p_out.y,p_out.x);
+	if (desired_angle < 0)
+	{
+    	desired_angle = desired_angle + 2*M_PI;
+	}
+
+	if (desired_angle > 2*M_PI)
+	{
+		desired_angle = desired_angle - 2*M_PI;
+	}
 	robot_linear_vel = odom_msg->twist.twist.linear.x;
 	robot_angular_vel = odom_msg->twist.twist.angular.z;	
 }
@@ -177,7 +228,7 @@ void VFH_node::publishVFHVisualization()
 {
 	visualization_msgs::msg::MarkerArray array;
 	int id = 0;
-	auto stamp = rclcpp::Time(0);
+	auto stamp = rclcpp::Time(0); //importante, cuidado con el tiempo (no tomar el timpo "now" porque con el desafase ploteará con saltos)
 
     // Opcional: borrar todo antes
     visualization_msgs::msg::Marker clear;
@@ -193,6 +244,18 @@ void VFH_node::publishVFHVisualization()
     addPickedDirection(array, stamp, id);
 
     vfh_markers_pub_->publish(array);
+}
+
+void VFH_node::stop_to_cmd_vel()
+{
+    geometry_msgs::msg::Twist stop_msg;
+    stop_msg.linear.x = 0.0;
+    stop_msg.angular.z = 0.0;
+  
+    cmd_vel_pub_->publish(stop_msg);
+    
+    RCLCPP_INFO(this->get_logger(),"Stop command sent");
+    std::this_thread::sleep_for(std::chrono::milliseconds(1000));
 }
 
 
@@ -652,10 +715,27 @@ void VFH_node::publishGoalPosition()
 }
 
 
-int main(int argc, char** argv)
-{
-	rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<VFH_node>());
+std::shared_ptr<VFH_node> node = nullptr;
+
+void signal_handler(int signum) {
+
+    if (rclcpp::ok()) {
+        node->stop_to_cmd_vel();
+    }
     rclcpp::shutdown();
+    exit(signum);
+}
+
+int main(int argc, char *argv[])
+{
+
+    rclcpp::init(argc,argv);
+
+    node = std::make_shared<VFH_node>();
+
+    std::signal(SIGINT, signal_handler);
+
+    rclcpp::spin(node);
+
     return 0;
 }

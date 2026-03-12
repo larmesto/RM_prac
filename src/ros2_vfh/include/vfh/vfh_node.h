@@ -68,6 +68,8 @@ public:
 	int hist_size;
 
 	float sector_angle;
+	
+	bool use_amcl;
 
 	std::unique_ptr<VFH_Algorithm> m_vfh;
     
@@ -103,17 +105,26 @@ public:
 	rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr goal_line_pub_;
 	rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr vfh_markers_pub_;
 
+	// Extra markers
+	rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr grid_marker_pub_;
 
+
+	// Transforms
 	std::unique_ptr<tf2_ros::Buffer> tf_buffer; 
   	std::shared_ptr<tf2_ros::TransformListener> tf_listener;
 	
+
+	void stop_to_cmd_vel();
+
+	// Functions algorithm
     void scanCallback (const sensor_msgs::msg::LaserScan::SharedPtr scan_msg);
     void odomCallback (const nav_msgs::msg::Odometry::SharedPtr odom_msg);
 	void goalPose_callback(const geometry_msgs::msg::PoseStamped::SharedPtr goal_pose_msg);
 	void doTransform();
 	void publishCommand(float picked_angle, float chosen_speed);
 
-	// Visualización
+
+	//Functions Visualization
 		
 	void publishVFHVisualization();
 
@@ -122,8 +133,8 @@ public:
     void addPrimaryHistogram (visualization_msgs::msg::MarkerArray& array, const rclcpp::Time& stamp, int& id);
     void addBinaryHistogram (visualization_msgs::msg::MarkerArray& array, const rclcpp::Time& stamp, int& id);
     void addCandidateDirections (visualization_msgs::msg::MarkerArray& array, const rclcpp::Time& stamp, int& id);
-    void addPickedDirection (visualization_msgs::msg::MarkerArray& array, const rclcpp::Time& stamp, int& id);	
-
+    void addPickedDirection (visualization_msgs::msg::MarkerArray& array, const rclcpp::Time& stamp, int& id);
+	
 	void publishGoalPosition();
 
 };
