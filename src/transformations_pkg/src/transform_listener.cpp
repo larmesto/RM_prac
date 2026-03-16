@@ -6,6 +6,7 @@
 #include "rclcpp/rclcpp.hpp" 
 
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp> 
+#include "tf2_ros/static_transform_broadcaster.h"
 #include "geometry_msgs/msg/twist.hpp"
 #include "tf2_ros/transform_listener.h" 
 #include "tf2_ros/buffer.h" 
@@ -20,12 +21,25 @@ class TransformListener : public rclcpp::Node
   { 
 
     tf_buffer = std::make_unique<tf2_ros::Buffer>(this->get_clock()); 
-    tf_listener = std::make_shared<tf2_ros::TransformListener>(*tf_buffer); 
+    tf_listener = std::make_shared<tf2_ros::TransformListener>(*tf_buffer);
+    
     
     bill_subscriber = this->create_subscription<geometry_msgs::msg::Point>( 
     "bill",10,std::bind(&TransformListener::camera_callback,this,std::placeholders::_1)); 
     
-    cmd_vel_pub = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel",10); 
+    cmd_vel_pub = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel",10);
+    //Publish a static transform
+    broadcaster_ = std::make_shared<tf2_ros::StaticTransformBroadcaster>(this);
+
+    geometry_msgs::msg::TransformStamped transform;
+
+    transform.header.stamp = this->get_clock()->now();
+    transform.header.frame_id = "base_link";
+    transform.child_frame_id = "camera_link";
+
+    //TODO: set proper values on "transform" variable to set the transformation between the camera_link and base_link
+
+    broadcaster_->sendTransform(transform);
   } 
   private: 
 
