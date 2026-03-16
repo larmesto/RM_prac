@@ -75,6 +75,7 @@ class TransformListener : public rclcpp::Node
   std::shared_ptr<tf2_ros::TransformListener> tf_listener; 
   rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr bill_subscriber; 
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub; 
+  std::shared_ptr<tf2_ros::StaticTransformBroadcaster> broadcaster_;
 
 }; 
 
