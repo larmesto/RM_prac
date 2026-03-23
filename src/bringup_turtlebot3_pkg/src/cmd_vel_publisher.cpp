@@ -29,14 +29,18 @@ class CmdVelPublisher : public rclcpp::Node
     void cmd_vel_callback()
     {
         //TODO: Publish on cmd_vel topic
+    		geometry_msgs::msg::Twist cmd_vel_msg = geometry_msgs::msg::Twist();
+    		rclcpp::Time time = this->get_clock()->now();
+    		double t=time.seconds();
+    		(void)t; // This is to avoid a warning when the code is empty
+    		cmd_vel_msg.linear.x=0.0;
+    		cmd_vel_msg.angular.z=0.0;
+    		cmd_vel_publisher->publish(cmd_vel_msg);
     }
 
     void odom_data_callback(const nav_msgs::msg::Odometry::SharedPtr odom_msg){
-
-      (void)odom_msg; // This is to avoid a warning when the code is empty
-
-      //TODO: Print positions x,y and linear velocities x,y  and angular velocity z
-      //Hint: Use RCLCPP_INFO
+      //TODO: Print positions x,y and linear velocities x,y  and angle theta
+      RCLCPP_INFO(this->get_logger(),"x: %f",odom_msg->pose.pose.position.x);
     }
     rclcpp::TimerBase::SharedPtr timer;
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_publisher;
