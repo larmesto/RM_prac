@@ -42,7 +42,7 @@ VFH_node::VFH_node()
 
     m_robot_radius   = this->declare_parameter("m_robot_radius",0.1);
     m_cell_size      = this->declare_parameter("m_cell_size",0.05);   
-    m_window_diameter= this->declare_parameter("m_window_diameter",30);
+    m_window_diameter= this->declare_parameter("m_window_diameter",45);
     m_sectors_number   = this->declare_parameter("sectors_number",72);
 	
 	use_amcl = this->declare_parameter("use_amcl",false);

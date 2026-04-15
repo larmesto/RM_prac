@@ -1,0 +1,49 @@
+[0.035s] Invoking command in '/home/rinese/RM_prac/build/navigation_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/rinese/RM_prac/src/navigation_pkg -DCMAKE_INSTALL_PREFIX=/home/rinese/RM_prac/install/navigation_pkg
+[0.157s] -- The C compiler identification is GNU 11.4.0
+[0.360s] -- The CXX compiler identification is GNU 11.4.0
+[0.375s] -- Detecting C compiler ABI info
+[0.577s] -- Detecting C compiler ABI info - done
+[0.603s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.603s] -- Detecting C compile features
+[0.604s] -- Detecting C compile features - done
+[0.610s] -- Detecting CXX compiler ABI info
+[0.886s] -- Detecting CXX compiler ABI info - done
+[0.913s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.913s] -- Detecting CXX compile features
+[0.914s] -- Detecting CXX compile features - done
+[0.920s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.375s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.763s] -- Configuring done
+[1.776s] -- Generating done
+[1.787s] -- Build files have been written to: /home/rinese/RM_prac/build/navigation_pkg
+[1.800s] Invoked command in '/home/rinese/RM_prac/build/navigation_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/rinese/RM_prac/src/navigation_pkg -DCMAKE_INSTALL_PREFIX=/home/rinese/RM_prac/install/navigation_pkg
+[1.800s] Invoking command in '/home/rinese/RM_prac/build/navigation_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM_prac/build/navigation_pkg -- -j8 -l8
+[3.660s] Invoked command in '/home/rinese/RM_prac/build/navigation_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM_prac/build/navigation_pkg -- -j8 -l8
+[3.688s] Invoking command in '/home/rinese/RM_prac/build/navigation_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rinese/RM_prac/build/navigation_pkg
+[4.042s] -- Install configuration: ""
+[4.043s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/launch
+[4.043s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/launch/turtlebot3_navigation.launch.py
+[4.043s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/launch/speed_limit.launch.py
+[4.043s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/launch/navigation_with_speed_limit.launch.py
+[4.043s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/launch/navigation.launch.py
+[4.043s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/param
+[4.043s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/param/keepout_params.yaml
+[4.043s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/param/nav2_params.yaml
+[4.044s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/param/speed_params.yaml
+[4.044s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/param/nav2_params_speed_limit.yaml
+[4.044s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/ament_index/resource_index/package_run_dependencies/navigation_pkg
+[4.044s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/ament_index/resource_index/parent_prefix_path/navigation_pkg
+[4.044s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/environment/ament_prefix_path.sh
+[4.044s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/environment/ament_prefix_path.dsv
+[4.044s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/environment/path.sh
+[4.044s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/environment/path.dsv
+[4.044s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/local_setup.bash
+[4.045s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/local_setup.sh
+[4.045s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/local_setup.zsh
+[4.045s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/local_setup.dsv
+[4.053s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/package.dsv
+[4.053s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/ament_index/resource_index/packages/navigation_pkg
+[4.053s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/cmake/navigation_pkgConfig.cmake
+[4.053s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/cmake/navigation_pkgConfig-version.cmake
+[4.054s] -- Installing: /home/rinese/RM_prac/install/navigation_pkg/share/navigation_pkg/package.xml
+[4.057s] Invoked command in '/home/rinese/RM_prac/build/navigation_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rinese/RM_prac/build/navigation_pkg
