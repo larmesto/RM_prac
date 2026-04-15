@@ -1,6 +1,0 @@
-Invoking command in '/home/rinese/RM_prac/build/ros2_vfh': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/rinese/RM_prac/src/ros2_vfh -DCMAKE_INSTALL_PREFIX=/home/rinese/RM_prac/install/ros2_vfh
-Invoked command in '/home/rinese/RM_prac/build/ros2_vfh' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/rinese/RM_prac/src/ros2_vfh -DCMAKE_INSTALL_PREFIX=/home/rinese/RM_prac/install/ros2_vfh
-Invoking command in '/home/rinese/RM_prac/build/ros2_vfh': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM_prac/build/ros2_vfh -- -j8 -l8
-Invoked command in '/home/rinese/RM_prac/build/ros2_vfh' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM_prac/build/ros2_vfh -- -j8 -l8
-Invoking command in '/home/rinese/RM_prac/build/ros2_vfh': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rinese/RM_prac/build/ros2_vfh
-Invoked command in '/home/rinese/RM_prac/build/ros2_vfh' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rinese/RM_prac/build/ros2_vfh
