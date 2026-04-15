@@ -70,6 +70,8 @@ public:
 	float sector_angle;
 	
 	bool use_amcl;
+	bool pub_cmd_vel;
+	bool wandering_mode;
 
 	std::unique_ptr<VFH_Algorithm> m_vfh;
     

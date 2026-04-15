@@ -28,21 +28,26 @@
 
 #include <csignal> //interruptions
 
+static inline float wrap_pi(float a)
+{
+  while (a >  M_PI) a -= 2.0f * M_PI;
+  while (a <= -M_PI) a += 2.0f * M_PI;
+  return a;
+}
 
 
 VFH_node::VFH_node()
 : Node("vfh_node")
 {
 
-    m_robot_radius   = this->declare_parameter("m_robot_radius",0.08);
+    m_robot_radius   = this->declare_parameter("m_robot_radius",0.1);
     m_cell_size      = this->declare_parameter("m_cell_size",0.05);   
     m_window_diameter= this->declare_parameter("m_window_diameter",30);
     m_sectors_number   = this->declare_parameter("sectors_number",72);
 	
-	use_amcl = this->declare_parameter("use_amcl",true);
-
-
-    
+	use_amcl = this->declare_parameter("use_amcl",false);
+	wandering_mode = this->declare_parameter("wandering_mode",false);
+	pub_cmd_vel = this->declare_parameter("pub_cmd_vel",true);
 
     m_vfh = std::make_unique<VFH_Algorithm>(
         m_robot_radius,    
@@ -91,10 +96,6 @@ VFH_node::VFH_node()
 
 	vfh_markers_pub_ = this->create_publisher<visualization_msgs::msg::MarkerArray>("vfh_visualization", 10);
 
-	//.---------------- Extra Visualization --------------
-
-	grid_marker_pub_ = this->create_publisher<visualization_msgs::msg::Marker>("vfh_grid_marker", 10);
-
 }
 
 
@@ -103,12 +104,14 @@ VFH_node::~VFH_node(){}
 
 void VFH_node::goalPose_callback(const geometry_msgs::msg::PoseStamped::SharedPtr goal_pose_msg)
 {
+	if(!wandering_mode)
+	{
 	RCLCPP_INFO(this->get_logger(),"Got goal pose.");
  	goal_position = goal_pose_msg->pose.position;
 	doTransform();
 	RCLCPP_INFO(this->get_logger(),"Desired Distance: %.3f; Desired Angle: %.3f", desired_dist, desired_angle);
-
 	goal_flag = true;
+	}
 }
 
 
@@ -149,60 +152,67 @@ void VFH_node::doTransform()
 
 void VFH_node::odomCallback (const nav_msgs::msg::Odometry::SharedPtr odom_msg)
 {
-	double xdiff,ydiff;
-	xdiff=goal_position.x-odom_msg->pose.pose.position.x;
-	ydiff=goal_position.y-odom_msg->pose.pose.position.y;
-
-	tf2::Quaternion q( 
-        	    odom_msg->pose.pose.orientation.x,
-        	    odom_msg->pose.pose.orientation.y,
-        	    odom_msg->pose.pose.orientation.z,
-        	    odom_msg->pose.pose.orientation.w);
-
-    double roll, pitch, yaw;
-    tf2::Matrix3x3 m(q);
-    m.getRPY(roll,pitch,yaw);
-
-	double theta=yaw;
-	p_out.x=cos(theta)*xdiff+sin(theta)*ydiff;
-	p_out.y=-sin(theta)*xdiff+cos(theta)*ydiff;
-	desired_dist = sqrt(pow(p_out.x,2)+pow(p_out.y,2));
- 	desired_angle = atan2(p_out.y,p_out.x);
-	if (desired_angle < 0)
+	if(!wandering_mode)
 	{
-    	desired_angle = desired_angle + 2*M_PI;
+		double xdiff,ydiff;
+		xdiff=goal_position.x-odom_msg->pose.pose.position.x;
+		ydiff=goal_position.y-odom_msg->pose.pose.position.y;
+
+		tf2::Quaternion q( 
+    	    	    odom_msg->pose.pose.orientation.x,
+    	    	    odom_msg->pose.pose.orientation.y,
+    	    	    odom_msg->pose.pose.orientation.z,
+    	    	    odom_msg->pose.pose.orientation.w);
+
+    	double roll, pitch, yaw;
+    	tf2::Matrix3x3 m(q);
+    	m.getRPY(roll,pitch,yaw);
+
+		double theta=yaw;
+		p_out.x=cos(theta)*xdiff+sin(theta)*ydiff;
+		p_out.y=-sin(theta)*xdiff+cos(theta)*ydiff;
+		desired_dist = sqrt(pow(p_out.x,2)+pow(p_out.y,2));
+ 		desired_angle = atan2(p_out.y,p_out.x);
+		if (desired_angle < 0)
+		{
+    		desired_angle = desired_angle + 2*M_PI;
+		}
+
+		if (desired_angle > 2*M_PI)
+		{
+			desired_angle = desired_angle - 2*M_PI;
+		}
 	}
 
-	if (desired_angle > 2*M_PI)
-	{
-		desired_angle = desired_angle - 2*M_PI;
-	}
 	robot_linear_vel = odom_msg->twist.twist.linear.x;
 	robot_angular_vel = odom_msg->twist.twist.angular.z;	
 }
 
+
 void VFH_node::scanCallback (const sensor_msgs::msg::LaserScan::SharedPtr scan_msg)
 {	
-	int n = scan_msg->ranges.size();
 
-	m_laser_ranges.resize(n);
 
-	laser_resolution = scan_msg->angle_increment;
+		int n = scan_msg->ranges.size();
 
-	m_laser_ranges.assign(n, std::numeric_limits<double>::infinity());
+		m_laser_ranges.resize(n);
 
-	for (int i = 0; i < n; ++i)
-	{
-	    double r = scan_msg->ranges[i];
+		laser_resolution = scan_msg->angle_increment;
 
-	    if (!std::isfinite(r) || r < scan_msg->range_min || r > scan_msg->range_max)
-	    {
-	        continue;
-	    }
-	    m_laser_ranges[i] = r;
-	}
+		m_laser_ranges.assign(n, std::numeric_limits<double>::infinity());
 
-	update();
+		for (int i = 0; i < n; ++i)
+		{
+		    double r = scan_msg->ranges[i];
+
+		    if (!std::isfinite(r) || r < scan_msg->range_min || r > scan_msg->range_max)
+		    {
+		        continue;
+		    }
+		    m_laser_ranges[i] = r;
+		}
+
+		update();
 }
 
 
@@ -210,11 +220,18 @@ void VFH_node::scanCallback (const sensor_msgs::msg::LaserScan::SharedPtr scan_m
 
 void VFH_node::update()
 {
+	if (wandering_mode)
+	{
+	    desired_angle = 0.0;
+	    desired_dist = 1.0;
+	}
+
 	m_vfh->Update_VFH(m_laser_ranges,laser_resolution, robot_linear_vel, desired_angle, desired_dist);
 	
 	publishVFHVisualization();
 
-	if (m_vfh->selectDirection() && goal_flag)
+
+	if (m_vfh->selectDirection())
 	{
 		publishCommand(m_vfh->Picked_Angle,m_vfh->Chosen_Speed);
 	}
@@ -240,8 +257,12 @@ void VFH_node::publishVFHVisualization()
     addReferenceSectors(array, stamp, id);
     addPrimaryHistogram(array, stamp, id);
     addBinaryHistogram(array, stamp, id);
+
+	if(goal_flag)
+	{
     addCandidateDirections(array, stamp, id);
     addPickedDirection(array, stamp, id);
+	}
 
     vfh_markers_pub_->publish(array);
 }
@@ -262,13 +283,6 @@ void VFH_node::stop_to_cmd_vel()
 //---------------------------------------------------------------------------
 //---------------------------------------------------------------------------
 //---------------------------------------------------------------------------
-
-static inline float wrap_pi(float a)
-{
-  while (a >  M_PI) a -= 2.0f * M_PI;
-  while (a <= -M_PI) a += 2.0f * M_PI;
-  return a;
-}
 
 void VFH_node::publishCommand(float picked_angle, float chosen_speed)
 {
@@ -319,7 +333,8 @@ void VFH_node::publishCommand(float picked_angle, float chosen_speed)
         cmd.angular.z = omega;
     }
 
-    cmd_vel_pub_->publish(cmd);
+	if(pub_cmd_vel)
+    	cmd_vel_pub_->publish(cmd);
 }
 
 

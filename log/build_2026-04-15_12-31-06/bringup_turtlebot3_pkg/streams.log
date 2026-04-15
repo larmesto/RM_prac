@@ -1,0 +1,75 @@
+[0.029s] Invoking command in '/home/rinese/RM_prac/build/bringup_turtlebot3_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/rinese/RM_prac/src/bringup_turtlebot3_pkg -DCMAKE_INSTALL_PREFIX=/home/rinese/RM_prac/install/bringup_turtlebot3_pkg
+[0.139s] -- The C compiler identification is GNU 11.4.0
+[0.270s] -- The CXX compiler identification is GNU 11.4.0
+[0.278s] -- Detecting C compiler ABI info
+[0.349s] -- Detecting C compiler ABI info - done
+[0.359s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.360s] -- Detecting C compile features
+[0.360s] -- Detecting C compile features - done
+[0.365s] -- Detecting CXX compiler ABI info
+[0.446s] -- Detecting CXX compiler ABI info - done
+[0.453s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.453s] -- Detecting CXX compile features
+[0.454s] -- Detecting CXX compile features - done
+[0.470s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.640s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.773s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.850s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.857s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.870s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.890s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.912s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.970s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.974s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.070s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.105s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.157s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.168s] -- Looking for pthread.h
+[1.232s] -- Looking for pthread.h - found
+[1.233s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.305s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.305s] -- Found Threads: TRUE  
+[1.375s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.395s] -- Found tf2: 0.25.19 (/opt/ros/humble/share/tf2/cmake)
+[1.409s] -- Found tf2_geometry_msgs: 0.25.19 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.431s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.434s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.434s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.558s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.586s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.678s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.679s] -- Configured cppcheck include dirs: 
+[1.681s] -- Configured cppcheck exclude dirs and/or files: 
+[1.681s] -- Added test 'lint_cmake' to check CMake code style
+[1.681s] -- Added test 'uncrustify' to check C / C++ code style
+[1.681s] -- Configured uncrustify additional arguments: 
+[1.682s] -- Added test 'xmllint' to check XML markup files
+[1.683s] -- Configuring done
+[1.704s] -- Generating done
+[1.706s] -- Build files have been written to: /home/rinese/RM_prac/build/bringup_turtlebot3_pkg
+[1.746s] Invoked command in '/home/rinese/RM_prac/build/bringup_turtlebot3_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/rinese/RM_prac/src/bringup_turtlebot3_pkg -DCMAKE_INSTALL_PREFIX=/home/rinese/RM_prac/install/bringup_turtlebot3_pkg
+[1.748s] Invoking command in '/home/rinese/RM_prac/build/bringup_turtlebot3_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM_prac/build/bringup_turtlebot3_pkg -- -j8 -l8
+[1.810s] [ 50%] [32mBuilding CXX object CMakeFiles/cmd_vel_publisher.dir/src/cmd_vel_publisher.cpp.o[0m
+[14.907s] [100%] [32m[1mLinking CXX executable cmd_vel_publisher[0m
+[15.495s] [100%] Built target cmd_vel_publisher
+[15.507s] Invoked command in '/home/rinese/RM_prac/build/bringup_turtlebot3_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rinese/RM_prac/build/bringup_turtlebot3_pkg -- -j8 -l8
+[15.509s] Invoking command in '/home/rinese/RM_prac/build/bringup_turtlebot3_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rinese/RM_prac/build/bringup_turtlebot3_pkg
+[15.516s] -- Install configuration: ""
+[15.516s] -- Installing: /home/rinese/RM_prac/install/bringup_turtlebot3_pkg/lib/bringup_turtlebot3_pkg/cmd_vel_publisher
+[15.519s] -- Set runtime path of "/home/rinese/RM_prac/install/bringup_turtlebot3_pkg/lib/bringup_turtlebot3_pkg/cmd_vel_publisher" to ""
+[15.519s] -- Installing: /home/rinese/RM_prac/install/bringup_turtlebot3_pkg/share/ament_index/resource_index/package_run_dependencies/bringup_turtlebot3_pkg
+[15.519s] -- Installing: /home/rinese/RM_prac/install/bringup_turtlebot3_pkg/share/ament_index/resource_index/parent_prefix_path/bringup_turtlebot3_pkg
+[15.519s] -- Installing: /home/rinese/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/environment/ament_prefix_path.sh
+[15.519s] -- Installing: /home/rinese/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/environment/ament_prefix_path.dsv
+[15.520s] -- Installing: /home/rinese/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/environment/path.sh
+[15.520s] -- Installing: /home/rinese/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/environment/path.dsv
+[15.520s] -- Installing: /home/rinese/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/local_setup.bash
+[15.520s] -- Installing: /home/rinese/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/local_setup.sh
+[15.520s] -- Installing: /home/rinese/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/local_setup.zsh
+[15.520s] -- Installing: /home/rinese/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/local_setup.dsv
+[15.520s] -- Installing: /home/rinese/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/package.dsv
+[15.520s] -- Installing: /home/rinese/RM_prac/install/bringup_turtlebot3_pkg/share/ament_index/resource_index/packages/bringup_turtlebot3_pkg
+[15.521s] -- Installing: /home/rinese/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/cmake/bringup_turtlebot3_pkgConfig.cmake
+[15.521s] -- Installing: /home/rinese/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/cmake/bringup_turtlebot3_pkgConfig-version.cmake
+[15.521s] -- Installing: /home/rinese/RM_prac/install/bringup_turtlebot3_pkg/share/bringup_turtlebot3_pkg/package.xml
+[15.526s] Invoked command in '/home/rinese/RM_prac/build/bringup_turtlebot3_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rinese/RM_prac/build/bringup_turtlebot3_pkg
