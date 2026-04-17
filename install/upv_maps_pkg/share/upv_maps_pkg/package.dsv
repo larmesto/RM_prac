@@ -1,8 +1,0 @@
-source;share/upv_maps_pkg/hook/cmake_prefix_path.ps1
-source;share/upv_maps_pkg/hook/cmake_prefix_path.dsv
-source;share/upv_maps_pkg/hook/cmake_prefix_path.sh
-source;share/upv_maps_pkg/local_setup.bash
-source;share/upv_maps_pkg/local_setup.dsv
-source;share/upv_maps_pkg/local_setup.ps1
-source;share/upv_maps_pkg/local_setup.sh
-source;share/upv_maps_pkg/local_setup.zsh
