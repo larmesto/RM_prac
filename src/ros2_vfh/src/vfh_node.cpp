@@ -313,7 +313,7 @@ void VFH_node::publishCommand(float picked_angle, float chosen_speed)
         cmd.angular.z = omega;
     }
 
-	if ((std::fabs(e_db) > align_thresh) && (desired_dist < min_dist))
+	else if ((std::fabs(e_db) > align_thresh) && (desired_dist < min_dist))
 	{
 		cmd.linear.x = 0.0;
 		cmd.angular.z = 0.0;
