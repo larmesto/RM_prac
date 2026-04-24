@@ -109,7 +109,7 @@ private:
         double theta_ref_ = yaw;
 
         x_ref=cos(theta_rob_0)*x_ref_-sin(theta_rob_0)*y_ref_+x_rob_0;
-		y_ref=sin(theta_rob_0)*x_ref+cos(theta_rob_0)*y_ref+y_rob_0;
+		y_ref=sin(theta_rob_0)*x_ref_+cos(theta_rob_0)*y_ref_+y_rob_0;
 
         theta_ref=theta_rob_0+theta_ref_;
 
