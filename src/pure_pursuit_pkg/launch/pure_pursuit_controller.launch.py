@@ -14,7 +14,7 @@ def generate_launch_description():
     declare_path_file_cmd = DeclareLaunchArgument(
         'path_file',
         default_value=os.path.join(
-            get_package_share_directory('pure_pursuit_controller_pkg'),
+            get_package_share_directory('pure_pursuit_pkg'),
             'config','path.yaml'),
             description='To select the amount of points to define the trajectory')
 
@@ -23,7 +23,7 @@ def generate_launch_description():
         declare_path_file_cmd,
 
         Node(
-            package='pure_pursuit_controller_pkg',
+            package='pure_pursuit_pkg',
             executable='waypoints_node',
             name='waypoints_node',
             output='screen',
@@ -31,7 +31,7 @@ def generate_launch_description():
         ),
 
         Node(
-            package='pure_pursuit_controller_pkg',
+            package='pure_pursuit_pkg',
             executable='pure_pursuit_odom',
             name='pure_pursuit_odom',
             output='screen',
