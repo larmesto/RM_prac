@@ -5,7 +5,7 @@
 #include <math.h>
 
 #include "rclcpp/rclcpp.hpp"
-#include <geometry_msgs/msg/twist.hpp>
+#include <geometry_msgs/msg/twist_stamped.hpp>
 #include <sensor_msgs/msg/battery_state.hpp>
 #include <std_srvs/srv/empty.hpp>
 #include <turtlebot3_msgs/srv/sound.hpp>
@@ -19,7 +19,7 @@ class MaintenanceMode : public rclcpp::Node
     MaintenanceMode()
     : Node("maintenance_mode")
     {
-      cmd_vel_publisher = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
+      cmd_vel_publisher = this->create_publisher<geometry_msgs::msg::TwistStamped>("cmd_vel", 10);
 
       bat_subscriber = this->create_subscription<sensor_msgs::msg::BatteryState>(
       "battery_state", 10, std::bind(&MaintenanceMode::bat_data_callback, this,std::placeholders::_1));
@@ -33,9 +33,11 @@ class MaintenanceMode : public rclcpp::Node
 
 void stop_to_cmd_vel(){
 
-    geometry_msgs::msg::Twist stop_msg;
-    stop_msg.linear.x = 0.0;
-    stop_msg.angular.z = 0.0;
+    geometry_msgs::msg::TwistStamped stop_msg;
+	stop_msg.header.stamp = this->now();
+	stop_msg.header.frame_id = "base_link";
+    stop_msg.twist.linear.x = 0.0;
+    stop_msg.twist.angular.z = 0.0;
   
     cmd_vel_publisher->publish(stop_msg);
     
@@ -47,12 +49,14 @@ void stop_to_cmd_vel(){
     void cmd_vel_callback()
     {
         //TODO: Publish on cmd_vel topic
-    		geometry_msgs::msg::Twist cmd_vel_msg = geometry_msgs::msg::Twist();
-    		rclcpp::Time time = this->get_clock()->now();
+    		geometry_msgs::msg::TwistStamped cmd_vel_msg = geometry_msgs::msg::TwistStamped();
+    		rclcpp::Time time = this->now();
     		double t=time.seconds();
     		(void)t; // This is to avoid a warning when the code is empty
-    		cmd_vel_msg.linear.x=0.1*sin(t);
-    		cmd_vel_msg.angular.z=0.1*cos(t);
+			cmd_vel_msg.header.stamp = time;
+			cmd_vel_msg.header.frame_id = "base_link";
+    		cmd_vel_msg.twist.linear.x=0.1*sin(t);
+    		cmd_vel_msg.twist.angular.z=0.1*cos(t);
     		cmd_vel_publisher->publish(cmd_vel_msg);
     }
 
@@ -61,9 +65,11 @@ void stop_to_cmd_vel(){
       RCLCPP_INFO(this->get_logger(),"Bat: %.2f ",bat_msg->percentage);
 	  if (bat_msg->percentage<80 && !sound_played)
 	  {
-		  geometry_msgs::msg::Twist cmd_vel_msg = geometry_msgs::msg::Twist();
-    	  cmd_vel_msg.linear.x=0;
-    	  cmd_vel_msg.angular.z=0;
+		  geometry_msgs::msg::TwistStamped cmd_vel_msg = geometry_msgs::msg::TwistStamped();
+    	  cmd_vel_msg.header.stamp =this->now();
+		  cmd_vel_msg.header.frame_id = "base_link";
+		  cmd_vel_msg.twist.linear.x=0;
+    	  cmd_vel_msg.twist.angular.z=0;
     	  cmd_vel_publisher->publish(cmd_vel_msg);
 		  if (!sound_srv->service_is_ready()) {
 			  RCLCPP_WARN(this->get_logger(), "Sound service not ready");
@@ -93,7 +99,7 @@ void stop_to_cmd_vel(){
 	  }
     }
     rclcpp::TimerBase::SharedPtr timer;
-    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_publisher;
+    rclcpp::Publisher<geometry_msgs::msg::TwistStamped>::SharedPtr cmd_vel_publisher;
     rclcpp::Subscription<sensor_msgs::msg::BatteryState>::SharedPtr bat_subscriber;
 	rclcpp::Client<std_srvs::srv::Empty>::SharedPtr shutdown_srv;
 	rclcpp::Client<turtlebot3_msgs::srv::Sound>::SharedPtr sound_srv;

@@ -10,7 +10,7 @@
 #include <geometry_msgs/msg/pose_stamped.hpp>
 
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp> 
-#include "geometry_msgs/msg/twist.hpp"
+#include "geometry_msgs/msg/twist_stamped.hpp"
 #include "tf2_ros/transform_listener.h" 
 #include "tf2_ros/buffer.h" 
 #include "tf2/exceptions.h"
@@ -94,7 +94,7 @@ VFH_node::VFH_node()
 
 	//-------------- Publishers -----------------------
 
-	cmd_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel",10);
+	cmd_vel_pub_ = this->create_publisher<geometry_msgs::msg::TwistStamped>("cmd_vel",10);
 		
 	goal_line_pub_ = this->create_publisher<visualization_msgs::msg::Marker>("goal_line_marker", 10);
 
@@ -120,9 +120,11 @@ void VFH_node::stopRobotCallback(
 
     goal_flag = false;
 
-    geometry_msgs::msg::Twist stop_msg;
-    stop_msg.linear.x = 0.0;
-    stop_msg.angular.z = 0.0;
+    geometry_msgs::msg::TwistStamped stop_msg;
+	stop_msg.header.stamp = this->now();
+	stop_msg.header.frame_id = "base_link";
+    stop_msg.twist.linear.x = 0.0;
+    stop_msg.twist.angular.z = 0.0;
     cmd_vel_pub_->publish(stop_msg);
 
     response->success = true;
@@ -272,9 +274,11 @@ void VFH_node::update()
 
 void VFH_node::stop_to_cmd_vel()
 {
-    geometry_msgs::msg::Twist stop_msg;
-    stop_msg.linear.x = 0.0;
-    stop_msg.angular.z = 0.0;
+    geometry_msgs::msg::TwistStamped stop_msg;
+	stop_msg.header.stamp = this->now();
+	stop_msg.header.frame_id = "base_link";
+    stop_msg.twist.linear.x = 0.0;
+    stop_msg.twist.angular.z = 0.0;
   
     cmd_vel_pub_->publish(stop_msg);
     
@@ -315,7 +319,7 @@ void VFH_node::publishVFHVisualization()
 
 void VFH_node::publishCommand(float picked_angle, float chosen_speed)
 {
-    geometry_msgs::msg::Twist cmd;
+    geometry_msgs::msg::TwistStamped cmd;
 
     // 1) normaliza error angular
     const float e = wrap_pi(picked_angle);
@@ -329,6 +333,9 @@ void VFH_node::publishCommand(float picked_angle, float chosen_speed)
     const float min_v        = 0.05f;  // m/s (opcional)
     const float max_v        = chosen_speed;
 	const float min_dist	 = 0.05;
+	
+	cmd.header.stamp = this->now();
+	cmd.header.frame_id = "base_link";
 
     // 3) deadband (evita micro-oscilación)
     float e_db = (std::fabs(e) < deadband) ? 0.0f : e;
@@ -336,16 +343,16 @@ void VFH_node::publishCommand(float picked_angle, float chosen_speed)
     // 4) modo align: si el error es grande, NO avances (evitas espirales y giro errático)
     if (std::fabs(e_db) > align_thresh)
     {
-        cmd.linear.x  = 0.0;
+        cmd.twist.linear.x  = 0.0;
         float omega = k_omega_align * e_db;
         omega = std::clamp(omega, -max_omega, max_omega);
-        cmd.angular.z = omega;
+        cmd.twist.angular.z = omega;
     }
 
 	if ((std::fabs(e_db) > align_thresh) && (desired_dist < min_dist))
 	{
-		cmd.linear.x = 0.0;
-		cmd.angular.z = 0.0;
+		cmd.twist.linear.x = 0.0;
+		cmd.twist.angular.z = 0.0;
 	}
 
     else
@@ -358,8 +365,8 @@ void VFH_node::publishCommand(float picked_angle, float chosen_speed)
         float omega = k_omega_go * e_db;
         omega = std::clamp(omega, -max_omega, max_omega);
 	
-        cmd.linear.x  = v;
-        cmd.angular.z = omega;
+        cmd.twist.linear.x  = v;
+        cmd.twist.angular.z = omega;
     }
 
 	if(pub_cmd_vel)

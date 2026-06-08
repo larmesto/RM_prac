@@ -11,21 +11,14 @@
 #include "pure_pursuit_pkg/WayPointPathTools.hpp"
 
 #include <rclcpp/rclcpp.hpp>
-    #include <rclcpp/qos.hpp>
-
+#include <rclcpp/qos.hpp>
 #include <nav_msgs/msg/odometry.hpp>
-
+#include <geometry_msgs/msg/twist_stamped.hpp>
 #include "std_msgs/msg/header.hpp"
-
 #include "builtin_interfaces/msg/time.hpp"
-
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
-
 #include "pure_pursuit_pkg/msg/way_point_path.hpp"
-
 #include "visualization_msgs/msg/marker.hpp"
-
-
 
 class PurePursuitOdom : public rclcpp::Node	
 {
@@ -47,7 +40,7 @@ public: PurePursuitOdom() : Node("pure_pursuit")
     waypoint_subs = this->create_subscription<pure_pursuit_pkg::msg::WayPointPath>(
         "waypoints",qos_profile,std::bind(&PurePursuitOdom::waypoint_callback, this, std::placeholders::_1));
 
-    cmd_vel_pub = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel",10);
+    cmd_vel_pub = this->create_publisher<geometry_msgs::msg::TwistStamped>("cmd_vel",10);
 
 	marker_pub_ = this->create_publisher<visualization_msgs::msg::Marker>("marker_path_controller",qos_profile);
 
@@ -55,9 +48,11 @@ public: PurePursuitOdom() : Node("pure_pursuit")
 
 void stop_to_cmd_vel(){
 
-    geometry_msgs::msg::Twist stop_msg;
-    stop_msg.linear.x = 0.0;
-    stop_msg.angular.z = 0.0;
+    geometry_msgs::msg::TwistStamped stop_msg;
+	stop_msg.header.stamp = this->now();
+	stop_msg.header.frame_id = "base_link";
+    stop_msg.twist.linear.x = 0.0;
+    stop_msg.twist.angular.z = 0.0;
   
     cmd_vel_pub->publish(stop_msg);
 
@@ -158,7 +153,7 @@ private:
 		if (isPathReceived)
 		{
 			//TODO: compute closest point to the path, implement pure pursuit controller
-			//		based on latest pose of the robot and waypoints	and publish a Twist message 
+			//		based on latest pose of the robot and waypoints	and publish a TwistStamped message 
 			// 		on /cmd_vel with the linear and angular velocites
 		}
 
@@ -167,7 +162,7 @@ private:
 rclcpp::TimerBase::SharedPtr timer_controller;
 rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_subscriber;
 rclcpp::Subscription<pure_pursuit_pkg::msg::WayPointPath>::SharedPtr waypoint_subs;
-rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub;
+rclcpp::Publisher<geometry_msgs::msg::TwistStamped>::SharedPtr cmd_vel_pub;
 
 rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub_;
 

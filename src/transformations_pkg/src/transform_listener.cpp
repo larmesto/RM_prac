@@ -7,7 +7,7 @@
 
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp> 
 #include "tf2_ros/static_transform_broadcaster.h"
-#include "geometry_msgs/msg/twist.hpp"
+#include "geometry_msgs/msg/twist_stamped.hpp"
 #include "tf2_ros/transform_listener.h" 
 #include "tf2_ros/buffer.h" 
 #include "tf2/exceptions.h" 
@@ -27,7 +27,7 @@ class TransformListener : public rclcpp::Node
     bill_subscriber = this->create_subscription<geometry_msgs::msg::Point>( 
     "bill",10,std::bind(&TransformListener::camera_callback,this,std::placeholders::_1)); 
     
-    cmd_vel_pub = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel",10);
+    cmd_vel_pub = this->create_publisher<geometry_msgs::msg::TwistStamped>("cmd_vel",10);
     //Publish a static transform
     broadcaster_ = std::make_shared<tf2_ros::StaticTransformBroadcaster>(this);
 
@@ -67,14 +67,14 @@ class TransformListener : public rclcpp::Node
 
     //TODO: do transform of bill_pose_cam_msg; compute linear and angular velocities; publish  
 
-    //geometry_msgs::msg::Twist message on cmd_vel topic; 
+    //geometry_msgs::msg::TwistStamped message on cmd_vel topic; 
 
   } 
 
   std::unique_ptr<tf2_ros::Buffer> tf_buffer; 
   std::shared_ptr<tf2_ros::TransformListener> tf_listener; 
   rclcpp::Subscription<geometry_msgs::msg::Point>::SharedPtr bill_subscriber; 
-  rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub; 
+  rclcpp::Publisher<geometry_msgs::msg::TwistStamped>::SharedPtr cmd_vel_pub; 
   std::shared_ptr<tf2_ros::StaticTransformBroadcaster> broadcaster_;
 
 }; 

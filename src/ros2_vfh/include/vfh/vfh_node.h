@@ -32,7 +32,7 @@
 #include <std_msgs/msg/float32_multi_array.hpp>
 #include <sensor_msgs/msg/laser_scan.hpp>
 #include <geometry_msgs/msg/pose2_d.hpp>
-#include <geometry_msgs/msg/twist.hpp>
+#include <geometry_msgs/msg/twist_stamped.hpp>
 #include <nav_msgs/msg/odometry.hpp>
 //#include <tf/transform_datatypes.h>
 //#include "tf2_ros/transform_listener.h" 
@@ -101,7 +101,7 @@ public:
 	rclcpp::Subscription<sensor_msgs::msg::LaserScan>::SharedPtr laser_sub_;
 	rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_sub_;
 	rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr goalPose_sub_;
-	rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub_; 
+	rclcpp::Publisher<geometry_msgs::msg::TwistStamped>::SharedPtr cmd_vel_pub_; 
 
 	rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr stop_robot_srv_;
 	

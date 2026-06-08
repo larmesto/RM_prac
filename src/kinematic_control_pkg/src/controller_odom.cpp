@@ -8,16 +8,11 @@
 
 
 #include <rclcpp/rclcpp.hpp>
-
 #include <nav_msgs/msg/odometry.hpp>
-
 #include "std_msgs/msg/header.hpp"
-
-
+#include <geometry_msgs/msg/twist_stamped.hpp>
 #include "builtin_interfaces/msg/time.hpp"
-
 #include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
-
 
 //msg reference
 #include "kinematic_control_pkg/msg/reference.hpp"
@@ -38,15 +33,17 @@ public: ControllerOdom() : Node("controller")
     ref_subs = this->create_subscription<kinematic_control_pkg::msg::Reference>(
         "reference",10,std::bind(&ControllerOdom::reference_callback, this, std::placeholders::_1));
 
-    cmd_vel_pub = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel",10);
+    cmd_vel_pub = this->create_publisher<geometry_msgs::msg::TwistStamped>("cmd_vel",10);
 	marker_pub = this->create_publisher<visualization_msgs::msg::Marker>("reference_marker",10);
 }
 
 void stop_to_cmd_vel(){
 
-    geometry_msgs::msg::Twist stop_msg;
-    stop_msg.linear.x = 0.0;
-    stop_msg.angular.z = 0.0;
+    geometry_msgs::msg::TwistStamped stop_msg;
+	stop_msg.header.stamp = this->now();
+	stop_msg.header.frame_id = "base_link";
+    stop_msg.twist.linear.x = 0.0;
+    stop_msg.twist.angular.z = 0.0;
   
     cmd_vel_pub->publish(stop_msg);
     
@@ -154,13 +151,13 @@ private:
     void controller(){
 
        //TODO: Implement kinematic controller based on latest pose of the robot and reference
-       //TODO: Publish a Twist message on /cmd_vel with the linear and angular velocites
+       //TODO: Publish a TwistStamped message on /cmd_vel with the linear and angular velocites
     }
 
 rclcpp::TimerBase::SharedPtr timer_controller;
 rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odom_subscriber;
 rclcpp::Subscription<kinematic_control_pkg::msg::Reference>::SharedPtr ref_subs;
-rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_pub;
+rclcpp::Publisher<geometry_msgs::msg::TwistStamped>::SharedPtr cmd_vel_pub;
 rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_pub;
 
 double x_rob,y_rob,theta_rob;
